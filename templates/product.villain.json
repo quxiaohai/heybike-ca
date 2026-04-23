@@ -146,6 +146,7 @@
         },
         "text_NLFHz8": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/icon_UL_f5820271-ce97-4ea4-88dc-27e012349cc4.png",
             "text": "Safety Certified in Accordance with UL 2849",
