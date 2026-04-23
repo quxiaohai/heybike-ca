@@ -1,0 +1,29 @@
+{% style %}
+body #PageContainer{
+    background: {{ section.settings.background_color }} !important;
+}
+body #PageContainer .media,
+[role="main"] .shopify-section {
+    background: none;
+}
+{% endstyle %}
+{% schema %}
+{
+  "name": "MC Page Color",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": " MC Page Color"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "label": "Background color",
+      "id": "background_color",
+      "default": "#000000"
+    }
+  ]
+}
+{% endschema %}

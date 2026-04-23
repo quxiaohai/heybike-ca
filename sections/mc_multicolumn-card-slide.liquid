@@ -1,0 +1,476 @@
+{%- liquid
+    assign ss = section.settings
+    assign cid = section.id | split: '__' | last
+  if ss.image_ratio != blank
+    assign aspect_ratio = ss.image_ratio
+  else
+    assign aspect_ratio = section.blocks[0].settings.image.aspect_ratio | default: 1.77
+  endif
+
+  if ss.mb_image_ratio != blank
+    assign mb_aspect_ratio = ss.mb_image_ratio
+  else
+    assign mb_aspect_ratio = section.blocks[0].settings.mb_image.aspect_ratio | default: aspect_ratio
+  endif
+-%}
+<style>
+  .{{ cid }} {
+    padding: 80px 0;
+    background-color: #000000;
+  }
+  .{{ cid }} .card-content {
+    padding-right: 0;
+  }
+  .{{ cid }} .custom-slide-button > .card-item ~ .card-item {
+    display: none;
+  }
+  .{{ cid }} .card-content.column-card-1 .card-item {
+    width: 100%;
+    max-width: calc(100% - var(--page-padding));
+    margin-right: 73px;
+  }
+  .{{ cid }} .card-content.column-card-1 .card-item .media-info {
+    padding: 36px 50px 52px;
+  }
+  .{{ cid }} .card-content.column-card-1 .card-item .media-info .intro {
+    padding-top: 18px;
+  }
+  .{{ cid }} .card-content.column-card-3 .card-item {
+    width: calc((100% - 2.6vw - var(--page-padding)) / 3);
+  }
+  .{{ cid }} .card-content.column-card-3 .card-item .media-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 40px 38px;
+  }
+  .{{ cid }} .card-content .card-item {
+    height: auto;
+    min-height: 100%;
+    width: calc((100% - 3.9vw - var(--page-padding)) / 4);
+    margin-right: 1.3vw;
+    justify-content: flex-start;
+    background-color: {{ ss.card_bg_color }};
+    border-radius: 0 0 30px 0;
+  }
+  .{{ cid }} .card-content .card-item .image {
+    height: auto;
+    aspect-ratio: {{ aspect_ratio }};
+  }
+  .{{ cid }} .card-content .media-info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 20px 34px;
+  }
+  .{{ cid }} .card-content .media-info .intro,
+  .{{ cid }} .card-content .media-info .name {
+    width: 100%;
+    text-align: {{ ss.card_content_alignment }};
+    color: {{ ss.card_title_color }};
+  }
+  .{{ cid }} .card-content .media-info .intro {
+    line-height: 1.3333;
+    padding-top: 10px;
+    font-size: {{ ss.pc_card_desc_size }}px;
+    color: {{ ss.card_desc_color }};
+  }
+  .{{ cid }} .card-content .media-info .name {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: {{ ss.pc_card_title_size }}px;
+  }
+  @media screen and (max-width: 1440px) {
+    .{{ cid }} {
+      padding: 68px 0;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item {
+      margin-right: 62px;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item .media-info {
+      padding: 31px 43px 44px;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item .media-info .intro {
+      padding-top: 15px;
+    }
+    .{{ cid }} .card-content.column-card-3 .card-item .media-info {
+      padding: 0 34px 32px;
+    }
+    .{{ cid }} .card-content .card-item {
+      border-radius: 0px 0px 26px 0px;
+    }
+    .{{ cid }} .card-content .media-info {
+      padding: 22px 17px 29px;
+    }
+    .{{ cid }} .card-content .media-info .intro {
+      padding-top: 9px;
+      font-size: {{ ss.pc_card_desc_size | times: 0.85 | round }}px;
+    }
+    .{{ cid }} .card-content .media-info .name {
+      font-size: {{ ss.pc_card_title_size | times: 0.85 | round }}px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .{{ cid }} {
+      padding: 2.5rem 0;
+    }
+    .{{ cid }} .card-content {
+      padding-left: 0.9375rem;
+      box-sizing: border-box;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item {
+      width: 19.375rem;
+      margin-right: 0.625rem;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item .media-info {
+      padding: 1.5625rem 1.40625rem 1.4375rem;
+    }
+    .{{ cid }} .card-content.column-card-1 .card-item .media-info .intro {
+      padding-top: 1.0625rem;
+    }
+    .{{ cid }} .card-content.column-card-3 .card-item {
+      width: 15.59375rem;
+    }
+    .{{ cid }} .card-content.column-card-3 .card-item .media-info {
+      padding: 0 1.25rem 1.125rem;
+    }
+    .{{ cid }} .card-content .card-item {
+      height: auto;
+      margin-right: 0.625rem;
+      width: 10.78125rem;
+      border-radius: 0 0 0.9375rem 0;
+    }
+    .{{ cid }} .card-content .card-item .image {
+      aspect-ratio: {{ mb_aspect_ratio }};
+    }
+    .{{ cid }} .card-content .media-info {
+      padding: 0.875rem 0.625rem 0.6875rem;
+    }
+    .{{ cid }} .card-content .media-info .intro {
+      padding-top: 0.3125rem;
+      font-size: {{ ss.mb_card_desc_size }}px;
+    }
+    .{{ cid }} .card-content .media-info .name {
+      font-size: {{ ss.mb_card_title_size }}px;
+    }
+  }
+  {% render 'page-wrap-style' %}
+</style>
+<div class="{{ cid }} section--page w-full">
+    {%- render 'section-title', info: ss -%}
+    <div class="card-content relative column-card-{{ ss.card_cols }} page-width">
+      <slide-element buttons {% if ss.card_loop %}loop{% endif %} cells="{{ ss.card_cells }}" class="block custom-slide-button">
+        {%- liquid
+          if ss.card_cols == '1'
+            assign size = 1440
+          else
+            assign size = 500
+          endif
+        -%}
+        {%- for block in section.blocks -%}
+          {%- assign bs = block.settings -%}
+          <div class="card-item flex-center-col">
+            {%- render 'global-image',
+                desktop_img: bs.image,
+                desktop_size: size,
+                mobile_img: bs.mb_image,
+                mobile_size: 500
+            -%}
+            <div class="media-info flex-center-col">
+              <div class="name">{{ bs.title }}</div>
+              <div class="intro">{{ bs.text }}</div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </slide-element>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "MC Multicolumn Card Slide",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "MC Multicolumn Card Slide"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Title",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "Title font style",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "italic",
+          "value": "italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "title_pc_size",
+      "label": "Desktop title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_mb_size",
+      "label": "Mobile title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "title_margin_bottom",
+      "label": "Title margin bottom",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_bold_color",
+      "label": "Title Bold color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "title_gradient_color",
+      "label": "Title gradient color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show description",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "description_pc_size",
+      "label": "Desktop description size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_mb_size",
+      "label": "Mobile description size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "number",
+      "id": "description_pc_margin_bottom",
+      "label": "Desktop description margin bottom",
+      "default": 40
+    },
+    {
+      "type": "number",
+      "id": "description_mb_margin_bottom",
+      "label": "Mobile description margin bottom",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Card"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_loop",
+      "label": "Card infinite loop",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "card_cells",
+      "label": "Card group cells",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "n",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "card_cols",
+      "label": "Desktop card cols",
+      "options": [
+        {
+          "label": "1 Column",
+          "value": "1"
+        },
+        {
+          "label": "3 Column",
+          "value": "3"
+        },
+        {
+          "label": "4 Column",
+          "value": "4"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "image_ratio",
+      "label": "Desktop card image ratio(w/h)"
+    },
+    {
+      "type": "text",
+      "id": "mb_image_ratio",
+      "label": "Mobile card image ratio(w/h)"
+    },
+    {
+      "type": "text_alignment",
+      "id": "card_content_alignment",
+      "label": "Card content alignment",
+      "default": "left"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "pc_card_title_size",
+      "label": "Desktop card title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mb_card_title_size",
+      "label": "Mobile card title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card title color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pc_card_desc_size",
+      "label": "Desktop card desc size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mb_card_desc_size",
+      "label": "Mobile card desc size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 9
+    },
+    {
+      "type": "color",
+      "id": "card_desc_color",
+      "label": "Card desc color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Slide card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Desc"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

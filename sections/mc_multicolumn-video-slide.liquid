@@ -1,0 +1,608 @@
+{%- liquid
+    assign ss = section.settings
+    assign cid = section.id | split: '__' | last
+    if ss.video_ratio != blank
+        assign aspect_ratio = ss.video_ratio
+    else
+        assign aspect_ratio = section.blocks[0].settings.video_desktop.aspect_ratio | default: 1.77
+    endif
+
+    if ss.mb_video_ratio != blank
+        assign mb_aspect_ratio = ss.mb_video_ratio
+    else
+        assign mb_aspect_ratio = section.blocks[0].settings.video_mobile.aspect_ratio | default: aspect_ratio
+    endif
+-%}
+<style>
+    .{{ cid }} {
+        padding: 80px 0;
+        background-color: #000000;
+    }
+
+    .{{ cid }} .card-content {
+        padding-right: 0;
+    }
+
+    .{{ cid }} .custom-slide-button > .card-item ~ .card-item {
+        display: none;
+    }
+
+    .{{ cid }} .card-content .card-item {
+        height: auto;
+        min-height: 100%;
+        width: calc((100% - 2.6vw - var(--page-padding)) / 3);
+        margin-right: 1.3vw;
+        justify-content: flex-start;
+        border-radius: 0 0 30px 0;
+        background-color: {{ ss.card_bg_color }};;
+    }
+
+    .{{ cid }} .card-content .card-item .media {
+        height: auto;
+        aspect-ratio: {{ aspect_ratio }};
+        border-radius: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .{{ cid }} .card-content .card-item .media[playing] .deferred-poster .play-button {
+        opacity: 0;
+    }
+
+    .{{ cid }} .custom-play-button .play-button {
+        position: static;
+    }
+
+    .{{ cid }} .card-content .card-item .youtube-deferred-poster {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+    }
+
+    .{{ cid }} .card-content .card-item .youtube-play-button {
+        width: 100%;
+        height: auto;
+        background: none;
+        inset-inline: 0;
+        inset-block: 0;
+    }
+
+    .{{ cid }} .card-content .card-item .youtube-play-button .icon {
+        width: 70px;
+        height: 48px;
+    }
+
+    .{{ cid }} .card-content .media-info {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 38px 28px 30px;
+        color: #ffffff;
+    }
+
+    .{{ cid }} .card-content .media-info .intro {
+        line-height: 1.3333;
+        padding-top: 10px;
+        font-size: {{ ss.pc_card_desc_size }}px;
+        text-align: {{ ss.card_content_alignment }};
+        color: {{ ss.card_desc_color }};
+    }
+
+    .{{ cid }} .card-content .media-info .name {
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: {{ ss.pc_card_title_size }}px;
+        color: {{ ss.card_title_color }};
+        text-align: {{ ss.card_content_alignment }};
+    }
+
+    .{{ cid }} .card-content .media-info .user {
+        padding-top: 26px;
+        justify-content: flex-{% if ss.card_content_alignment == 'left' %}start{% elsif ss.card_content_alignment == 'center' %}center{% else %}right{% endif %};
+    }
+
+    .{{ cid }} .card-content .media-info .user .image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .{{ cid }} .card-content .media-info .user .nickname {
+        font-size: 18px;
+        padding-left: 16px;
+        word-break: break-word;
+        color: {{ ss.author_color }};
+    }
+
+    @media screen and (max-width: 1440px) {
+        .{{ cid }} {
+            padding: 68px 0;
+        }
+
+        .{{ cid }} .card-content .card-item {
+            border-radius: 0 0 26px 0;
+        }
+
+        .{{ cid }} .card-content .card-item .youtube-deferred-poster {
+            width: 60px;
+        }
+
+        .{{ cid }} .card-content .card-item .youtube-play-button .icon {
+            width: 60px;
+            height: 41px;
+        }
+
+        .{{ cid }} .card-content .media-info {
+            padding: 32px 24px 26px;
+        }
+
+        .{{ cid }} .card-content .media-info .intro {
+            padding-top: 9px;
+            font-size: {{ ss.pc_card_desc_size | times: 0.85 | round }}px;
+        }
+
+        .{{ cid }} .card-content .media-info .name {
+            font-size: {{ ss.pc_card_title_size | times: 0.85 | round }}px;
+        }
+
+        .{{ cid }} .card-content .media-info .user {
+            padding-top: 22px;
+        }
+
+        .{{ cid }} .card-content .media-info .user .image {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+        }
+
+        .{{ cid }} .card-content .media-info .user .nickname {
+            font-size: 15px;
+            padding-left: 14px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .{{ cid }} {
+            padding: 2.5rem 0;
+        }
+
+        .{{ cid }} .card-content {
+            padding-left: 0.9375rem;
+            box-sizing: border-box;
+        }
+
+        .{{ cid }} .card-content .card-item {
+            height: auto;
+            margin-right: 0.625rem;
+            width: 15.59375rem;
+        }
+
+        .{{ cid }} .card-content .card-item .image {
+            aspect-ratio: 1.38;
+            border-radius: 0 0 0.9375rem 0;
+        }
+
+        .{{ cid }} .card-content .media-info {
+            padding: 1.1875rem 1.25rem 1.125rem;
+        }
+
+        .{{ cid }} .card-content .media-info .intro {
+            padding-top: 0.3125rem;
+            font-size: {{ ss.mb_card_desc_size }}px;
+        }
+
+        .{{ cid }} .card-content .media-info .name {
+            font-size: {{ ss.mb_card_title_size }}px;
+        }
+
+        .{{ cid }} .card-content .media-info .user {
+            padding-top: 0.875rem;
+        }
+
+        .{{ cid }} .card-content .media-info .user .image {
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+
+        .{{ cid }} .card-content .media-info .user .nickname {
+            font-size: 0.625rem;
+            padding-left: 0.5rem;
+        }
+    }
+
+    {% render 'page-wrap-style' %}
+</style>
+<div class="{{ cid }} section--page w-full">
+    {%- render 'section-title', info: ss -%}
+    <div class="card-content relative page-width">
+        <slide-element buttons {% if ss.card_loop %}loop{% endif %} cells="{{ ss.card_cells }}"
+                       class="block custom-slide-button">
+            {%- for block in section.blocks -%}
+                {%- assign bs = block.settings -%}
+                <div class="card-item flex-center-col">
+                    {%- capture sizes -%}{% if bs.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+                    {%- if bs.video_mobile or bs.video_url_mobile -%}
+                        {%- liquid
+                            assign show_youtube_button = false
+                            if bs.video_mobile == blank and bs.video_url_mobile != blank
+                                assign show_youtube_button = true
+                            endif
+                        -%}
+                        {%- render 'video',
+                            sizes: sizes,
+                            video: bs.video_mobile,
+                            video_url: bs.video_url_mobile,
+                            muted: bs.muted,
+                            autoplay: false,
+                            loop: false,
+                            cover_image: bs.mobile_image,
+                            play_icon: ss.play_button_icon,
+                            show_youtube_button: show_youtube_button,
+                            is_mobile: true,
+                            controls: true
+                        -%}
+                    {%- endif -%}
+                    {%- liquid
+                        assign show_youtube_button = false
+                        if bs.video_desktop == blank and bs.video_url != blank
+                            assign show_youtube_button = true
+                        endif
+                    -%}
+                    {%- render 'video',
+                        sizes: sizes,
+                        video: bs.video_desktop,
+                        video_url: bs.video_url,
+                        muted: bs.muted,
+                        autoplay: false,
+                        loop: false,
+                        cover_image: bs.desktop_image,
+                        play_icon: ss.play_button_icon,
+                        show_youtube_button: show_youtube_button,
+                        controls: true
+                    -%}
+                    <div class="media-info flex-center-col">
+                        <div class="name w-full">{{ bs.title }}</div>
+                        <div class="intro w-full">{{ bs.text }}</div>
+                        {% if bs.avatar and bs.author %}
+                            <div class="user w-full flex-left">
+                                {%- render 'global-image', image: bs.avatar, image_size: 40, media_type: 'icon' -%}
+                                <span class="nickname">{{ bs.author }}</span>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {%- endfor -%}
+        </slide-element>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "MC Multi Video Slide",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "MC Multicolumn Video Slide"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Title",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "Title font style",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "italic",
+          "value": "italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "title_pc_size",
+      "label": "Desktop title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_mb_size",
+      "label": "Mobile title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "title_margin_bottom",
+      "label": "Title margin bottom",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_bold_color",
+      "label": "Title Bold color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "title_gradient_color",
+      "label": "Title gradient color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show description",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "description_pc_size",
+      "label": "Desktop description size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_mb_size",
+      "label": "Mobile description size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "number",
+      "id": "description_pc_margin_bottom",
+      "label": "Desktop description margin bottom",
+      "default": 40
+    },
+    {
+      "type": "number",
+      "id": "description_mb_margin_bottom",
+      "label": "Mobile description margin bottom",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Card"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_loop",
+      "label": "Card infinite loop",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "card_cells",
+      "label": "Card group cells",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "unit": "n",
+      "default": 1
+    },
+    {
+      "type": "text",
+      "id": "video_ratio",
+      "label": "Desktop card video ratio(w/h)"
+    },
+    {
+      "type": "text",
+      "id": "mb_video_ratio",
+      "label": "Mobile card video ratio(w/h)"
+    },
+    {
+      "type": "image_picker",
+      "id": "play_button_icon",
+      "label": "Play button icon"
+    },
+    {
+      "type": "text_alignment",
+      "id": "card_content_alignment",
+      "label": "Card content alignment",
+      "default": "left"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "pc_card_title_size",
+      "label": "Desktop card title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "mb_card_title_size",
+      "label": "Mobile card title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card title color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pc_card_desc_size",
+      "label": "Desktop card desc size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mb_card_desc_size",
+      "label": "Mobile card desc size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 9
+    },
+    {
+      "type": "color",
+      "id": "card_desc_color",
+      "label": "Card desc color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Slide card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Desktop video cover"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile video cover"
+        },
+        {
+          "type": "checkbox",
+          "id": "muted",
+          "label": "Disable muted",
+          "default": true
+        },
+        {
+          "type": "video",
+          "id": "video_desktop",
+          "label": "Video (Desktop)"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "URL",
+          "info": "Use a YouTube or Vimeo URL"
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "Video (Mobile)"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url_mobile",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "label": "Or embed video from URL",
+          "info": "Use a YouTube or Vimeo URL"
+        },
+        {
+          "type": "header",
+          "content": "Content settings"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Desc"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
