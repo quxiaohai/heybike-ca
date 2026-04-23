@@ -235,7 +235,7 @@
         </div>
     </div>
     <div class="slide-content page-width mobile-done">
-        <div class="slider" node-name="slider">
+        <slide-element class="slider block" node-name="slider">
             {%- for block in section.blocks -%}
                 {%- assign bs = block.settings -%}
                 <div class="slide-item">
@@ -261,13 +261,12 @@
                     </div>
                 </div>
             {%- endfor -%}
-        </div>
+        </slide-element>
     </div>
 </div>
 {%- if section.blocks.size > 1 -%}
     <script>
-        (async function () {
-            await $heybike.bind('VENDOR.LOADED');
+        $heybike.ready(() => {
             const node = document.getElementById('{{ section.id }}-slide');
             let current = 0, slider = null;
             const {nodeList, trigger} = $heybike.tabSwitch({
@@ -338,25 +337,14 @@
             });
             {%- endif -%}
 
-            $heybike.inView(node, () => {
-                slider = new Flickity(nodeList.slider, {
-                    accessibility: false,
-                    prevNextButtons: false,
-                    wrapAround: true,
-                    autoPlay: false,
-                    cellAlign: false,
-                    on: {
-                        change: (index) => {
-                            {%- if ss.auto_slide -%}
-                            updateProgress(0);
-                            current = index;
-                            startSlide();
-                            {%- endif -%}
-                        }
-                    }
-                });
+            {%- if ss.auto_slide -%}
+            nodeList.slider.addEventListener('slider:change', ev => {
+                updateProgress(0);
+                current = ev.detail.index;
+                startSlide();
             });
-        })();
+            {%- endif -%}
+        });
     </script>
 {%- endif -%}
 {% schema %}
