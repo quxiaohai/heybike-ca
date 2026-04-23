@@ -1,0 +1,745 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+  {% assign cssSelected = ""%}
+  {% for i in (2..section.settings.columns) %}
+  {% assign cssSelected =  cssSelected | append: " + .multicolumn-card"%}
+  .multicolumn-slide .multicolumn-card.selected{{cssSelected}}:after{
+    background-color: unset;
+  }
+  {% endfor %}
+  .multicolumn-card video-media .deferred-poster .play-button{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+
+<div class="section section--padding {% if section.settings.swipe_on_desktop %} multicolumn-slide {% endif %} {% if section.settings.hide_desktop %} block md:hidden {% endif %} {% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
+    {% if section.settings.swipe_on_desktop  %}
+    {%- capture indicators -%}
+      {%- if section.blocks.size > 1 -%}
+        <div class="indicators hidden lg:flex gap-2d5">
+          <button class="button button--secondary" type="button" is="previous-button" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.previous' | t | escape }}" disabled>
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">
+              {%- render 'icon', icon: 'chevron-left', class: 'transform' -%}
+            </span>
+          </button>
+          <button class="button button--secondary" type="button" is="next-button" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.next' | t | escape }}">
+            <span class="btn-fill" data-fill></span>
+            <span class="btn-text">
+              {%- render 'icon', icon: 'chevron-right', class: 'transform' -%}
+            </span>
+          </button>
+        </div>
+      {%- endif -%}
+    {%- endcapture -%}
+    {%- render 'section-heading', section: section, section_button: indicators -%}
+    {% else %}
+    {%- render 'section-heading', section: section -%}
+    {% endif %}
+
+    <slider-element id="Slider-{{ section.id }}" class="grid slider {% if section.settings.swipe_on_desktop %} slider--desktop {% endif %} {% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
+      <div class="multicolumn card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid relative z-1">
+        {%- for block in section.blocks -%}
+          <div class="multicolumn-card {% if forloop.first %} selected{% endif %} {% if block.settings.show_border %} with-border{% endif %} card flex gap-5 w-full flex-col items-start xl:flex-row md:text-{{ block.settings.text_alignment }} text-{{ block.settings.text_alignment_mobile }}" {{ block.shopify_attributes }}>
+            <div class="grid gap-4 lg:gap-6">
+              {%- if block.settings.video != blank or block.settings.video_url != blank -%}
+                {% comment %}
+                {%- capture sizes -%}(max-width: 639px) 100vw, (max-width: 1023px) calc(100vw / 2 - 40px), (max-width: 1535px) calc(min(100vw, {{ settings.page_width }}px) / 3 - 40px) , calc(min(100vw, {{ settings.page_width }}px) / 3 - 80px) {%- endcapture -%}
+                <a class="block media media--{{ block.settings.image_ratio }} relative overflow-hidden"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+                  {%- liquid
+                    assign video_alt = block.settings.video.alt | default: block.settings.image.alt
+                    assign alt = 'general.accessibility.load_video' | t: description: video_alt | escape
+                    assign preview_image = block.settings.video.preview_image | default: block.settings.image
+
+                    capture poster
+                      if preview_image != blank
+                        echo preview_image | image_url: width: preview_image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080,1600', sizes: sizes, is: 'lazy-image', alt: alt
+                      else
+                        echo 'lifestyle-1' | placeholder_svg_tag: 'placeholder'
+                      endif
+                    endcapture
+                  -%}
+                  <video-media class="block" style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}" autoplay>
+                    {{- poster -}}
+                    <template>
+                      {{- block.settings.video | video_tag: playsinline: true, muted: true, autoplay: true, loop: true, controls: false, preload: 'none', image_size: '800x' -}}
+                    </template>
+                  </video-media>
+                </a>
+                {% endcomment %}
+                {%- assign sizes = '(max-width: 767px) 100vw, 50vw' -%}
+                {%- render 'video',
+                          sizes: sizes,
+                          video: block.settings.video,
+                          video_url: block.settings.video_url,
+                          muted: block.settings.enable_video_autoplay,
+                          autoplay: block.settings.enable_video_autoplay,
+                          loop: block.settings.enable_video_looping,
+                          description: block.settings.description,
+                          cover_image: block.settings.cover_image,
+                          show_play_button: true,
+                          use_popup: block.id,
+                          controls: true,
+                          class: 'media media--height block w-full h-full relative overflow-hidden'
+                        -%}
+
+                         <x-modal id="PopVideo-{{ block.id }}" class="video-modal x-modal drawer z-30 fixed bottom-0 left-0 h-full w-full pointer-events-none"
+                              role="dialog"
+                              aria-modal="true"
+                              hidden
+                            >
+                            <overlay-element class="overlay fixed-modal invisible opacity-0 fixed bottom-0 left-0 w-full h-screen pointer-events-none" aria-controls="PopVideo-{{ block.id }}" aria-expanded="false"></overlay-element>
+                            <div class="drawer__inner z-10 absolute top-0 flex flex-col w-full h-full overflow-hidden">
+                              <button class="button button--secondary button--close drawer__close hidden sm:flex items-center justify-center" type="button" is="hover-button" aria-controls="PopVideo-{{ block.id }}" aria-expanded="false" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
+                                  {%- render 'icon', icon: 'close', size: 'sm' -%}
+                                </span>
+                              </button>
+                              <div class="video-drawer w-full h-full">
+                              {%- render 'video',
+                                sizes: '100vw',
+                                video: block.settings.video,
+                                video_url: block.settings.video_url,
+                                muted: false,
+                                autoplay: true,
+                                loop: false,
+                                show_play_button: false,
+                                is_mobile: false,
+                                controls: true,
+                                class: 'relative'
+                              -%}
+                              </div>
+                            </div>
+                          </x-modal>
+              {%- elsif block.settings.image != blank -%}
+                {%- capture sizes -%}(max-width: 639px) 100vw, (max-width: 1023px) calc(100vw / 2 - 40px), (max-width: 1535px) calc(min(100vw, {{ settings.page_width }}px) / 3 - 40px) , calc(min(100vw, {{ settings.page_width }}px) / 3 - 80px) {%- endcapture -%}
+                <a class="block media media--{{ block.settings.image_ratio }} relative overflow-hidden"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080,1600', sizes: sizes, is: 'lazy-image' -}}
+                </a>
+              {%- endif -%}
+
+              {%- if block.settings.heading != blank or block.settings.text != blank or block.settings.button_label != blank -%}
+                <div class="multicolumn-card__info grid gap-4 lg:gap-6">
+                  {%- if block.settings.heading != blank -%}
+                    <p class="heading {{ block.settings.heading_size }} font-bold leading-tight tracking-tight">
+                      {%- render 'highlighted-text', content: block.settings.heading, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble -%}
+                    </p>
+                  {%- endif -%}
+    
+                  {%- if block.settings.text != blank -%}
+                    <div class="rte leading-normal">
+                      {{- block.settings.text -}}
+                    </div>
+                  {%- endif -%}
+    
+                  {%- if block.settings.button_label != blank -%}
+                    <p>
+                      <a class="button button--secondary button--fixed icon-with-text"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link">
+                        <span class="btn-fill" data-fill></span>
+                        <span class="btn-text">
+                          {%- liquid
+                            echo block.settings.button_label | escape
+                            render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
+                          -%}
+                        </span>
+                      </a>
+                    </p>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </slider-element>
+
+    {%- if section.blocks.size > 1 and  section.settings.swipe_on_desktop  -%}
+        <div class="scroll-area">
+          <slider-dots class="timeline-dots flex justify-center items-center gap-2d5" aria-controls="Slider-{{ section.id }}">
+             {% assign maxIndex =  section.blocks.size | minus: section.settings.columns | plus: 1%}
+            {%- for block in section.blocks -%}
+              {% if forloop.index <= maxIndex %}
+              <button type="button" class="text-lg text-left font-bold flex items-center gap-2d5" data-index="{{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                <span class="sr-only">{{ 'general.pagination.page' | t: number: forloop.index }}</span>
+              </button>
+              {% endif %}
+            {%- endfor -%}
+          </slider-dots>
+        </div>
+      {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.multicolumn.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "swipe_on_desktop",
+      "label": "Enable swipe on desktop",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.global.settings.columns.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.global.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.global.settings.columns_mobile.options__2.label"
+        }
+      ],
+      "default": "1",
+      "label": "t:sections.global.settings.columns_mobile.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "label": "t:sections.global.settings.swipe_on_mobile.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Multicolumn"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "text-center md:items-center"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.global.settings.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.global.settings.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.global.settings.button_label.label",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_desktop",
+      "default": false,
+      "label": "Hide on desktop"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_border",
+          "default": false,
+          "label": "t:sections.multicolumn.blocks.column.settings.show_border.label"
+        },
+        {
+          "type": "text_alignment",
+          "id": "text_alignment",
+          "default": "left",
+          "label": "t:sections.global.settings.text_alignment.label"
+        },
+        {
+          "type": "text_alignment",
+          "id": "text_alignment_mobile",
+          "default": "left",
+          "label": "t:sections.global.settings.text_alignment_mobile.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.global.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "options": [
+            {
+              "value": "adapt",
+              "label": "t:sections.global.settings.image_ratio.options__1.label"
+            },
+            {
+              "value": "square",
+              "label": "t:sections.global.settings.image_ratio.options__2.label"
+            },
+            {
+              "value": "portrait",
+              "label": "t:sections.global.settings.image_ratio.options__3.label"
+            },
+            {
+              "value": "landscape",
+              "label": "t:sections.global.settings.image_ratio.options__4.label"
+            },
+            {
+              "value": "wide",
+              "label": "t:sections.global.settings.image_ratio.options__5.label"
+            }
+          ],
+          "default": "adapt",
+          "label": "t:sections.global.settings.image_ratio.label"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.video.settings.video.label"
+        },
+        
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__video_url.content",
+          "info": "t:sections.video.settings.header__video_url.info"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_autoplay",
+          "label": "t:sections.video.settings.enable_video_autoplay.label",
+          "info": "t:sections.video.settings.enable_video_autoplay.info",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        },
+        
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "t:sections.global.settings.heading.label",
+          "default": "Example title"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "text-base-xl",
+              "label": "t:sections.global.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "text-lg-2xl",
+              "label": "t:sections.global.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "text-2xl lg:text-3xl",
+              "label": "t:sections.global.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "text-lg-2xl",
+          "label": "t:sections.global.settings.heading_size.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.global.settings.description.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.global.settings.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.global.settings.button_link.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__highlight.content",
+          "info": "t:sections.global.settings.header__highlight.info"
+        },
+        {
+          "type": "select",
+          "id": "highlighted_text",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.global.settings.highlighted_text.options__1.label"
+            },
+            {
+              "value": "text",
+              "label": "t:sections.global.settings.highlighted_text.options__2.label"
+            },
+            {
+              "value": "full_text",
+              "label": "t:sections.global.settings.highlighted_text.options__3.label"
+            },
+            {
+              "value": "half_text",
+              "label": "t:sections.global.settings.highlighted_text.options__4.label"
+            },
+            {
+              "value": "underline",
+              "label": "t:sections.global.settings.highlighted_text.options__5.label"
+            },
+            {
+              "value": "stencil",
+              "label": "t:sections.global.settings.highlighted_text.options__6.label"
+            },
+            {
+              "value": "scribble",
+              "label": "t:sections.global.settings.highlighted_text.options__7.label"
+            }
+          ],
+          "default": "none",
+          "label": "t:sections.global.settings.highlighted_text.label"
+        },
+        {
+          "type": "select",
+          "id": "highlighted_scribble",
+          "options": [
+            {
+              "value": "circle",
+              "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+            },
+            {
+              "value": "basic-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+            },
+            {
+              "value": "sketch-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+            },
+            {
+              "value": "squiggle-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+            },
+            {
+              "value": "squiggle-underline-2",
+              "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+            }
+          ],
+          "default": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.label",
+          "info": "t:sections.global.settings.highlighted_scribble.info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.multicolumn.presets.name",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  }
+}
+{% endschema %}

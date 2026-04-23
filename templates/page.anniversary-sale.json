@@ -1,0 +1,1007 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-sm",
+        "heading_tag": "h1",
+        "text_size": "text-sm",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "countdown_timer_qK7c8e": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_LcGU3z": {
+          "type": "heading",
+          "settings": {
+            "heading": "A JOYFUL",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_QYATWE": {
+          "type": "heading",
+          "settings": {
+            "heading": "ANNIVERSARY WITH HEYBIKE",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_RMdkiE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Green Rides for a Cleaner World</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "timer_tfzdhE": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "year": "2025",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "text_font": "heading",
+            "text_size": "title-lg tracking-heading",
+            "message": ""
+          }
+        },
+        "button_DNDqi4": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LcGU3z",
+        "heading_QYATWE",
+        "text_RMdkiE",
+        "timer_tfzdhE",
+        "button_DNDqi4"
+      ],
+      "name": "t:sections.countdown-timer.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/01_pc_05_77b8b4fb-7aa2-408f-bf06-f841bd207808.jpg",
+        "image_height": "adapt",
+        "content_width": "medium",
+        "content_position": "md:items-start md:justify-center",
+        "text_alignment": "center",
+        "image_mobile": "shopify://shop_images/App_01_fced05eb-3c1e-4add-888c-d49c97d8fbd3.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-start justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_ccgh6B": {
+      "type": "rich-text",
+      "blocks": {
+        "text_rcQLWY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4th Anniversary Sale Frenzy</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_wrY67i": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "text_rcQLWY",
+        "button_wrY67i"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_cWRUGz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p44dgz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>You Don't Want to Miss</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_9PrnNN": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_p44dgz",
+        "button_9PrnNN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "portfolio_NQ8P8J": {
+      "type": "portfolio",
+      "blocks": {
+        "profile_MRXgqH": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/Anniversary_card_01.jpg",
+            "image_mobile": "shopify://shop_images/Anniversary_card_01.jpg",
+            "heading": "Massive Savings Await",
+            "text": "<p>Heybike 4th Anniversary Sale Is On! Celebrate 4 years of riding with the biggest deals all time—don’t miss the party!<br/><br/>💸 Biggest Price Drop on All Ebikes<br/>🏷️ Extra $100 Off with code \"ANNIVERSARY\"<br/>🎁 Free Gifts Worth Up to $208 (Front basket+Rear basket)</p>",
+            "color_text": "#ffdb00",
+            "color_background": "#171717"
+          }
+        },
+        "profile_ccNV8N": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/card05.jpg",
+            "image_mobile": "shopify://shop_images/card05.jpg",
+            "heading": "Shop With Confidence",
+            "text": "<p>Shop now, worry-free. For orders placed during Heybike 4th Anniversary Sale, if you find a better deal on the same product within 60 days of your purchase, simply contact us for a refund of the difference.</p>",
+            "color_text": "#ffdb00",
+            "color_background": "#171717"
+          }
+        },
+        "profile_RjNKLA": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/card06.jpg",
+            "image_mobile": "shopify://shop_images/card06.jpg",
+            "heading": "One Bike, One Tree",
+            "text": "<p>Join Heybike’s green journey—ride electric, think sustainable. Through our partnership with One Tree Planted, your purchase supports reforestation efforts. </p><p>Together, our rides and trees create lasting impact for a healthier planet.</p>",
+            "color_text": "#ffdb00",
+            "color_background": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "profile_MRXgqH",
+        "profile_ccNV8N",
+        "profile_RjNKLA"
+      ],
+      "name": "t:sections.portfolio.presets.name",
+      "settings": {
+        "enable_stack": false,
+        "columns": 3,
+        "layout": "default",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left justify-start",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#f6be00",
+        "gradient_highlight": "",
+        "color_button_text": "#ffdb00",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_background_profile": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_JpBBLe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_r6N4Rh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Season's Top Picks</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_r6N4Rh"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_8LwmpM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cxp7p8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Best Ebike Deals All Time</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cxp7p8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "featured_collection_bVkA6w": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "electric-bikes",
+        "products": [
+          "ranger-s",
+          "heybike-cityrun-electric-bike",
+          "alpha"
+        ],
+        "product_limit": 6,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_V4E9cL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_dRVPiR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find Your Perfect Ride!</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_dRVPiR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_MEDtJ7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3TaCzQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Epic Savings for All Rides</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3TaCzQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "featured_collection_36FjmB": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "electric-bikes",
+        "products": [
+          "horizon",
+          "mars-2-0",
+          "hauler",
+          "heybike-brawn-electric-bike",
+          "tyson",
+          "hero"
+        ],
+        "product_limit": 6,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "custom_slideshow_T7B6Ui": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "image_gJFGzP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sale_Page_Mid_banner.jpg",
+            "image_height": "400px",
+            "content_width": "small",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/mnid_banner_App.jpg",
+            "image_height_mobile": "adapt",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_highlight": "#e0a580",
+            "gradient_highlight": "",
+            "color_button_text": "#171717",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "block_color_overlay": "#171717",
+            "overlay_opacity": 0,
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true,
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "text": "",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color_text": false,
+            "highlighted_text_text": "none",
+            "highlighted_scribble_text": "circle",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "md",
+            "button_secondary_style": false,
+            "label": "",
+            "link": "",
+            "liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gJFGzP"
+      ],
+      "name": "Custom Slideshow",
+      "settings": {
+        "transparent_header": false,
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_WmJtra": {
+      "type": "rich-text",
+      "blocks": {
+        "text_tf6iN3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buy More Save More!</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_tf6iN3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_bAGwqM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tPNnnW": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>Mega Combo Deals</em>",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tPNnnW"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "featured_collection_3hRGF8": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "combo-sale",
+        "products": [
+          "ranger-s-1000w-combo",
+          "mars-2-0-1000w-combo",
+          "cityrun-combo",
+          "horizon-combo",
+          "brawn-combo",
+          "tyson-combo",
+          "mars-2-0-combo",
+          "ranger-s-combo"
+        ],
+        "product_limit": 6,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "faq_BDNbhL": {
+      "type": "faq",
+      "blocks": {
+        "question_GEKcy4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What’s included in Heybike 4th Anniversary Celebration?</strong>",
+            "text": "<p>We're celebrating 4 amazing years with unbeatable deals and exciting gifts! Here's what you can enjoy:</p><ul><li><strong>Best Deals Ever</strong> on All Ebikes</li><li><strong>Extra $100 Coupon</strong> with code \"ANNIVERSARY\"</li><li><strong>Free Baskets</strong> with select models</li><li><strong>60-Day Price Match Guarantee</strong></li><li><strong>Green Rides Campaign With </strong><em><strong>OneTreePlanted</strong></em></li></ul><p>Even more anniversary giveaways & surprises await! Stay in the loop—<a href=\"https://www.heybike.com/account/register\" target=\"_blank\" title=\"https://www.heybike.com/account/register\"><em><strong>subscribe</strong></em></a> to our emails for exclusive offers and the latest event updates!</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_tncXgJ": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What is the 60-Day Price Match Guarantee?</strong>",
+            "text": "<p>We guarantee price protection for orders placed during Heybike 4th Anniversary Sale. If you find a lower price on the exact same product within 60 days of your purchase on Heybike official website, simply reach out to our customer service team with proof of the lower price. Our team will verify the information, and issue a refund for the price difference depending on the specific situation.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_b4HpKq": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>When can I expect my ebike order to ship?</strong>",
+            "text": "<p>Generally each ebike order will be shipped within 1-2 businss days.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_becm6F": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "<strong>How do I redeem my anniversary gift pack and when is the shipment?</strong>",
+            "text": "<p>Generally each ebike order will be shipped within 1-2 businss days.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_jPbcNw": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "<strong>How do I redeem my anniversary gift pack and when is the shipment?</strong>",
+            "text": "<p>Generally each ebike order will be shipped within 1-2 businss days.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wtk38b": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is customer service available 24/7?</strong>",
+            "text": "<p>For customer service via email, it is available 24/7. More than 90% of the emails will be replied to within 24 hours and some emails may be 48 hours. As for telephone customer service, please dial +1 888-301-6908 or +1 888-859-1518 at 7:00-16:00 PST, Mon.-Fri.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_GEKcy4",
+        "question_tncXgJ",
+        "question_b4HpKq",
+        "question_becm6F",
+        "question_jPbcNw",
+        "question_wtk38b"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "section_id": "",
+        "style": "with-border",
+        "heading": "<em>FAQs</em>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "half_text",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "testimonials_TC8P6b": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_itbMdE": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Heybike Horizon comes fully loaded with front and rear suspension, wide 4.0” tires, and the ability to collapse down during storage or transport.</p>",
+            "author": "Mounatin Weekly News",
+            "image": "shopify://shop_images/Mounatin_Weekly_News_05b1d2b7-8ad9-4f03-817e-306abe32f0da.png",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_4xVCcB": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Mars 2.0: Solidly built and fun to ride. It’s indeed a capable commuter for city dwellers and van lifers.</p>",
+            "author": "Tom's Guide",
+            "image": "shopify://shop_images/Tom_s_Guide_b8d4a1dd-4b50-4e9d-b382-7c4a7904f6dc.png",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_LHYmhy": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Mars 2.0 is an affordable multi-purpose folding bike with a smooth ride and fast speed!  </p>",
+            "author": "Electricbike Report",
+            "image": "shopify://shop_images/Electricbike_report_1b95f0c3-31d0-4529-a183-188f8e3cfef8.png",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_iFrGpx": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_itbMdE",
+        "testimonial_4xVCcB",
+        "testimonial_LHYmhy",
+        "testimonial_iFrGpx"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "171014248221776063": {
+      "type": "apps",
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "countdown_timer_qK7c8e",
+    "rich_text_ccgh6B",
+    "rich_text_cWRUGz",
+    "portfolio_NQ8P8J",
+    "rich_text_JpBBLe",
+    "rich_text_8LwmpM",
+    "featured_collection_bVkA6w",
+    "rich_text_V4E9cL",
+    "rich_text_MEDtJ7",
+    "featured_collection_36FjmB",
+    "custom_slideshow_T7B6Ui",
+    "rich_text_WmJtra",
+    "rich_text_bAGwqM",
+    "featured_collection_3hRGF8",
+    "faq_BDNbhL",
+    "testimonials_TC8P6b",
+    "171014248221776063"
+  ]
+}

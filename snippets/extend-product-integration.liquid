@@ -1,0 +1,111 @@
+<script>
+
+  // Run scripts on DOMContentLoaded to avoid affecting site load time
+  window.addEventListener('DOMContentLoaded', function(){
+
+    // Checks if Extend lives in the window and the active currency is USD before showing Extend offers
+    if (window.Extend && window.ExtendShopify && window.Shopify.currency.active === 'USD'&& window.location.href.indexOf('products') > -1) {
+      
+      /************************/
+      /* Initial Variables */
+      /************************/
+      const productForm = document.querySelector('form[action="/cart/add"]'); // Change this to the product form element
+      const addToCartButton = productForm.querySelector('button[name="add"]'); // Change this to the Add-To-Cart element
+      const extendOffer = document.createElement('div');
+      extendOffer.className = 'extend-offer';
+      const beforeQuantity = addToCartButton.parentElement.parentElement.parentElement
+      const referenceNode = document.querySelector('.product-action')
+      beforeQuantity.insertBefore(extendOffer, referenceNode);
+
+      /************************/
+      /* QA Cypress Variables */
+      /************************/
+      window.Extend.integration.pdpProductForm = productForm;
+      window.Extend.integration.pdpAddToCartButton = addToCartButton;
+      window.Extend.integration.pdpExtendOffer = extendOffer;
+
+      /************************/
+      /* initProductOffer */
+      /************************/
+      // Initializes product offers and handles ATC button functionality for the main PDP ATC
+      function initProductOffer() {
+
+        // Fail safes
+        if(!productForm || !addToCartButton || !extendOffer) return;
+
+        // Check if product is an extend warranty, if so disable the atc
+        function isExtend() {
+          if(meta.product && meta.product.vendor === 'Extend'){
+            addToCartButton.disabled = true;
+          }
+        }
+
+        // Checks if product is an Extend warranty and if so disables 
+        isExtend();
+
+        let variantId;
+
+        // Listens for changes to the productForm and sets the activeProduct for extend via variantID
+        productForm.addEventListener('change', function () {
+          variantId = productForm.id.value
+          if (variantId) {
+            Extend.setActiveProduct(extendOffer, variantId);
+            isExtend();
+          }
+        });
+
+        // Grabs the variantId from the productForm and renders the initial offers for it
+        variantId = productForm.id.value;
+        Extend.buttons.render(extendOffer, {referenceId: variantId });
+
+        //click simulation handling add to cart
+        function handleAddToCart(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+
+          const quantityEl = productForm.querySelector('[name="quantity"]');
+          const quantity = quantityEl && quantityEl.value;
+          ExtendShopify.handleAddToCart(extendOffer, {
+            quantity: quantity,
+            modal: true,
+            done: function () {
+              // Trigger Analytics
+              if (window.Extend.integration.analytics) window.Extend.integration.productAnalytics(variantId, quantity);
+              // remove default click listener
+              addToCartButton.removeEventListener('click', handleAddToCart, true);
+              //click atc button
+              addToCartButton.click();
+              // add default click listener back
+              addToCartButton.addEventListener('click', handleAddToCart, true);
+              
+              // Extend - Dispatch event
+              window.setTimeout(function() {
+                window.dispatchEvent(new Event('refreshAjaxSideCart'))
+              }, 500)
+              // Extend - End code
+              
+            },
+          });
+        }
+
+        //run handleCaddtoCart when we click ATC, capturing event
+        addToCartButton.addEventListener('click', handleAddToCart, true);
+
+      }
+
+      // Initial product offer render
+      initProductOffer();
+    }
+
+  })
+
+</script>
+
+<style>
+
+  .extend-offer {
+    padding-bottom: 5px;
+    /* width: 100% !important; */
+  }
+
+</style>

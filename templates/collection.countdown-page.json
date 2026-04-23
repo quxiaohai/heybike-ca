@@ -1,0 +1,157 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "title-xl"
+          }
+        },
+        "description_8f9GWF": {
+          "type": "description",
+          "settings": {
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title",
+        "description_8f9GWF"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image_height": "500px",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections_j6VAgQ": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "inscoder-collections",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion_tBDPfa": {
+          "type": "promotion",
+          "disabled": true,
+          "settings": {
+            "position": 4,
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_4.21.51_PM.png",
+            "heading": "HERO",
+            "content": "<p>Escape the ordinary and preorder yours today!</p>",
+            "button_label": "Preorder Now",
+            "button_link": "shopify://products/hero",
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#171717",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "subcollections_j6VAgQ",
+        "promotion_tBDPfa"
+      ],
+      "settings": {
+        "products_per_page": 11,
+        "columns": 3,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "drawer",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 3,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "main-collection",
+    "recently-viewed"
+  ]
+}

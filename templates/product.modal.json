@@ -1,0 +1,309 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product-modal",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "show_price": false,
+            "show_badge": true,
+            "show_rating": false
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "Quality commuter ebike that's affordable for everyone.",
+            "text_size": "text-base",
+            "disable_top_spacing": true
+          }
+        },
+        "price_cWHVWG": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_installment": false,
+            "show_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "variant_name_info": "Style:Rider Heights 5’1” - 6’4”,Rider Heights 5’6” - 6’9”",
+            "size_chart_type": "drawer",
+            "size_chart": "{{ product.metafields.custom.pdp_size_fit_chart.value }}",
+            "version_type": "drawer",
+            "version": "{{ product.metafields.custom.pdp_compare_chart.value }}"
+          }
+        },
+        "bundle_collapse_3gC6bC": {
+          "type": "bundle_collapse",
+          "settings": {
+            "show_recommendations": false,
+            "recommendations_title": "<p><strong>Popular Upgrades</strong></p>",
+            "recommendations_limit": 10,
+            "recommendations_expand": true,
+            "recommendations_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_1.value }}",
+            "recommendations_checked_metafield": [],
+            "show_complementary": false,
+            "complementary_title": "<p>Add 3 Accessories and <strong>Save 29%</strong></p>",
+            "complementary_limit": 10,
+            "complementary_expand": false,
+            "complementary_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_2.value }}",
+            "warranty_product": "extend-protection-plan"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_info_icon_4tC4Uk": {
+          "type": "introduce_icon",
+          "settings": {
+            "use_icon_metafield": "pdc_icon",
+            "use_spec_metafield": "pdc_spec",
+            "icon_1": "shopify://shop_images/icon-cycle.png",
+            "title_1": "1,200W",
+            "remark_1": "Peak Mover",
+            "icon_2": "shopify://shop_images/icon-speed.png",
+            "title_2": "28 MPH",
+            "remark_2": "Top Speed",
+            "icon_3": "shopify://shop_images/icon-range.png",
+            "title_3": "45 Miles",
+            "remark_3": "Max Range",
+            "icon_4": "shopify://shop_images/Product_Card_Icon_1.png",
+            "title_4": "600Wh",
+            "remark_4": "Battery Capacity",
+            "icon_5": "shopify://shop_images/Product_Card_Icon_2.png",
+            "title_5": "149.7KG",
+            "remark_5": "Max Load",
+            "icon_6": "shopify://shop_images/icon-phone.png",
+            "title_6": "Phone APP",
+            "remark_6": "iOS, Android"
+          }
+        },
+        "text_KAtDL8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/product_card_icon_3643ab07-b162-4732-818c-c23aea490bc5.svg",
+            "text": "Fast shipping to 48 States & Canada",
+            "text_size": "text-sm",
+            "disable_top_spacing": false
+          }
+        },
+        "text_bWVdgQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group.svg",
+            "text": "TUV certified In accordance with UL 2849",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_RtUYcF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group_1.svg",
+            "text": "1-year warranty for the bike and battery",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "metafield_text_G44rGX": {
+          "type": "metafield_text",
+          "settings": {
+            "use_icon_metafield": "pdp_short_description_icon",
+            "use_desc_metafield": "pdp_short_description",
+            "disable_top_spacing": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "about-us"
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "heading": "Pairs well with",
+            "product_limit": 4,
+            "show_vendor": false,
+            "show_price": true
+          }
+        },
+        "read_more": {
+          "type": "read_more",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "price_cWHVWG",
+        "variant_picker",
+        "bundle_collapse_3gC6bC",
+        "inventory",
+        "buy_buttons",
+        "pickup_availability",
+        "custom_info_icon_4tC4Uk",
+        "text_KAtDL8",
+        "text_bWVdgQ",
+        "text_RtUYcF",
+        "metafield_text_G44rGX",
+        "share",
+        "complementary",
+        "read_more"
+      ],
+      "settings": {
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width"
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Compare Models",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/new-compare\" target=\"_blank\" title=\"new-compare\">Compare Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Find Your Ebike",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/find-your-heybike-ebike\" target=\"_blank\" title=\"Find Your Ebike\">Find Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content_heGqfB": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Test Ride",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/looking-for-test-riding-a-local-dealer\" target=\"_blank\" title=\"Test Riding\">Book Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Us</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content_heGqfB",
+        "content-4"
+      ],
+      "settings": {
+        "heading": "Need help?",
+        "description": ""
+      }
+    },
+    "size-chart-drawer": {
+      "type": "custom-drawer",
+      "disabled": true,
+      "settings": {
+        "heading": "Size & Fit",
+        "description": "",
+        "drawer_id": "SizeChartDrawer",
+        "page": "{{ product.metafields.custom.pdp_size_fit_chart.value }}"
+      }
+    },
+    "version-drawer": {
+      "type": "custom-drawer",
+      "disabled": true,
+      "settings": {
+        "heading": "Compare",
+        "description": "",
+        "drawer_id": "VersionDrawer",
+        "page": "{{ product.metafields.custom.pdp_compare_chart.value }}"
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "size-chart-drawer",
+    "version-drawer"
+  ]
+}

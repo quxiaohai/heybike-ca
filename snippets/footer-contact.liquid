@@ -1,0 +1,122 @@
+{%- comment -%}
+  Renders a contact block on the footer section
+
+  Accepts:
+  - block: {Object}
+
+  Usage:
+  {% render 'footer-contact', block: block %}
+{%- endcomment -%}
+
+{%- if block.settings.button_label_1 != blank or block.settings.button_label_2 != blank or block.settings.button_label_3 != blank or block.settings.button_label_4 != blank -%}
+  {%- capture block_content -%}
+    {%- if block.settings.footer_logo != blank -%}
+    <div class="footer_logo">
+      <img class="inline-block" src="{{ block.settings.footer_logo | img_url: 'master' }}" alt="{{ block.settings.footer_logo.alt }}" width="{{ block.settings.footer_logo.width }}" height="{{ block.settings.footer_logo.height }}">
+    </div>
+    {%- endif -%}
+    <div class="details__content">
+      <div class="footer__contact flex flex-col gap-1">
+        {%- if block.settings.button_label_1 != blank -%}
+          <div>
+            {%- if block.settings.tagline_icon_1 != blank -%}
+            <img class="info_icon inline-block" src="{{ block.settings.tagline_icon_1 | img_url: 'master' }}" alt="{{ block.settings.tagline_icon_1.alt }}" width="{{ block.settings.tagline_icon_1.width }}" height="{{ block.settings.tagline_icon_1.height }}">
+            {%- endif -%}
+            <a
+              class="link inline-block leading-tight text-left"
+              {% if block.settings.button_link_1 == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link_1 }}"
+              {% endif %}
+              is="magnet-link"
+            >
+              <span class="btn-text" data-text>
+                {{- block.settings.button_label_1 | escape -}}
+              </span>
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if block.settings.button_label_2 != blank -%}
+          <div>
+            {%- if block.settings.tagline_icon_2 != blank -%}
+            <img class="info_icon inline-block" src="{{ block.settings.tagline_icon_2 | img_url: 'master' }}" alt="{{ block.settings.tagline_icon_2.alt }}" width="{{ block.settings.tagline_icon_2.width }}" height="{{ block.settings.tagline_icon_2.height }}">
+            {%- endif -%}
+            <a
+              class="link inline-block leading-tight text-left"
+              {% if block.settings.button_link_2 == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link_2 }}"
+              {% endif %}
+              is="magnet-link"
+            >
+              <span class="btn-text" data-text>
+                {{- block.settings.button_label_2 | escape -}}
+              </span>
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if block.settings.button_label_3 != blank -%}
+          <div>
+            {%- if block.settings.tagline_icon_3 != blank -%}
+            <img class="info_icon inline-block" src="{{ block.settings.tagline_icon_3 | img_url: 'master' }}" alt="{{ block.settings.tagline_icon_3.alt }}" width="{{ block.settings.tagline_icon_3.width }}" height="{{ block.settings.tagline_icon_3.height }}">
+            {%- endif -%}
+            <a
+              class="link inline-block leading-tight text-left"
+              {% if block.settings.button_link_3 == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link_3 }}"
+              {% endif %}
+              is="magnet-link"
+            >
+              <span class="btn-text" data-text>
+                {{- block.settings.button_label_3 | escape -}}
+              </span>
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if block.settings.button_label_4 != blank -%}
+          <div>
+            {%- if block.settings.tagline_icon_4 != blank -%}
+            <img class="info_icon inline-block" src="{{ block.settings.tagline_icon_4 | img_url: 'master' }}" alt="{{ block.settings.tagline_icon_4.alt }}" width="{{ block.settings.tagline_icon_4.width }}" height="{{ block.settings.tagline_icon_4.height }}">
+            {%- endif -%}
+            <a
+              class="link inline-block leading-tight text-left"
+              {% if block.settings.button_link_4 == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ block.settings.button_link_4 }}"
+              {% endif %}
+              is="magnet-link"
+            >
+              <span class="btn-text" data-text>
+                {{- block.settings.button_label_4 | escape -}}
+              </span>
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+    <style>
+      @media (min-width: 1280px) {
+        .footer__item--{{ block.id }} { width: calc({{ block.settings.container_width }}% - var(--sp-12)); }
+      }
+    </style>
+  {%- endcapture -%}
+
+  {%- if block.settings.heading == blank -%}
+    <div class="footer__item--{{ block.id }} no-details" {{ block.shopify_attributes }}>
+      {{- block_content -}}
+    </div>
+  {%- else -%}
+    <details class="footer__item--{{ block.id }} details active" is="footer-details" {{ block.shopify_attributes }}>
+      <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
+        <span class="text-base-2xl font-medium">{{ block.settings.heading | escape }}</span>
+        {%- render 'icon', icon: 'chevron-up' -%}
+      </summary>
+      {{- block_content -}}
+    </details>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,150 @@
+
+{% assign show_recommendations = false %}
+{% if block.settings.recommendations_metafield != blank or block.settings.show_recommendations %}
+  {% assign show_recommendations = true %}
+{% endif %}
+
+{% assign show_complementary = false %}
+{% if block.settings.complementary_metafield != blank or block.settings.show_complementary %}
+  {% assign show_complementary = true %}
+{% endif %}
+{% if show_complementary or show_recommendations or true %}
+<product-bundle class="product-bundle">
+	{% if block.settings.recommendations_title != blank %}
+	<details class="product__accordion details" is="accordion-details" {{ block.shopify_attributes }} {% if block.settings.recommendations_expand %} open {% endif %}>
+		<summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
+			<div class="flex items-center gap-2d5">
+				<span class="leading-none">{{block.settings.recommendations_title }}</span>
+			</div>
+			{%- render 'icon', icon: 'arrow-collapse', size: 'xs', class: 'flex-auto' -%}
+		</summary>
+		<div class="details__content rte text-sm text-opacity" {% if block.settings.show_recommendations %} data-url="{{ routes.product_recommendations_url }}?section_id={{ section_id }}&product_id={{ product_id }}&limit={{ block.settings.recommendations_limit }}&intent=related" {% endif %}>
+          
+          {% if block.settings.show_recommendations %}
+              {%- if recommendations.performed -%}
+				{%- 	for product in recommendations.products-%}
+					<label class="product-bundle__info" for="Recommendations_{{product.handle}}" class="flex items-baseline gap-1">
+						<input name="bundles" value="{{product.first_available_variant.id}}" class="checkbox"  id="Recommendations_{{product.handle}}" type="checkbox"/>
+						{%- liquid
+							if product.featured_media
+								echo product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+							else
+								echo 'image' | placeholder_svg_tag
+							endif
+						-%}
+						<div class="product-bundle__title">
+							{{product.title}}
+						</div>
+						{% render 'product-price', product: product,showFree: true, class: 'flex items-end gap-2 text-sm' %}
+					</label>
+				{%- 	endfor -%}
+			{%- endif -%}
+            {% else %}
+              {%- 	for product in block.settings.recommendations_checked_metafield -%}
+  					<label class="product-bundle__info" for="Recommendations_{{product.handle}}" class="flex items-baseline gap-1">
+  						<input name="bundles" value="{{product.first_available_variant.id}}" class="checkbox"  id="Recommendations_{{product.handle}}" type="checkbox" checked disabled/>
+  						{%- liquid
+  							if product.featured_media
+  								echo product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+  							else
+  								echo 'image' | placeholder_svg_tag
+  							endif
+  						-%}
+  						<div class="product-bundle__title">
+  							{{product.title}}
+  						</div>
+  						{% render 'product-price', product: product, showFree: true, class: 'flex items-end gap-2 text-sm' %}
+  					</label>
+  				{%- 	endfor -%}
+				{%- 	for product in block.settings.recommendations_metafield -%}
+					<label class="product-bundle__info" for="Recommendations_{{product.handle}}" class="flex items-baseline gap-1">
+						<input name="bundles" value="{{product.first_available_variant.id}}" class="checkbox"  id="Recommendations_{{product.handle}}" type="checkbox"/>
+						{%- liquid
+							if product.featured_media
+								echo product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+							else
+								echo 'image' | placeholder_svg_tag
+							endif
+						-%}
+						<div class="product-bundle__title">
+							{{product.title}}
+						</div>
+						{% render 'product-price', product: product,showFree: true, class: 'flex items-end gap-2 text-sm' %}
+					</label>
+				{%- 	endfor -%}
+            {% endif %}
+		</div>
+	</details>
+	{% endif %}
+	{% if block.settings.complementary_title != blank  and  show_complementary  %}
+		<details class="product__accordion details" is="accordion-details" {{ block.shopify_attributes }}  {% if block.settings.complementary_expand %} open {% endif %}>
+			<summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
+				<div class="flex items-center gap-2d5">
+					<span class="leading-none">{{block.settings.complementary_title  }}</span>
+				</div>
+				{%- render 'icon', icon: 'arrow-collapse', size: 'xs', class: 'flex-auto' -%}
+			</summary>
+			<div class="details__content rte text-sm text-opacity" {% if block.settings.show_complementary %} data-url="{{ routes.product_recommendations_url }}?section_id={{ section_id }}&product_id={{ product_id }}&limit={{ block.settings.complementary_limit }}&intent=complementary" {% endif %}>
+			{% if block.settings.show_complementary %}
+              {%- if recommendations.performed -%}
+				{%- 	for product in recommendations.products-%}
+					<label class="product-bundle__info" for="Complementary_{{product.handle}}" class="flex items-baseline gap-1">
+						<input name="bundles" value="{{product.first_available_variant.id}}" class="checkbox"  id="Complementary_{{product.handle}}" type="checkbox"/>
+						{%- liquid
+							if product.featured_media
+								echo product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+							else
+								echo 'image' | placeholder_svg_tag
+							endif
+						-%}
+						<div class="product-bundle__title">
+							{{product.title}}
+						</div>
+						{% render 'product-price', product: product,showFree: true, class: 'flex items-end gap-2 text-sm' %}
+					</label>
+				{%- 	endfor -%}
+			{%- endif -%}
+            {% else %}
+              {%- 	for product in block.settings.complementary_metafield -%}
+                <label class="product-bundle__info" for="Complementary_{{product.handle}}" class="flex items-baseline gap-1">
+						<input name="bundles" value="{{product.first_available_variant.id}}" class="checkbox"  id="Complementary_{{product.handle}}" type="checkbox"/>
+						{%- liquid
+							if product.featured_media
+								echo product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+							else
+								echo 'image' | placeholder_svg_tag
+							endif
+						-%}
+						<div class="product-bundle__title">
+							{{product.title}}
+						</div>
+						{% render 'product-price', product: product,showFree: true, class: 'flex items-end gap-2 text-sm' %}
+					</label>
+				{%- 	endfor -%}
+			{% endif %}
+			</div>
+		</details>
+		{% endif %}
+
+		{% if block.settings.warranty_product.available %}
+           {%- for variant in block.settings.warranty_product.variants -%}
+               {% assign optionName = variant.options | downcase %}
+               {% if optionName contains 'year' and variant.available%}
+                  <label class="product-warranty" for="Warrant_{{ variant.id }}" class="flex items-baseline gap-1">
+                      <input name="bundles" value="{{ variant.id }}" class="checkbox"  id="Warrant_{{ variant.id }}" type="checkbox"/>
+                      <div>Add <strong>{{ variant.price | money }}</strong>, enjoy extra {{ variant.options }} warranty</div>
+											{% render 'product-price', product: variant, class: 'hidden' %}
+                  </label>
+               {% endif %}
+           {%- endfor -%}
+		{% endif %}
+	</product-bundle>
+	<script>
+		window.Currency = {
+			"money_format":"{{shop.money_format}}",
+			"money_with_currency_format": "{{shop.money_with_currency_format}}",
+			"currency_code_enabled": {{settings.currency_code_enabled}}
+		}
+		
+	</script>
+  {% endif %}

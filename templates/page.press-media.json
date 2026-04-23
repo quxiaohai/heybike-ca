@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-sm",
+        "heading_tag": "h1",
+        "text_size": "text-sm",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "multicolumn_XdEYTc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PzXE9b": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-01.png",
+            "image_ratio": "wide",
+            "heading": "<strong>Heybike Tyson Reviews: What Do Customers Think?</strong>",
+            "heading_size": "text-base-xl",
+            "text": "<p>As you can see from those scores, most Heybike Tyson review writers were pleased with the bike. Its power and handling were among the most common compliments mentioned in buyer testimonials. </p>",
+            "button_label": "Read More",
+            "button_link": "https://www.honestbrandreviews.com/reviews/heybike-tyson-review/",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_KXenBM": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-02.png",
+            "image_ratio": "wide",
+            "heading": "Heybike Brawn review: $1,699 Moto-Inspired Beastly Electric Bike with Black Friday Sale Discount!",
+            "heading_size": "text-base-xl",
+            "text": "<p>The Brawn from Heybike is a motorcycle inspired off-road beast. A powerful motor, an integrated battery, and huge motorcycle-style forks are just a few of the things that make this bike one of the most exciting machines we've tested.</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_URYtqb": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-03.png",
+            "image_ratio": "wide",
+            "heading": "OBX Storm Soccer | NGO",
+            "heading_size": "text-base-xl",
+            "text": "<p>OBX Storm Inc. is the premier soccer Club on the Outer Banks of North Carolina. This club is designed to help kids grow in strength and character while enjoying the world's favorite game.</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_7tGQt3": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-04.png",
+            "image_ratio": "wide",
+            "heading": "Transportation Alternatives | NGO",
+            "heading_size": "text-base-xl",
+            "text": "<p>For nearly 50 years, Transportation Alternatives has led the movement for safe, equitable streets in New York City. Their mission is to reclaim New York City’s streets from the automobile and to advocate for better walking, biking and public transit for all New Yorkers.</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_b6rpKT": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-05.png",
+            "image_ratio": "wide",
+            "heading": "Heybike Explore: Full-Sized Fun to Explore Your City",
+            "heading_size": "text-base-xl",
+            "text": "<p>The Explore model is genuinely equipped for the first time rider to explore their surroundings. There’s plenty of other mission specific bikes out there, but for the first time buyer (or maybe second) a versatile platform with a wide array of features will help broaden horizons and create a lifelong passion...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Tcx3Cj": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-06.png",
+            "image_ratio": "wide",
+            "heading": "Heybike Anniversary sale: Score a new e-bike and save big",
+            "heading_size": "text-base-xl",
+            "text": "<p>Heybike, one of our favorite e-bike makers, is currently celebrating its anniversary with a two-week sale, providing the perfect opportunity to score a name-brand electronic bike at a discount and score some freebies while you’re at it...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_qJbaeQ": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-07.png",
+            "image_ratio": "wide",
+            "heading": "Heybike Mars review: $1,099 Full Suspension (Kind of) Folding Fat Tire Electric Bike",
+            "heading_size": "text-base-xl",
+            "text": "<p>What is going on, awesome peeps and welcome back to another episode of Electrified Reviews! Today we’re reviewing the Heybike Mars. This is a folding fat tire electric bike with front suspension, an integrated headlight and horn, telescoping handlebars, a handful of extremely functional accessories...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_MMeLTe": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-08.png",
+            "image_ratio": "wide",
+            "heading": "New Brand Heybike Reached Sales Record in 2021",
+            "heading_size": "text-base-xl",
+            "text": "<p>Only in over seven months, Heybike has sold more than 15,000 electric bikes. And its sales growth came at a time when the whole e-bike market reached the sales record...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_MpVKRQ": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-09.png",
+            "image_ratio": "wide",
+            "heading": "New Brand Heybike Reached the Sales Record 2021",
+            "heading_size": "text-base-xl",
+            "text": "<p>Since its establishment in 2021, this company has invested a lot of resources to develop and improve electric transport products that are reliable and user-oriented. Only in over seven months, Heybike has sold more than 15,000 electric bikes...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_wQMigL": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-10.png",
+            "image_ratio": "wide",
+            "heading": "Why Is Heybike’s New Fat Tire E-Bike So Popular?",
+            "heading_size": "text-base-xl",
+            "text": "<p>You might not have heard of Heybike, the brand has sold thousands of its fat-tired utility bikes around the world by focusing on providing widely accessible (and affordable!) electric transportation to people who need a dependable A-to-B. Now, HeyBike plans to grow, even more, thanks to a number of upgrades to its fat tired e-bike model, <a href=\"https://www.heybike.com/products/heybike-explore-electric-bike\" target=\"_blank\" title=\"https://www.heybike.com/products/heybike-explore-electric-bike\"><strong>Explore</strong></a>, announced earlier this week...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_MFKaGC": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-11.png",
+            "image_ratio": "wide",
+            "heading": "The HeyBike Mars is an affordable folding fat tire e-bike",
+            "heading_size": "text-base-xl",
+            "text": "<p>Electric bicycles have never been more popular as riders all over the world flock to two-wheeled EVs for both fun and transportation. Fat tire bikes are their own popular category of e-bikes since their large tires allow them to ride over all sorts of terrains. The <a href=\"https://bit.ly/3lOysyA\" target=\"_blank\"><strong>HeyBike Mars</strong></a> is a special type of fat tire e-bike that folds down for easier transportation, meaning you can take that ride-everywhere fun on the go with you...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_8dMLah": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/logo-12.png",
+            "image_ratio": "wide",
+            "heading": "Introducing Heybike Explore, an all-terrain e-bike with a smooth ride",
+            "heading_size": "text-base-xl",
+            "text": "<p><a href=\"https://www.heybike.com/\" target=\"_blank\" title=\"https://www.heybike.com\">Heybike</a> recently announced some upgrades to its newest e-bike model, and guess what, you can ride it for distances from 55 miles to 70 miles when pedal-assisted. Those long trips we talked about can be more casual and enjoyable thanks to the bike’s electric capabilities...</p>",
+            "button_label": "Read More",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_PzXE9b",
+        "column_KXenBM",
+        "column_URYtqb",
+        "column_7tGQt3",
+        "column_b6rpKT",
+        "column_Tcx3Cj",
+        "column_qJbaeQ",
+        "column_MMeLTe",
+        "column_MpVKRQ",
+        "column_wQMigL",
+        "column_MFKaGC",
+        "column_8dMLah"
+      ],
+      "settings": {
+        "swipe_on_desktop": false,
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "Press",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "hide_desktop": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "multicolumn_XdEYTc"
+  ]
+}

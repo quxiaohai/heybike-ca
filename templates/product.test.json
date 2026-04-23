@@ -1,0 +1,1406 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "show_price": false,
+            "show_badge": true,
+            "show_rating": false,
+            "show_label": true,
+            "label_text": "",
+            "label_color": ""
+          }
+        },
+        "text_RHmxfj": {
+          "type": "text",
+          "settings": {
+            "text": "Quality commuter ebike that's affordable for everyone.",
+            "text_size": "text-base",
+            "disable_top_spacing": true
+          }
+        },
+        "price_jg6hbG": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_installment": false,
+            "show_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "variant_name_info": "Style:Rider Heights 5’1” - 6’4”,Rider Heights 5’6” - 6’9”",
+            "size_chart_title": "Size & Fit",
+            "size_chart_icon": "shopify://shop_images/Heybike_UI_Design_R5_Screenshot_Feb_15.png",
+            "size_chart_type": "drawer",
+            "size_chart": "{{ product.metafields.custom.pdp_size_fit_chart.value }}",
+            "version_compare_title": "Compare",
+            "version_type": "drawer",
+            "version": "{{ product.metafields.custom.pdp_compare_chart.value }}"
+          }
+        },
+        "bundle_collapse_tHHytT": {
+          "type": "bundle_collapse",
+          "settings": {
+            "show_recommendations": false,
+            "recommendations_title": "<p><strong>Popular Upgrades</strong></p>",
+            "recommendations_limit": 10,
+            "recommendations_expand": true,
+            "recommendations_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_1.value }}",
+            "recommendations_checked_metafield": [],
+            "show_complementary": false,
+            "complementary_title": "<p>Add 3 Accessories and <strong>Save 29%</strong></p>",
+            "complementary_limit": 10,
+            "complementary_expand": false,
+            "complementary_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_2.value }}",
+            "warranty_product": "extend-protection-plan"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "hide_on_mobile": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_info_icon_4tC4Uk": {
+          "type": "introduce_icon",
+          "settings": {
+            "use_icon_metafield": "pdc_icon",
+            "use_spec_metafield": "pdc_spec",
+            "icon_1": "shopify://shop_images/icon-cycle.png",
+            "title_1": "1,200W",
+            "remark_1": "Peak Mover",
+            "icon_2": "shopify://shop_images/icon-speed.png",
+            "title_2": "28 MPH",
+            "remark_2": "Top Speed",
+            "icon_3": "shopify://shop_images/icon-range.png",
+            "title_3": "45 Miles",
+            "remark_3": "Max Range",
+            "icon_4": "shopify://shop_images/Product_Card_Icon_1.png",
+            "title_4": "600Wh",
+            "remark_4": "Battery Capacity",
+            "icon_5": "shopify://shop_images/Product_Card_Icon_2.png",
+            "title_5": "149.7KG",
+            "remark_5": "Max Load",
+            "icon_6": "shopify://shop_images/icon-phone.png",
+            "title_6": "Phone APP",
+            "remark_6": "iOS, Android"
+          }
+        },
+        "text_KAtDL8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/product_card_icon_3643ab07-b162-4732-818c-c23aea490bc5.svg",
+            "text": "Fast shipping to 48 States & Canada",
+            "text_size": "text-sm",
+            "disable_top_spacing": false
+          }
+        },
+        "text_bWVdgQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group.svg",
+            "text": "TUV certified In accordance with UL 2849",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_RtUYcF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group_1.svg",
+            "text": "1-year warranty for the bike and battery",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "metafield_text_xKR3KL": {
+          "type": "metafield_text",
+          "settings": {
+            "use_icon_metafield": "pdp_short_description_icon",
+            "use_desc_metafield": "pdp_short_description",
+            "disable_top_spacing": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "about-us"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_RHmxfj",
+        "price_jg6hbG",
+        "variant_picker",
+        "bundle_collapse_tHHytT",
+        "buy_buttons",
+        "sticky_buy_button",
+        "custom_info_icon_4tC4Uk",
+        "text_KAtDL8",
+        "text_bWVdgQ",
+        "text_RtUYcF",
+        "metafield_text_xKR3KL",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "thumbnail_classification": true,
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content_RigYRd": {
+          "type": "content",
+          "settings": {
+            "icon": "box",
+            "heading": "Shipping & Warranty",
+            "text": "<p>Share contact information, store details, and brand content with your customers.<br/><br/><a href=\"/pages/heybike-shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Learn More</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Compare Models",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/new-compare\" target=\"_blank\" title=\"new-compare\">Compare Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Find Your Ebike",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/find-your-heybike-ebike\" target=\"_blank\" title=\"Find Your Ebike\">Find Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content_heGqfB": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Test Ride",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/looking-for-test-riding-a-local-dealer\" target=\"_blank\" title=\"Test Riding\">Book Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Us</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_RigYRd",
+        "content-1",
+        "content-2",
+        "content_heGqfB",
+        "content-4"
+      ],
+      "settings": {
+        "heading": "Need help?",
+        "description": ""
+      }
+    },
+    "sticky_navigation_rQrgTj": {
+      "type": "sticky-navigation",
+      "blocks": {
+        "url_DiEcP6": {
+          "type": "url",
+          "settings": {
+            "link_text": "Features",
+            "link_url": "product_information"
+          }
+        },
+        "url_mdXKx7": {
+          "type": "url",
+          "settings": {
+            "link_text": "Specification",
+            "link_url": "specifications"
+          }
+        },
+        "url_gxRn9e": {
+          "type": "url",
+          "settings": {
+            "link_text": "FAQs",
+            "link_url": "faqs"
+          }
+        },
+        "url_XmgBkM": {
+          "type": "url",
+          "disabled": true,
+          "settings": {
+            "link_text": "Reviews",
+            "link_url": "judgeme_product_reviews"
+          }
+        }
+      },
+      "block_order": [
+        "url_DiEcP6",
+        "url_mdXKx7",
+        "url_gxRn9e",
+        "url_XmgBkM"
+      ],
+      "settings": {
+        "enable_show_price": false,
+        "enable_show_variant": false,
+        "hidden_sticky_nav": true
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "More Powerful",
+            "heading": "<em><strong>⬆33%</strong></em>",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/11-M.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "Go Faster",
+            "heading": "<em>⬆</em><em><strong>40%</strong></em>",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/230629_EBIKE_CW01344.png",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image_3Yt9XM": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/780X510-4_c8927b80-3c02-4d2e-acf5-ea29a89f8f37.jpg",
+            "image_ratio": "wide",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image-3",
+        "image-4",
+        "image_3Yt9XM"
+      ],
+      "settings": {
+        "section_id": "product_information",
+        "heading": "Why Mars 2.0?",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>The Mars 2.0 takes our most salable Mars design to the next generation, serving as your portal to an enriching and dynamic journey of exploration!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_solid": false,
+        "enable_mobile_slider": true,
+        "mobile_image_position": "bottom",
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "#000000",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "video_with_text_Ri94RC": {
+      "type": "video-with-text",
+      "blocks": {
+        "image_z8fTEi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 130
+          }
+        },
+        "text_LBdL8t": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Heybike Mars 2.0 Review: An Updated Budget Friendly Ebike That Goes 28 MPH</h4>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "heading",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_qEFhDb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Freshly Charged</strong><br/><em>176K subscribers</em></p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_z8fTEi",
+        "text_LBdL8t",
+        "text_qEFhDb"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=NEn_b-Ta-rw&t=7s",
+        "cover_image": "shopify://shop_images/Screenshot_2024-02-14_at_5.03.17_PM.png",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "large",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "#f6be00",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_slide_ktkXgf": {
+      "type": "video-with-text-slide",
+      "blocks": {
+        "content_y8hEDG": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>Heybike Mars 2.0 Review: An Updated Budget Friendly Ebike That Goes 28 MPH</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p><strong>Freshly Charged</strong><br/><em>176K subscribers</em></p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=NEn_b-Ta-rw&t=7s",
+            "cover_image": "shopify://shop_images/Screenshot_2024-02-14_at_5.03.17_PM.png",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        },
+        "content_CWdVUA": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>Heybike Mars 2.0 Review: An Updated Budget Friendly Ebike That Goes 28 MPH</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p><strong>Freshly Charged</strong><br/><em>176K subscribers</em></p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=NEn_b-Ta-rw&t=7s",
+            "cover_image": "shopify://shop_images/Screenshot_2024-02-14_at_5.03.17_PM.png",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        }
+      },
+      "block_order": [
+        "content_y8hEDG",
+        "content_CWdVUA"
+      ],
+      "settings": {
+        "heading": "Rider Review",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-center md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_x9i9By": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Q8kyik": {
+          "type": "heading",
+          "settings": {
+            "heading": "Go Farther",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FRNyW8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PmqF8C": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>- <em>600Wh</em> Battery Capacity<br/>- <em>600</em> Cycle, 80% Battery Life</h4>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q8kyik",
+        "text_FRNyW8",
+        "text_PmqF8C"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/hero_banner_1657eecf-ea31-4f5f-a863-97c56b91b93d.png",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_yJHEzB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_HxrfN3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/folded_aaf51a25-2021-461c-8686-090090849dff_1.png",
+            "image_width": "custom",
+            "image_max_width": 150,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading_ByHnMy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Foldable & Easy to Carry",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GGVaTm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_HxrfN3",
+        "heading_ByHnMy",
+        "text_GGVaTm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/800x560-foldable.jpg",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "timeline_rAgziH": {
+      "type": "timeline",
+      "blocks": {
+        "content_mQQdJ9": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/02_e5b414e4-2500-4905-ae0a-8d0034761c7c.jpg",
+            "subheading": "01",
+            "heading": "Suburban Trip",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_DDmqcz": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "02",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_MbjmTT": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "03",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content_mQQdJ9",
+        "content_DDmqcz",
+        "content_MbjmTT"
+      ],
+      "settings": {
+        "scroll_speed": 0,
+        "image_position": "left",
+        "image_ratio": "square",
+        "image_ratio_mobile": "wide",
+        "heading": "Build & Design For",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "show_indicators": false,
+        "enable_index_num": true,
+        "desktop_swtich_effect": "smooth"
+      }
+    },
+    "lookbook_Geh8Xd": {
+      "type": "lookbook",
+      "blocks": {
+        "content_ybM9CC": {
+          "type": "content",
+          "settings": {
+            "heading": "More Controlled Ride",
+            "text": "<p>With the front and rear dic brakes empowers you to tackle steep descents or sudden stops with ease, allowing you to maintain your line and conquer obstacles with confidence.</p>",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 74,
+            "horizontal": 32,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "content_yGndXK": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 69,
+            "horizontal_mobile": 27
+          }
+        },
+        "content_6qD6JN": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 58,
+            "horizontal": 67,
+            "vertical_mobile": 62,
+            "horizontal_mobile": 79
+          }
+        }
+      },
+      "block_order": [
+        "content_ybM9CC",
+        "content_yGndXK",
+        "content_6qD6JN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/2_1_1_339fd58b-08f8-4b1f-8ed1-f2ac63f901e1.png",
+        "image_mobile": "shopify://shop_images/2_1_2.png",
+        "heading": "Discover Mars 2.0",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Premium quality commuter ebike that’s affordable for everyone.</p>",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#000000",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_HJ8kPr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qUKjhQ": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/86010b87b3b922503cc8cd1ce2c54068.webp",
+            "image_ratio": "wide",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_7DkC79": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Screenshot_2024-02-15_at_5.17.57_PM.png",
+            "image_ratio": "wide",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_WbeTB7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/20240130115127.webp",
+            "image_ratio": "wide",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ApWnpB": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/86010b87b3b922503cc8cd1ce2c54068.webp",
+            "image_ratio": "wide",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_kPGbgL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "wide",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_qUKjhQ",
+        "column_7DkC79",
+        "column_WbeTB7",
+        "column_ApWnpB",
+        "column_kPGbgL"
+      ],
+      "settings": {
+        "swipe_on_desktop": true,
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Discover Mars 2.0",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "hide_desktop": false
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab_w9zHha": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frameset",
+            "content": "<h6>Frame</h6><p>Aluminum Alloy, external removable lithium-ion battery, rear rack included, fender mounts, front & rear mount mechanical disc, kickstand mount</p><h6>Fork</h6><p>Spring Fork, 65 mm travel with preload adjustment and lock-out</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_Tx7jh4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wheels",
+            "content": "<h6>Hub rear</h6><p>Brushless geared hub motor, 80Nm, 750W/1200W Peak Motor</p><h6>Spokes</h6><p>Aluminum alloy</p><h6>Tire</h6><p>Puncture protection, 26\"x4.0\"-max tire size without fenders</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_weW7dP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "E-system & Drivetrain",
+            "content": "<h6>Battery</h6><p>48V 20Ah, external removable lithium-ion battery</p><h6>Charger Port</h6><p>Output 54.6V 2.8A</p><h6>Display Type</h6><p>LCD Display</p><h6>Rear Derailleur</h6><p>Shimano 7 speed</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_8UV3wm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Accessories",
+            "content": "<h6>Rear Rack</h6><p>Weight capacity: Up to 120 lbs</p><h6>Light</h6><p>LED, headlight and taillight</p><h6>Kickstand</h6><p>Alloy</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_4Mk4Nz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Weight & Dimensions",
+            "content": "<h6>Weight</h6><p>35 kg / 77 lbs</p><h6>Weight limit</h6><p>This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 400 pounds (181.4kg).</p><h6>Ebike Dimensions</h6><p>80*49.2*25.2 inch</p>",
+            "metafields": ""
+          }
+        },
+        "specification_DGqJjp": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/untitled_1.png",
+            "heading": "Explore Ebike"
+          }
+        },
+        "specification_J8tFJW": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/Screenshot_2024-02-15_at_10.19.12_AM.png",
+            "heading": "Front Wheel"
+          }
+        },
+        "specification_aDwPRP": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/istockphoto-1132160175-612x612.jpg",
+            "heading": "User Manual"
+          }
+        },
+        "specification_bgB4bi": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/Screenshot_2024-02-15_at_10.19.53_AM.png",
+            "heading": "Toolkit box"
+          }
+        },
+        "specification_bnREc4": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/Screenshot_2024-02-15_at_10.19.38_AM.png",
+            "heading": "Front Fender & Seat"
+          }
+        },
+        "specification_LzRHNB": {
+          "type": "specification",
+          "settings": {
+            "heading": "Left & Right Pedals"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_w9zHha",
+        "collapsible_tab_Tx7jh4",
+        "collapsible_tab_weW7dP",
+        "collapsible_tab_8UV3wm",
+        "collapsible_tab_4Mk4Nz",
+        "specification_DGqJjp",
+        "specification_J8tFJW",
+        "specification_aDwPRP",
+        "specification_bgB4bi",
+        "specification_bnREc4",
+        "specification_LzRHNB"
+      ],
+      "settings": {
+        "section_id": "specifications",
+        "open_first_row": true,
+        "specifications_heading": "What's In The Box",
+        "heading": "Specifications",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Riding Range Test | Explore",
+            "text": "<p>Max Range: 55 miles(pure electric) / 70 miles(pedal assist )</p><p>*Note: Throttle Max Range tests are calculated using PAS 1 with a rider weight of 165 lbs on flat terrain. Throttle speed and range may vary if ridden in different conditions.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "What Are Fat Tire Step-Thru E-Bikes Good For?",
+            "text": "<p>A fat tire step-thru e-bike has both the advantages of a fat-tire and a step-thru. It keeps a more constant speed and stable riding while it is easy to get on and off the bike. </p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "What Are The Main Differences Between Heybike Explore And Heybike Mars?",
+            "text": "<p>The Explore is an Ebike that is bigger (26\"x 4\" fat-tire), more powerful (has a 750w motor), and has a faster speed (up to 28mph) than Heybike Mars. It also has a longer range (70 miles per charge under PAS mode) than Mars. But also please be aware that the recommended height of Explore is 5'9\"-6'6\" while Mars's 5'3\"-6'3\".</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "Can I Use The Explore To Charge My Phone?",
+            "text": "<p>Unfortunately, currently, Heybike Explore can not be used to charge phone as there is no USB charge port on it.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4"
+      ],
+      "settings": {
+        "section_id": "faqs",
+        "style": "with-border",
+        "heading": "FAQs - <em>Mars 2.0</em>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "17095465697947f178": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_ktVzDU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_ktVzDU"
+      ],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 3,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You May Also Like",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured_collection_KJUV6g": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "heybike-cityrun-electric-bike"
+        ],
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Featured collection",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "sticky_navigation_rQrgTj",
+    "collage",
+    "video_with_text_Ri94RC",
+    "video_with_text_slide_ktkXgf",
+    "image_with_text_x9i9By",
+    "image_with_text_yJHEzB",
+    "timeline_rAgziH",
+    "lookbook_Geh8Xd",
+    "multicolumn_HJ8kPr",
+    "product-details",
+    "faq",
+    "17095465697947f178",
+    "product-recommendations",
+    "recently-viewed",
+    "featured_collection_KJUV6g"
+  ]
+}

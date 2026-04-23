@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_FX9gUF": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "text": "⚡<strong>Weekend Flash Sale: Mars 3.0 Extra C$100 off at checkout. Shop now>></strong>",
+            "link": "shopify://products/mars-3-0",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement_HKc6qM": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "<strong>Meet the New X Series – Ranger 3.0 Pro & Mars 3.0>></strong>",
+            "link": "shopify://collections/new-arrivals",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "<strong>New In! Venus: Explode Your Lightweight Commuter>></strong>",
+            "link": "shopify://collections/electric-bikes",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "flag_and_link_mxBVY3": {
+          "type": "flag_and_link",
+          "settings": {
+            "title": "CA",
+            "link": "#"
+          }
+        },
+        "flag_and_link_JiGxr3": {
+          "type": "flag_and_link",
+          "settings": {
+            "title": "United States",
+            "link": "https://www.heybike.com/"
+          }
+        },
+        "flag_and_link_WGkjKH": {
+          "type": "flag_and_link",
+          "settings": {
+            "title": "United Kingdom",
+            "link": "https://heybike.co.uk/"
+          }
+        },
+        "flag_and_link_wAUTnY": {
+          "type": "flag_and_link",
+          "settings": {
+            "title": "Europe",
+            "link": "https://eu.heybike.com/"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_FX9gUF",
+        "announcement_HKc6qM",
+        "announcement-1",
+        "flag_and_link_mxBVY3",
+        "flag_and_link_JiGxr3",
+        "flag_and_link_WGkjKH",
+        "flag_and_link_wAUTnY"
+      ],
+      "settings": {
+        "show_social": true,
+        "enable_language_selector": true,
+        "enable_country_selector_custom": true,
+        "invert_icons_selectors": false,
+        "announcement_position": "center",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "color_text": "#000000",
+        "color_background": "#f6be00",
+        "gradient_background": "",
+        "color_highlight": "#ffddbf",
+        "gradient_highlight": "",
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_RErhjP": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "ebikes",
+            "show_menu_image": true,
+            "button_label": "All Ebikes",
+            "button_link": "shopify://collections/electric-bikes",
+            "promo_image_1": "shopify://shop_images/Anniversary_Sale_banner.jpg",
+            "promo_image_ratio_1": "square",
+            "promo_heading_1": "Up to $1000 Off!",
+            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Black Friday Sale!",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "shopify://collections/electric-bikes",
+            "promo_tag_1": "Sale",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 0,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        },
+        "mega_menu_8HP8HY": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "Equipments",
+            "show_menu_image": false,
+            "button_label": "All Equipment",
+            "button_link": "shopify://collections/all-equipment",
+            "promo_image_1": "shopify://shop_images/Anniversary_Sale_banner.jpg",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "Up to $1000 OFF",
+            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Black Friday Sale!",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "shopify://collections/electric-bikes",
+            "promo_tag_1": "Sale",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 19,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        },
+        "mega_menu_g3R8C9": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "explore",
+            "show_menu_image": false,
+            "button_label": "",
+            "button_link": "",
+            "promo_image_ratio_1": "wide",
+            "promo_heading_1": "Affiliate Program",
+            "promo_subtext_1": "We’re always excited to collaborate withnew influential affiliates.",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "",
+            "promo_tag_1": "",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 30,
+            "promo_image_ratio_2": "square",
+            "promo_heading_2": "Customer Stories",
+            "promo_subtext_2": "Story between customers and Heybike Ebikes",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "shopify://blogs/customer-stories",
+            "promo_tag_2": "New",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 30,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        },
+        "mega_menu_QiUPDe": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "support",
+            "show_menu_image": false,
+            "button_label": "Contact Us",
+            "button_link": "https://heybike.ca/pages/contact-us",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "",
+            "promo_subtext_1": "",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "",
+            "promo_tag_1": "",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 40,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_RErhjP",
+        "mega_menu_8HP8HY",
+        "mega_menu_g3R8C9",
+        "mega_menu_QiUPDe"
+      ],
+      "settings": {
+        "menu": "inscoder-main-menu",
+        "menu_mobile": "",
+        "menu_active": "block",
+        "hover_menu": true,
+        "header_layout": "left-center",
+        "sticky_header_type": "on-scroll-up",
+        "logo_position_mobile": "center",
+        "show_social": true,
+        "enable_language_selector": true,
+        "enable_country_selector_custom": true,
+        "transparent_color_text": "#ffffff",
+        "color_text": "#000000",
+        "color_background": "#ffffff",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

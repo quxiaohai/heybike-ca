@@ -1,0 +1,1641 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "show_price": false,
+            "show_badge": false,
+            "show_rating": false,
+            "show_label": true,
+            "label_text": "Limited Time Deal",
+            "label_color": "#f6be00"
+          }
+        },
+        "text_RHmxfj": {
+          "type": "text",
+          "settings": {
+            "text": "Powerful folding ebike with fat tires for versatile usages",
+            "text_size": "text-base",
+            "disable_top_spacing": true
+          }
+        },
+        "price_jg6hbG": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_installment": false,
+            "show_rating": true
+          }
+        },
+        "countdown_AcBdzU": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry!",
+            "subheading": "Sale ends in:",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "variant_name_info": "Style:Rider Heights 5’1” - 6’4”,Rider Heights 5’6” - 6’9”",
+            "size_chart_title": "Size & Fit",
+            "size_chart_icon": "shopify://shop_images/Heybike_UI_Design_R5_Screenshot_Feb_15.png",
+            "size_chart_type": "drawer",
+            "size_chart": "{{ product.metafields.custom.pdp_size_fit_chart.value }}",
+            "version_compare_title": "Compare",
+            "version_type": "drawer",
+            "version": "{{ product.metafields.custom.pdp_compare_chart.value }}"
+          }
+        },
+        "bundle_collapse_tHHytT": {
+          "type": "bundle_collapse",
+          "settings": {
+            "show_recommendations": false,
+            "recommendations_title": "<p><strong>Popular Upgrades</strong></p>",
+            "recommendations_limit": 10,
+            "recommendations_expand": true,
+            "recommendations_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_1.value }}",
+            "recommendations_checked_metafield": [],
+            "show_complementary": false,
+            "complementary_title": "<p>More Accessories</p>",
+            "complementary_limit": 10,
+            "complementary_expand": false,
+            "complementary_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_2.value }}",
+            "warranty_product": "extend-protection-plan"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "hide_on_mobile": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_info_icon_4tC4Uk": {
+          "type": "introduce_icon",
+          "settings": {
+            "use_icon_metafield": "pdc_icon",
+            "use_spec_metafield": "pdc_spec",
+            "icon_1": "shopify://shop_images/56a85e16a046cb332aca2019e675a194_e9afe442-dc15-42d8-8125-c42af40a31d7.png",
+            "title_1": "1200W",
+            "remark_1": "Peak Mover",
+            "icon_2": "shopify://shop_images/icon-speed.png",
+            "title_2": "28 MPH",
+            "remark_2": "Top Speed",
+            "icon_3": "shopify://shop_images/icon-range.png",
+            "title_3": "55 Miles",
+            "remark_3": "Max Range",
+            "icon_4": "shopify://shop_images/b37921b961e5adb84e66048a85bbee72_9845a821-3908-423b-b031-8c6e11c76168.png",
+            "title_4": "692Wh",
+            "remark_4": "Battery Capacity",
+            "icon_5": "shopify://shop_images/Product_Card_Icon_2.png",
+            "title_5": "400lbs",
+            "remark_5": "Max Load",
+            "icon_6": "shopify://shop_images/3b49dcc1eb4b18b6fa150e99d1621f22_889799d0-0224-4cc6-92ac-8fd188183cb4.png",
+            "title_6": "20*4\"",
+            "remark_6": "Fat Tires"
+          }
+        },
+        "text_XtEpYw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/icon_TUV.svg",
+            "text": "TUV certified In accordance with UL 2849",
+            "text_size": "text-base",
+            "disable_top_spacing": false
+          }
+        },
+        "text_KAtDL8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/product_card_icon_3643ab07-b162-4732-818c-c23aea490bc5.svg",
+            "text": "Free, Fast Shipping Within 2 business days",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_bWVdgQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/icon-cycle.png",
+            "text": "30-Day Trial",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_RtUYcF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Product_Card_Icon_4.png",
+            "text": "1-Year Warranty",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "about-us"
+          }
+        },
+        "metafield_text_UU9bHP": {
+          "type": "metafield_text",
+          "settings": {
+            "use_icon_metafield": "pdp_short_description_icon",
+            "use_desc_metafield": "pdp_short_description",
+            "disable_top_spacing": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_RHmxfj",
+        "price_jg6hbG",
+        "countdown_AcBdzU",
+        "variant_picker",
+        "bundle_collapse_tHHytT",
+        "buy_buttons",
+        "sticky_buy_button",
+        "custom_info_icon_4tC4Uk",
+        "text_XtEpYw",
+        "text_KAtDL8",
+        "text_bWVdgQ",
+        "text_RtUYcF",
+        "share",
+        "metafield_text_UU9bHP"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "thumbnail_classification": true,
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content_RigYRd": {
+          "type": "content",
+          "settings": {
+            "icon": "box",
+            "heading": "Shipping & Warranty",
+            "text": "<p>We guarantee fast and free shipping within 2 business days and offer a 2-year warranty for each ebike.<br/><br/><a href=\"/pages/heybike-shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Learn More</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Compare Models",
+            "text": "<p>Hesitate to choose a suitable ebike? Check the comparison chart to make an informed decision.</p><p><a href=\"/pages/new-compare\" target=\"_blank\" title=\"new-compare\">Compare Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "eye",
+            "heading": "Find Your Ebike",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/find-your-heybike-ebike\" target=\"_blank\" title=\"Find Your Ebike\">Find Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content_heGqfB": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "eye",
+            "heading": "Test Ride",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/looking-for-test-riding-a-local-dealer\" target=\"_blank\" title=\"Test Riding\">Book Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Feel free to contact us if you have any questions. We are always here to help you 24/7!</p><p><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Us</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_RigYRd",
+        "content-1",
+        "content-2",
+        "content_heGqfB",
+        "content-4"
+      ],
+      "settings": {
+        "heading": "Need help?",
+        "description": ""
+      }
+    },
+    "sticky_navigation_rQrgTj": {
+      "type": "sticky-navigation",
+      "blocks": {
+        "url_DiEcP6": {
+          "type": "url",
+          "settings": {
+            "link_text": "Features",
+            "link_url": "product_information"
+          }
+        },
+        "url_mdXKx7": {
+          "type": "url",
+          "settings": {
+            "link_text": "Spec&Size",
+            "link_url": "Specification"
+          }
+        },
+        "url_gxRn9e": {
+          "type": "url",
+          "settings": {
+            "link_text": "FAQs",
+            "link_url": "faqs"
+          }
+        },
+        "url_XmgBkM": {
+          "type": "url",
+          "settings": {
+            "link_text": "Reviews",
+            "link_url": "judgeme_product_reviews"
+          }
+        }
+      },
+      "block_order": [
+        "url_DiEcP6",
+        "url_mdXKx7",
+        "url_gxRn9e",
+        "url_XmgBkM"
+      ],
+      "settings": {
+        "enable_show_price": false,
+        "enable_show_variant": false,
+        "hidden_sticky_nav": true
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "<strong>Peak Motor</strong>",
+            "heading": "<em><strong>1200W </strong></em>",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/e28a42c4475362c949415a1c17dcc923_5f14f2b7-54dc-4f1d-b667-e76eb1979066.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/Mobile_f50ca39b-622d-44e8-846c-cdb14ddba24d.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "Max Range",
+            "heading": "<em>55 Miles</em>",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/e0589ac10a2e2968f00ae4315ad82f2b_a4ad2f7b-4fe4-428e-b659-070645ea432d.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/Mobile_de6553e9-713a-41a8-beea-992d5ed63ca9.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "image_3Yt9XM": {
+          "type": "image",
+          "settings": {
+            "subheading": "Max load",
+            "heading": "<em>400lbs</em>",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/92341600ddc9f51d42ff97f28767d294_a11ecdc1-194e-475d-97cd-57d8dcbac496.jpg",
+            "image_ratio": "wide",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/Mobile_8d65eaa1-c703-4103-a293-247b11f1cc34.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "image-3",
+        "image-4",
+        "image_3Yt9XM"
+      ],
+      "settings": {
+        "section_id": "product_information",
+        "heading": "Why Ranger S?",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>The Ranger S e-bike is a folding electric bike equipped with a powerful 750W motor. It offers a remarkable range of up to 55 miles on a single charge, allowing riders to explore their surroundings with ease and convenience.<br/></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_solid": false,
+        "enable_mobile_slider": true,
+        "mobile_image_position": "bottom",
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "#000000",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "video_with_text_Ri94RC": {
+      "type": "video-with-text",
+      "blocks": {
+        "image_z8fTEi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 130
+          }
+        },
+        "text_LBdL8t": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Heybike Mars 2.0 Review: An Updated Budget Friendly Ebike That Goes 28 MPH</h4>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "heading",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_qEFhDb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Freshly Charged</strong><br/><em>176K subscribers</em></p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_z8fTEi",
+        "text_LBdL8t",
+        "text_qEFhDb"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=NEn_b-Ta-rw&t=7s",
+        "cover_image": "shopify://shop_images/Screenshot_2024-02-14_at_5.03.17_PM.png",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "large",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "#f6be00",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_slide_ktkXgf": {
+      "type": "video-with-text-slide",
+      "blocks": {
+        "content_y8hEDG": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>The Fast Charging 55 Mile Folding EBike Under $1,500</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p><strong>TailHappyTV</strong><br/></p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=8AnkRF8BWkA",
+            "cover_image": "shopify://shop_images/Ranger_S_eb6b37f5-b38a-4a61-bd82-21351d72d587.jpg",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        },
+        "content_CWdVUA": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>Heybike Ranger S review: A fat tire e-bike for anyone</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p><strong>Electrek.co</strong></p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=HJmFaJc6gd0",
+            "cover_image": "shopify://shop_images/Ranger-S_9025a01e-941d-468f-8154-31c1b2920f8a.jpg",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        },
+        "content_9Gz8DL": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>HeyBike Ranger S Review | A Folding E-Bike That Can Go 28 MPH!?</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p><strong>Electric Bike Report</strong></p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=wJu7L6Q5Uk8",
+            "cover_image": "shopify://shop_images/Ranger_S_3.jpg",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        }
+      },
+      "block_order": [
+        "content_y8hEDG",
+        "content_CWdVUA",
+        "content_9Gz8DL"
+      ],
+      "settings": {
+        "heading": "Rider Review",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-center md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_x9i9By": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Q8kyik": {
+          "type": "heading",
+          "settings": {
+            "heading": "Add a Pop of Color to Your Ride",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FRNyW8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>There are 4 color</em> options of Ranger S: merlot-red, stone-blue, shark-grey, metallic-sand. Choose the one you like and ride in style.<br/></p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PmqF8C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Exciting Riding</em> in Different Colors<br/>                Stylish Cycling in Happy Moods<br/></p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q8kyik",
+        "text_FRNyW8",
+        "text_PmqF8C"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/8e609219eec12830c144f60619f70b62_23b23267-df46-406e-8469-1d1c664cdc95.jpg",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/Mobile_1d43138b-9c4b-4730-9cf7-56a23c8b76d2.jpg",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_yJHEzB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_HxrfN3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/folded_aaf51a25-2021-461c-8686-090090849dff_1.png",
+            "image_width": "custom",
+            "image_max_width": 150,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading_ByHnMy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Safety Certified Battery",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GGVaTm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ranger S ebike features a Safety Certified Battery <em>(UL2849 Standard)</em> with a capacity of 692Wh. It can provide reliable power for a versatile and eco-friendly ride.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GAqBNG": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><em>692Wh</em>  Battery Capacity<br/><em>600 Cycle</em>, 80% Battery Life</h4>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_HxrfN3",
+        "heading_ByHnMy",
+        "text_GGVaTm",
+        "text_GAqBNG"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/TUV_ed2021f1-c063-4e18-9b44-789f69a0391a.jpg",
+        "image_height": "550px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/TUV_Mobile_6965fa04-a2cc-4a78-9e5d-999e767c073b.jpg",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "timeline_rAgziH": {
+      "type": "timeline",
+      "blocks": {
+        "content_mQQdJ9": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/02_e5b414e4-2500-4905-ae0a-8d0034761c7c.jpg",
+            "subheading": "01",
+            "heading": "Suburban Trip",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_DDmqcz": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "02",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_MbjmTT": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "03",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content_mQQdJ9",
+        "content_DDmqcz",
+        "content_MbjmTT"
+      ],
+      "disabled": true,
+      "settings": {
+        "scroll_speed": 0,
+        "image_position": "left",
+        "image_ratio": "square",
+        "image_ratio_mobile": "wide",
+        "heading": "Build & Design For",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "show_indicators": false,
+        "enable_index_num": true,
+        "desktop_swtich_effect": "smooth"
+      }
+    },
+    "lookbook_Geh8Xd": {
+      "type": "lookbook",
+      "blocks": {
+        "content_ybM9CC": {
+          "type": "content",
+          "settings": {
+            "heading": "More Controlled Ride",
+            "text": "<p>With the front and rear dic brakes empowers you to tackle steep descents or sudden stops with ease, allowing you to maintain your line and conquer obstacles with confidence.</p>",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 74,
+            "horizontal": 32,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "content_yGndXK": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 69,
+            "horizontal_mobile": 27
+          }
+        },
+        "content_6qD6JN": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 58,
+            "horizontal": 67,
+            "vertical_mobile": 62,
+            "horizontal_mobile": 79
+          }
+        }
+      },
+      "block_order": [
+        "content_ybM9CC",
+        "content_yGndXK",
+        "content_6qD6JN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/2_1_1_339fd58b-08f8-4b1f-8ed1-f2ac63f901e1.png",
+        "image_mobile": "shopify://shop_images/2_1_2.png",
+        "heading": "Discover Mars 2.0",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Premium quality commuter ebike that’s affordable for everyone.</p>",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#000000",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_HJ8kPr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jmmxaM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/2a95e26b9a0ff5a5cef9f91fbdd428de_2c819674-75a4-4a43-99e8-073867b8ff59.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "NEW: Torque Sensor",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Utilizing torque sensing pedal assist ensures a beautifully responsive ride feels and there's virtually zero latency. Translate your every movement into smooth motor power. <strong>(1000W Version Only)</strong></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_qUKjhQ": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/5962d2608c01e3f4376ee70bdf02074e_d4aa50a0-997d-4c7e-969c-c74636e2f2d4.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Hydraulic Disc Brakes",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>The advanced hydraulic disc brakes provide reliable braking power for enhanced safety and control during your rides.<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_mhGJBh": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/400lbs_5898816b-d7bd-427f-b32f-571be4c6f3c7.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "400 lbs Payload Capacity",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_7DkC79": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/850309a892bddcbd841585e155bfcdaf_c504d19f-ca2c-49b9-8763-277d40f9b6f1.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Folding Design",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>No longer to leave your bike locked at the starting point. Easily fold the Ranger S and carry it for your RV trip. Enjoy the portability of Ranger S.<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_hFxQkC": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/d62069c9b0b0e1245328079c870c725e_51aee0ce-d3de-43ee-8bfd-052a9d0ac925.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Hydraulic Front Suspension",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>The durable hydraulic front suspension fork helps reduce the impacts from the road on the frame to a great extent, which maximizes comfort as well.<br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_kPGbgL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/7_925cd810-579d-4060-b821-09d0172b5c86.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Shimano 7-speed Gear Shift System",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Ranger S features a Shimano 7-speed gear shift system for smooth and precise gear changes, enhancing your riding experience.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_7RHhLW": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/5a01340d765a62359acff7f6f2efc9c6_74b15321-6b39-49a6-8f2b-6ae0695055c6.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "4A Fast Charger",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>The 4A fast charger takes 3-4 hours to charge the bike, saving you much time.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_WbeTB7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/260445d1c2b81a9afa3fd5182f586e59_1a615e62-536c-410a-8e27-2ed891f61ea6.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Integrated Taillight with Brake Lights",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Experience ultimate safety and convenience with its integrated taillight with brake lights. Ride with peace of mind, even in the dark.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ApWnpB": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/app_97499a85-f64a-4944-9f93-60f70c3b6715.jpg",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "App Connection",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Connect your bike with the Heybike smart app for convenient control of the bike.<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_fkP8fE": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/a01e7a044ca7d6d67e2304978580e6b2.jpg",
+            "image_ratio": "adapt",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "1,200W Peak Motor",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>The 750W hub motor (peak 1200W) provides strong power to climb steep inclines in an effortless way.<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_jmmxaM",
+        "column_qUKjhQ",
+        "column_mhGJBh",
+        "column_7DkC79",
+        "column_hFxQkC",
+        "column_kPGbgL",
+        "column_7RHhLW",
+        "column_WbeTB7",
+        "column_ApWnpB",
+        "column_fkP8fE"
+      ],
+      "settings": {
+        "swipe_on_desktop": true,
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Discover <em>Ranger S</em>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "hide_desktop": false
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab_w9zHha": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frameset",
+            "content": "<h6>Frame</h6><p>Aluminum Alloy;<br/>removable lithium-ion battery;<br/>rear rack and fenders included; <br/>front & rear mount hydraulic disc;<br/>kickstand mount</p><h6>Fork</h6><p>Hydraulic front suspension fork</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_Tx7jh4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wheels",
+            "content": "<h6>Hub rear</h6><p>Brushless geared hub motor, 80Nm, 750W/1400W Peak Motor</p><h6><strong>Tire Construction</strong></h6><p>Unibody, puncture protection, 20\"x4.0\"-max tire size without fenders</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_weW7dP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "E-system & Drivetrain",
+            "content": "<h6>Battery</h6><p>UL 2271 Recognized 48V 14.4Ah</p><h6>Fast Charger</h6><p>48V 4A</p><h6><strong>Display Type</strong></h6><p>Smart LCD Display</p><h6>Rear Derailleur</h6><p>Shimano 7 speed</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_8UV3wm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Accessories",
+            "content": "<h6><strong>Rear Rack</strong></h6><p>Max Load: 120 lbs</p><h6>Light</h6><p>LED, headlight and taillight</p><h6>Kickstand</h6><p>Alloy</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_4Mk4Nz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Weight & Dimensions",
+            "content": "<h6>Weight</h6><p>32.66 kg / 72 lbs</p><h6>Weight limit</h6><p>Maximum total weight limit (combined weight of rider and cargo) of 400 pounds (181kg).</p><h6>Folded Dimensions</h6><p>40*20*31 inch</p><h6>Unfolded Dimensions</h6><p>70*24.4*50 inch</p>",
+            "metafields": ""
+          }
+        },
+        "specification_DGqJjp": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/Ranger-s_27ee42b8-72ee-4e8f-8eae-35a22eca4fd8.jpg",
+            "heading": "Ranger S"
+          }
+        },
+        "specification_bnREc4": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/f61005e0dd4ae8c1efd06599ac8dff0b.jpg",
+            "heading": "Charger"
+          }
+        },
+        "specification_J8tFJW": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/6d4e18650a9c9901fdc5d0469953cf11.jpg",
+            "heading": "User Manual"
+          }
+        },
+        "specification_bgB4bi": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/b91517fce8151911361ddcad78aeaa92.jpg",
+            "heading": "Toolkit Box"
+          }
+        },
+        "specification_aDwPRP": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/45b943a42c87dd66716d3c924e8a6de1.jpg",
+            "heading": "Keys"
+          }
+        },
+        "specification_j8jxpY": {
+          "type": "specification",
+          "disabled": true,
+          "settings": {
+            "heading": "Left & Right Pedals"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_w9zHha",
+        "collapsible_tab_Tx7jh4",
+        "collapsible_tab_weW7dP",
+        "collapsible_tab_8UV3wm",
+        "collapsible_tab_4Mk4Nz",
+        "specification_DGqJjp",
+        "specification_bnREc4",
+        "specification_J8tFJW",
+        "specification_bgB4bi",
+        "specification_aDwPRP",
+        "specification_j8jxpY"
+      ],
+      "settings": {
+        "section_id": "Specification",
+        "open_first_row": true,
+        "specifications_heading": "What's In The Box",
+        "heading": "Spec&Size",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_nUet9K": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_aFJaa8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_LAHT7r": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_zLkdnF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_aFJaa8",
+        "heading_LAHT7r",
+        "text_zLkdnF"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Ranger_s_pc.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "enable_stack": false,
+        "mobile_image_position": "top",
+        "image_mobile": "shopify://shop_images/Ranger_S_Mobile.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question_FtCcTx": {
+          "type": "question",
+          "settings": {
+            "title": "Compared to 750W, what is the advantage of Ranger S with a 1000W motor?",
+            "text": "<p>The advantage of Ranger S with a 1000W motor lies in its increased power, enhanced control, and improved riding experience. It has quicker speed and better overall performance, making it easy to navigate through traffic with agile maneuverability and conquer challenging terrain with reliable control. Additionally, the inclusion of a torque sensor in 1000W Ranger S provides advanced technology that enhances responsiveness with virtually zero latency. The torque sensor translates your every movement into smooth motor power. This new version Ranger S is a desirable choice for those seeking a high-powered ebike.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What Types of Terrain Can Ranger S Handle?</strong>",
+            "text": "<p>They are designed for off-road use on rugged, unpaved surfaces with their wide, knobby fat tires. This includes dirt trails, gravel roads, grass, sand, and light snow. They can handle rougher terrain than narrow road tires but may still struggle on very technical mountain biking trails. Also rated for all-season use.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I Ride Ranger S in The Rain?</strong>",
+            "text": "<p>Though Heybike e-bikes are designed to handle wet conditions, please keep in mind that riding in heavy rain may affect battery life and reduce traction, so exercise caution.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How Do I Maintain My Ranger S?</strong>",
+            "text": "<p>Regular maintenance for an e-bike includes:</p><ul><li>Keeping the battery charged and stored at room temperature</li><li>Inspecting and inflating tires to the recommended pressure</li><li>Cleaning and lubricating the chain</li><li>Checking and adjusting the brakes</li><li>Ensuring all bolts and fasteners are secure</li></ul><p>Periodically, you may need to replace consumable parts like brake pads, tires, and the chain.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Are Ranger S E-Bikes Suitable for All Ages and Fitness Levels?</strong>",
+            "text": "<p>Heybike e-bikes are generally suitable for a wide range of ages (above 18 years old) and fitness levels, as the electric motor provides adjustable assistance to accommodate different riding abilities. However, the max load for Ranger S is 400 lbs. And please consult with a healthcare professional if you have any health concerns before riding.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_FtCcTx",
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4"
+      ],
+      "settings": {
+        "section_id": "faqs",
+        "style": "with-border",
+        "heading": "FAQs - <em>Ranger S</em>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "17095465697947f178": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_ktVzDU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_ktVzDU"
+      ],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_limit": 3,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You May Also Like",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "sticky_navigation_rQrgTj",
+    "collage",
+    "video_with_text_Ri94RC",
+    "video_with_text_slide_ktkXgf",
+    "image_with_text_x9i9By",
+    "image_with_text_yJHEzB",
+    "timeline_rAgziH",
+    "lookbook_Geh8Xd",
+    "multicolumn_HJ8kPr",
+    "product-details",
+    "image_with_text_overlay_nUet9K",
+    "faq",
+    "17095465697947f178",
+    "product-recommendations",
+    "recently-viewed"
+  ]
+}

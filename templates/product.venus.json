@@ -1,0 +1,1549 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "show_price": false,
+            "show_badge": false,
+            "show_rating": false,
+            "show_label": true,
+            "label_text": "New Arrival",
+            "label_color": "#f6be00"
+          }
+        },
+        "text_RHmxfj": {
+          "type": "text",
+          "settings": {
+            "text": "Your Lightweight Commuter, Your Getaway Cruiser",
+            "text_size": "text-base",
+            "disable_top_spacing": true
+          }
+        },
+        "price_jg6hbG": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_installment": false,
+            "show_rating": true
+          }
+        },
+        "countdown_Yb9jEM": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry!",
+            "subheading": "Sale ends in:",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker_XmTAmi": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "variant_name_info": "",
+            "size_chart_title": "Size & Fit",
+            "size_chart_icon": "shopify://shop_images/Heybike_UI_Design_R5_Screenshot_Feb_15.png",
+            "size_chart_type": "drawer",
+            "size_chart": "",
+            "version_compare_title": "",
+            "version_type": "drawer",
+            "version": ""
+          }
+        },
+        "gsc_countdown_timer_countdown_yXj64c": {
+          "type": "shopify://apps/gsc-countdown-timer/blocks/countdown/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
+          "settings": {
+            "widget_id": "GSC-SMALL-KiNcWBaERqQr"
+          }
+        },
+        "bundle_collapse_tHHytT": {
+          "type": "bundle_collapse",
+          "settings": {
+            "show_recommendations": false,
+            "recommendations_title": "<p><strong>Popular Upgrades</strong></p>",
+            "recommendations_limit": 10,
+            "recommendations_expand": true,
+            "recommendations_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_1.value }}",
+            "recommendations_checked_metafield": [],
+            "show_complementary": false,
+            "complementary_title": "<p>More Accessories</p>",
+            "complementary_limit": 10,
+            "complementary_expand": false,
+            "complementary_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_2.value }}",
+            "warranty_product": "extend-protection-plan"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "hide_on_mobile": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_info_icon_4tC4Uk": {
+          "type": "introduce_icon",
+          "settings": {
+            "use_icon_metafield": "pdc_icon",
+            "use_spec_metafield": "pdc_spec",
+            "icon_1": "shopify://shop_images/56a85e16a046cb332aca2019e675a194_e9afe442-dc15-42d8-8125-c42af40a31d7.png",
+            "title_1": "1600W",
+            "remark_1": "Peak Moter",
+            "icon_2": "shopify://shop_images/icon-speed.png",
+            "title_2": "32 MPH",
+            "remark_2": "Top Speed",
+            "icon_3": "shopify://shop_images/icon-range.png",
+            "title_3": "45 Miles",
+            "remark_3": "Max Range",
+            "icon_4": "shopify://shop_images/b37921b961e5adb84e66048a85bbee72_9845a821-3908-423b-b031-8c6e11c76168.png",
+            "title_4": "600Wh",
+            "remark_4": "Battery Capacity",
+            "icon_5": "shopify://shop_images/Product_Card_Icon_2.png",
+            "title_5": "330 lbs",
+            "remark_5": "Max Load",
+            "icon_6": "shopify://shop_images/3b49dcc1eb4b18b6fa150e99d1621f22_889799d0-0224-4cc6-92ac-8fd188183cb4.png",
+            "title_6": "20*4\"",
+            "remark_6": "Fat Tires"
+          }
+        },
+        "text_KAtDL8": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/product_card_icon_3643ab07-b162-4732-818c-c23aea490bc5.svg",
+            "text": "In Stock! Free, fast shipping within 2 business  days",
+            "text_size": "text-sm",
+            "disable_top_spacing": false
+          }
+        },
+        "text_NLFHz8": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/icon_UL_f5820271-ce97-4ea4-88dc-27e012349cc4.png",
+            "text": "Safety Certified in Accordance with UL 2849",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_RtUYcF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/icon-cycle.png",
+            "text": "30-Day Free Trial",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_bWVdgQ": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Group.svg",
+            "text": "2-Year Warranty",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "about-us"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_RHmxfj",
+        "price_jg6hbG",
+        "countdown_Yb9jEM",
+        "variant_picker_XmTAmi",
+        "gsc_countdown_timer_countdown_yXj64c",
+        "bundle_collapse_tHHytT",
+        "buy_buttons",
+        "sticky_buy_button",
+        "custom_info_icon_4tC4Uk",
+        "text_KAtDL8",
+        "text_NLFHz8",
+        "text_RtUYcF",
+        "text_bWVdgQ",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "thumbnail_classification": true,
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content_RigYRd": {
+          "type": "content",
+          "settings": {
+            "icon": "box",
+            "heading": "Shipping & Warranty",
+            "text": "<p>We guarantee fast and free shipping within 2 business days and offer a 2-year warranty for each ebike.<br/><br/><a href=\"/pages/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Learn More</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "eye",
+            "heading": "Compare Models",
+            "text": "<p>Hesitate to choose a suitable ebike? Check the comparison chart to make an informed decision.</p><p><a href=\"/pages/compare-model\" target=\"_blank\" title=\"Compare model\">Compare Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "eye",
+            "heading": "Find Your Ebike",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/find-your-heybike-ebike\" target=\"_blank\" title=\"Find Your Ebike\">Find Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content_heGqfB": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "eye",
+            "heading": "Test Ride",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p><p><a href=\"/pages/looking-for-test-riding-a-local-dealer\" target=\"_blank\" title=\"Test Riding\">Book Now</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Feel free to contact us if you have any questions. We are always here to help you 24/7!</p><p><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Us</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": "",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_RigYRd",
+        "content-1",
+        "content-2",
+        "content_heGqfB",
+        "content-4"
+      ],
+      "settings": {
+        "heading": "Need help?",
+        "description": ""
+      }
+    },
+    "sticky_navigation_rQrgTj": {
+      "type": "sticky-navigation",
+      "blocks": {
+        "url_DiEcP6": {
+          "type": "url",
+          "settings": {
+            "link_text": "Features",
+            "link_url": "product_information"
+          }
+        },
+        "url_mdXKx7": {
+          "type": "url",
+          "settings": {
+            "link_text": "Spec&Size",
+            "link_url": "specifications"
+          }
+        },
+        "url_gxRn9e": {
+          "type": "url",
+          "settings": {
+            "link_text": "FAQs",
+            "link_url": "faqs"
+          }
+        },
+        "url_XmgBkM": {
+          "type": "url",
+          "settings": {
+            "link_text": "Reviews",
+            "link_url": "judgeme_product_reviews"
+          }
+        }
+      },
+      "block_order": [
+        "url_DiEcP6",
+        "url_mdXKx7",
+        "url_gxRn9e",
+        "url_XmgBkM"
+      ],
+      "settings": {
+        "enable_show_price": false,
+        "enable_show_variant": false,
+        "hidden_sticky_nav": true
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": true,
+            "image": "shopify://shop_images/600X580.jpg",
+            "image_ratio": "square",
+            "content_position": "md:items-end md:justify-end",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/600X580.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-end",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/1600X1600.jpg",
+            "image_ratio": "square",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/1600X1600.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_highlight": "#f6be00",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_3Yt9XM": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/680X420.jpg",
+            "image_ratio": "adapt",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/680X420.jpg",
+            "image_ratio_mobile": "square",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#000000",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image-3",
+        "image-4",
+        "image_3Yt9XM"
+      ],
+      "settings": {
+        "section_id": "product_information",
+        "heading": "What is venus",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Venus is created to make everyday travel effortless while inspiring the freedom of a getaway. It embodies a dual-use lightweight eBike that combines commuter efficiency with cruiser comfort.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_solid": false,
+        "enable_mobile_slider": true,
+        "mobile_image_position": "bottom",
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "#000000",
+        "color_background": "#faf9f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 32,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "image_with_text_x9i9By": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Q8kyik": {
+          "type": "heading",
+          "settings": {
+            "heading": "Where to Go, How to Go, It's Your Call.",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FRNyW8": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Commute with Ease</h4><p>Natural, <strong>0.3s quick</strong> assist and easy <strong>Shimano Altus 8-SP shifting</strong> help you sprint through lights and climb with no fuss — so commuting feels fast, relaxed, and effortless.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PmqF8C": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Cruise with Style</h4><p>Up to<strong> 85-mile long range</strong> and confident <strong>28 mph top speed</strong> let you take longer loops and day trips without charging anxiety. More freedom, more routes, less planning.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": true,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q8kyik",
+        "text_FRNyW8",
+        "text_PmqF8C"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/21_d64e9d0b-f709-4f7d-9d96-56881b1a357d.jpg",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_yJHEzB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ByHnMy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Strikingly Light, Shockingly Strong",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GGVaTm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A light frame at <strong>45 lb</strong> without battery plus strong <strong>70 N·m torque</strong> motor delivers nimble handling and confident hill power, without the heavy-lift hassle at home or in transport.</p>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ByHnMy",
+        "text_GGVaTm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/22_668d6a30-7bf5-42d4-9844-3430f4700bf4.jpg",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_yHVPEw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jjk6NY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comfort HMI",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_HfnnyR": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Geometry and controls tuned for comfort</h4>",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_8pBeg4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The low <strong>step-through</strong> frame, ergonomic forward bottom bracket, and <strong>90° adjustable stem</strong> reduce strain on your back and wrists, while intuitive app and display controls make personalization effortless</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "half_text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jjk6NY",
+        "text_HfnnyR",
+        "text_8pBeg4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/23_a655c5f7-6d5b-4446-9b98-f5eb10617c4f.jpg",
+        "image_height": "450px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_JKRmR8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TFBap6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not Just the Bike...",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_LKErwp": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>One Bike, Many Roles</h4><p>Snap on a commute or comfort pack and transform Venus in seconds. Take it from daily errands to long, relaxed cruises with ease. Extra fork mounts, rack compatibility, and accessory packages mean the ride is always built around you.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TFBap6",
+        "text_LKErwp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/24_d89de8d5-df41-454e-b8d6-1130559925bb.jpg",
+        "image_height": "adapt",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "slideshow_KGwhEa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ya7ydk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2800X1000.jpg",
+            "image_mobile": "shopify://shop_images/3Discover_Venus.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h5",
+            "button_label": "",
+            "button_link": "",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": [
+        "image_ya7ydk"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "400px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_slide_ktkXgf": {
+      "type": "video-with-text-slide",
+      "blocks": {
+        "content_y8hEDG": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>THE FASTEST FOLDING E-BIKE // HeyBike Ranger 3.0 Pro X-Series</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p>-Mike Fede</p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=Uk3p6Xlsfzs",
+            "cover_image": "shopify://shop_images/maxresdefault_9a024aec-ee86-40f4-8fe8-e69deb6023d4.jpg",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        },
+        "content_CWdVUA": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/YouTube_Logo_2017_svg.png",
+            "image_width": "custom",
+            "image_max_width": 130,
+            "image_max_width_mobile": 70,
+            "text_1": "<h4>The ULTIMATE Folding Fat-Tire Ebike? Heybike Ranger 3.0 Pro Review</h4>",
+            "text_size_1": "subtext-sm",
+            "text_max_size_1": 32,
+            "text_font_1": "heading",
+            "secondary_color_1": false,
+            "highlighted_text_1": "none",
+            "highlighted_scribble_1": "circle",
+            "text_2": "<p>-Chris Crossed</p>",
+            "text_size_2": "subtext-sm",
+            "text_max_size_2": 32,
+            "text_font_2": "body",
+            "secondary_color_2": false,
+            "highlighted_text_2": "text",
+            "highlighted_scribble_2": "circle",
+            "video_url": "https://www.youtube.com/watch?v=04oRaO1GSF8",
+            "cover_image": "shopify://shop_images/Untitled_design.png",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "enable_parallax": false,
+            "parallax_direction": "vertical"
+          }
+        }
+      },
+      "block_order": [
+        "content_y8hEDG",
+        "content_CWdVUA"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Rider Review",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-center md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "timeline_rAgziH": {
+      "type": "timeline",
+      "blocks": {
+        "content_mQQdJ9": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/02_e5b414e4-2500-4905-ae0a-8d0034761c7c.jpg",
+            "subheading": "01",
+            "heading": "Suburban Trip",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_DDmqcz": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "02",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_MbjmTT": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_2.42.52_PM.png",
+            "subheading": "03",
+            "heading": "City Commuting",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. </p>",
+            "button_label": "",
+            "button_link": "",
+            "text_alignment": "items-start",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content_mQQdJ9",
+        "content_DDmqcz",
+        "content_MbjmTT"
+      ],
+      "disabled": true,
+      "settings": {
+        "scroll_speed": 0,
+        "image_position": "left",
+        "image_ratio": "square",
+        "image_ratio_mobile": "wide",
+        "heading": "Build & Design For",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "show_indicators": false,
+        "enable_index_num": true,
+        "desktop_swtich_effect": "smooth"
+      }
+    },
+    "lookbook_Geh8Xd": {
+      "type": "lookbook",
+      "blocks": {
+        "content_ybM9CC": {
+          "type": "content",
+          "settings": {
+            "heading": "More Controlled Ride",
+            "text": "<p>With the front and rear dic brakes empowers you to tackle steep descents or sudden stops with ease, allowing you to maintain your line and conquer obstacles with confidence.</p>",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 74,
+            "horizontal": 32,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "content_yGndXK": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 50,
+            "horizontal": 50,
+            "vertical_mobile": 69,
+            "horizontal_mobile": 27
+          }
+        },
+        "content_6qD6JN": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "link": "",
+            "color_text": "#ffffff",
+            "vertical": 58,
+            "horizontal": 67,
+            "vertical_mobile": 62,
+            "horizontal_mobile": 79
+          }
+        }
+      },
+      "block_order": [
+        "content_ybM9CC",
+        "content_yGndXK",
+        "content_6qD6JN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/2_1_1_339fd58b-08f8-4b1f-8ed1-f2ac63f901e1.png",
+        "image_mobile": "shopify://shop_images/2_1_2.png",
+        "heading": "Discover Mars 2.0",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Premium quality commuter ebike that’s affordable for everyone.</p>",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#000000",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "multicolumn_HJ8kPr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4VdPd7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/1_494b5677-567d-458d-8767-d73473c7495e.png",
+            "image_ratio": "wide",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Lighting & Integrated Turn Signals",
+            "heading_size": "text-base-xl",
+            "text": "<p>A bright headlight, reflectors, and <strong>built-in turn signals</strong> help you see and be seen for safer city riding and low-light trips.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_pU6HFh": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/3_4a38d231-6cab-48fd-94f5-4f83fe69d309.png",
+            "image_ratio": "wide",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "Hydraulic Brakes",
+            "heading_size": "text-base-xl",
+            "text": "<p>Responsive hydraulic disc brakes deliver precise, confident stopping power when you need it most.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_qUKjhQ": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/4_ab037823-afbf-42a6-8a42-1c74191cbc11.png",
+            "image_ratio": "wide",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "IP65 Water-resistance Rating",
+            "heading_size": "text-base-xl",
+            "text": "<p>The electrical system feature an <strong>IP65</strong> rating, shielding vital electronic components from rain, dust, and splashes for more worry-free rides.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_JQByzX": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/5_23e584b7-ae0b-495e-9618-39009fc81870.png",
+            "image_ratio": "wide",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "27.5\" x 2.2\" KENDA Tires",
+            "heading_size": "text-base-xl",
+            "text": "<p>The Kenda tires strike a balance of efficiency, grip, and quiet rolling for both city streets and light weekend cruising.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_MyPRUW": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/2UL.png",
+            "image_ratio": "wide",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "UL Certified",
+            "heading_size": "text-base-xl",
+            "text": "<p>Venus is<strong> UL 2849</strong> and <strong>UL 2271</strong> certified, covering the electrical system and battery for trusted, tested safety you can rely on.</p>",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_4VdPd7",
+        "column_pU6HFh",
+        "column_qUKjhQ",
+        "column_JQByzX",
+        "column_MyPRUW"
+      ],
+      "settings": {
+        "swipe_on_desktop": true,
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Discover <strong>Venus</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "hide_desktop": false
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab_UYjbAG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frameset",
+            "content": "<p><strong>Frame:</strong> 6061 Aluminum Alloy<br/><strong>Fork: </strong>Aluminum Rigid Fork</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_w9zHha": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wheels & Braking",
+            "content": "<p><strong>Tires: </strong>KENDA 27.5 x 2.2\"<br/><strong>Brakes:</strong> Hydraulic Disc Brakes<br/><strong>Rotor: </strong>180 × 1.9 mm</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_Tx7jh4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Motor & Drivetrain",
+            "content": "<p><strong>Motor:</strong> 750W Hub Motor (Galaxy eDrive System)<br/><strong>Torque: </strong>70 Nm<br/><strong>Drivetrain: </strong>Shimano Altus 8-Speed (11–32T)<br/><strong>Chainring: </strong>48T<br/><strong>Pedal Assist: </strong>Dual Sensor (Torque + Cadence)</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_weW7dP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Battery & Performance",
+            "content": "<p><strong>Battery:</strong> 680Wh <br/><strong>Certification: </strong>UL 2849 (Whole Bike), UL 2271 (Battery)<br/><strong>Charger: </strong>54.6V / 2A<br/><strong>Max Speed:</strong> 28 MPH<br/><strong>Max Range:</strong> Up to 85 Miles (tested with a 155 lb rider in PAS1, no throttle applied)</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_8UV3wm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Display & Connectivity",
+            "content": "<p><strong>Display: </strong>LCD Color Display<br/><strong>App: </strong>Heybike Smart App (iOS & Android)</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_YdMGt4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Lighting & Utility",
+            "content": "<p><strong>Front Light:</strong> White Light with Horn<br/><strong>Rear Light:</strong> Integrated Turn Signal, Rear Red LED (optional)<br/><strong>Rack Capacity: </strong>66 lb<br/><strong>Fenders & Rear Rack:</strong> Optional</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_4Mk4Nz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Weight & Dimensions",
+            "content": "<p><strong>Bike Weight: </strong>50 lb<br/><strong>Dimensions: </strong>72.8\" × 29.5\" × 40.9\"/43.7\"</p>",
+            "metafields": ""
+          }
+        },
+        "specification_DGqJjp": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/118_77032724-6c17-4acf-a5c3-eda29230caa3.png",
+            "heading": "Venus"
+          }
+        },
+        "specification_bgB4bi": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/f61005e0dd4ae8c1efd06599ac8dff0b.jpg",
+            "heading": "Charger"
+          }
+        },
+        "specification_J8tFJW": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/6d4e18650a9c9901fdc5d0469953cf11.jpg",
+            "heading": "User Manual"
+          }
+        },
+        "specification_bnREc4": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/45b943a42c87dd66716d3c924e8a6de1.jpg",
+            "heading": "Keys"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_UYjbAG",
+        "collapsible_tab_w9zHha",
+        "collapsible_tab_Tx7jh4",
+        "collapsible_tab_weW7dP",
+        "collapsible_tab_8UV3wm",
+        "collapsible_tab_YdMGt4",
+        "collapsible_tab_4Mk4Nz",
+        "specification_DGqJjp",
+        "specification_bgB4bi",
+        "specification_J8tFJW",
+        "specification_bnREc4"
+      ],
+      "settings": {
+        "section_id": "specifications",
+        "open_first_row": true,
+        "specifications_heading": "What's In The Box",
+        "heading": "Spec&Size",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_XH43zM": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "image_KQhbLJ": {
+          "type": "image",
+          "settings": {
+            "hide_image_border": false,
+            "video": "",
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "image_KQhbLJ"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/CA_PC.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "enable_stack": false,
+        "mobile_image_position": "top",
+        "image_mobile": "shopify://shop_images/CA_18a2cd93-23e3-4a5e-ad28-704f59ad183c.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Venus have a throttle?</strong>",
+            "text": "<p>Yes! Venus comes <strong>with a throttle</strong>. Top speed and throttle behavior can be configured via the Heybike app to meet <strong>Class 2 or Class 3 regulations</strong>.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_XMF9GC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What is Venus’s weight capacity?</strong>",
+            "text": "<p>Venus supports up to <strong>350 lbs</strong> total rider + cargo capacity.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_HrcC44": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How does Venus keep riders safe?</strong>",
+            "text": "<p>Venus comes with <strong>hydraulic disc brakes</strong> to help riders stop safely, timely, and confidently. It also comes with <strong>a bright headlight </strong>and integrated <strong>turn signals</strong> to help you see and be seen in traffic.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_GMGwnG": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is Venus suitable for shorter riders? Is it easy to get on and off?</strong>",
+            "text": "<p>Absolutely! Venus features a low <strong>step-through</strong> frame and a slightly forward bottom bracket that improves leg extension while maintaining <strong>a low stand-over</strong> for confident stops. </p><p>Recommended rider height: <strong>4'11\" – 6'2\"</strong>. Recommended inseam: <strong>24.4\" – 34.7\"</strong>.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_pBjHaf": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What is the warranty for Venus?</strong>",
+            "text": "<p>Venus purchased from our official website comes with a 2-year limited warranty. For full details, <a href=\"/pages/warranty\" title=\"Warranty\">visit our Warranty page. </a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-4",
+        "question_XMF9GC",
+        "question_HrcC44",
+        "question_GMGwnG",
+        "question_pBjHaf"
+      ],
+      "settings": {
+        "section_id": "faqs",
+        "style": "with-border",
+        "heading": "FAQs - <strong>Venus</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "17095465697947f178": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_ktVzDU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_ktVzDU"
+      ],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_limit": 3,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You May Also Like",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fafafa",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "sticky_navigation_rQrgTj",
+    "collage",
+    "image_with_text_x9i9By",
+    "image_with_text_yJHEzB",
+    "image_with_text_yHVPEw",
+    "image_with_text_JKRmR8",
+    "slideshow_KGwhEa",
+    "video_with_text_slide_ktkXgf",
+    "timeline_rAgziH",
+    "lookbook_Geh8Xd",
+    "multicolumn_HJ8kPr",
+    "product-details",
+    "image_with_text_overlay_XH43zM",
+    "faq",
+    "17095465697947f178",
+    "product-recommendations",
+    "recently-viewed"
+  ]
+}
