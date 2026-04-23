@@ -314,7 +314,7 @@
                     if (i >= 100) {
                         clearInterval(timer);
                         if ($heybike.isMobile) {
-                            nodeList.slider.slider?.next();
+                            nodeList.slider.next();
                         } else {
                             let next = current + 1;
                             if (next >= {{ section.blocks.size }}) {

@@ -3958,6 +3958,10 @@ class SlideElement extends HTMLElement {
     select(selectedIndex) {
         this.slider.select(selectedIndex);
     }
+
+    next() {
+        this.slider.next();
+    }
 }
 
 customElements.define('slide-element', SlideElement);
