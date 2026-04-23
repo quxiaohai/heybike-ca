@@ -3960,7 +3960,7 @@ class SlideElement extends HTMLElement {
     }
 
     next() {
-        this.slider.next();
+        this.slider?.next();
     }
 }
 
