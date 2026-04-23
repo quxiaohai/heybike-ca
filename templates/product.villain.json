@@ -281,7 +281,6 @@
             "video_url_mobile": "https://www.youtube.com/watch?v=vAd3vcRigqg",
             "title": "THE BEST WHEELIE PIT BIKE - HeyBike Villain Review",
             "text": "<p>This thing is a steal. Especially how good it rips wheelies.</p>",
-            "avatar": "shopify://shop_images/unnamed_1.jpg",
             "author": "MotoBroo"
           }
         },
@@ -309,7 +308,6 @@
             "video_url_mobile": "https://www.youtube.com/watch?v=mO6MRKT5IdY",
             "title": "Better Than A Tuttio? Heybike Villain, The 1st 52V Pit Bike below $1,500",
             "text": "<p>Unboxing assembly first impressions</p>",
-            "avatar": "shopify://shop_images/unnamed.jpg",
             "author": "Calthecool"
           }
         },
@@ -1494,7 +1492,7 @@
           "type": "question",
           "settings": {
             "title": "<strong>When will my order be processed/shipped?</strong>",
-            "text": "<p>Fast & Free U.S. Shipping. Electric dirt Bike orders ship from our local U.S. warehouse, typically within 2–3 business days.</p>",
+            "text": "<p>Fast & Free C.A. Shipping. Electric dirt Bike orders ship from our local C.A. warehouse, typically within 2–3 business days.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1586,6 +1584,7 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
+        "section_id": "",
         "style": "with-border",
         "heading": "FAQs",
         "heading_size": "title-md",
@@ -1595,11 +1594,8 @@
         "description": "",
         "button_label": "",
         "button_link": "",
-        "button_external": false,
-        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -1608,8 +1604,6 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 4,
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
@@ -1622,6 +1616,7 @@
       "blocks": {
         "judge_me_reviews_review_widget_kNhmaL": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
@@ -1634,6 +1629,7 @@
         "judge_me_reviews_review_widget_kNhmaL"
       ],
       "settings": {
+        "enable_reviews_integration": true,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
