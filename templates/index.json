@@ -362,14 +362,14 @@
       ],
       "settings": {
         "transparent_header": false,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": false,
+        "rounded": true,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
