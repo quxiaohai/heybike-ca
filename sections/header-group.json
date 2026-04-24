@@ -41,10 +41,11 @@
         },
         "announcement-1": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "<strong>New In! Venus: Explode Your Lightweight Commuter>></strong>",
-            "link": "shopify://collections/electric-bikes",
+            "text": "<strong>New In! Villain: Power Meets Adventure >></strong>",
+            "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
