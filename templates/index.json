@@ -360,7 +360,7 @@
         "image_UaaPWX"
       ],
       "settings": {
-        "transparent_header": false,
+        "transparent_header": true,
         "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
@@ -368,7 +368,7 @@
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": true,
+        "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
