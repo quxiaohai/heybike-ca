@@ -16,11 +16,22 @@
       "blocks": {
         "announcement_FX9gUF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "⚡<strong>Weekend Flash Sale: Mars 3.0 Extra C$100 off at checkout. Shop now>></strong>",
             "link": "shopify://products/mars-3-0",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "<strong>New In! ⚡Villain: Power Meets Adventure >></strong>",
+            "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -33,19 +44,6 @@
             "icon": "none",
             "text": "<strong>Meet the New X Series – Ranger 3.0 Pro & Mars 3.0>></strong>",
             "link": "shopify://collections/new-arrivals",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement-1": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "text": "<strong>New In! Villain: Power Meets Adventure >></strong>",
-            "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -83,8 +81,8 @@
       },
       "block_order": [
         "announcement_FX9gUF",
-        "announcement_HKc6qM",
         "announcement-1",
+        "announcement_HKc6qM",
         "flag_and_link_mxBVY3",
         "flag_and_link_JiGxr3",
         "flag_and_link_WGkjKH",
