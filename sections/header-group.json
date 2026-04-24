@@ -31,7 +31,7 @@
           "settings": {
             "icon": "none",
             "text": "<strong>New In! Villain: ⚡Power Meets Adventure >></strong>",
-            "link": "",
+            "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
