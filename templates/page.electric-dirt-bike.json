@@ -11,6 +11,7 @@
   "sections": {
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "heading_size": "title-sm",
         "heading_tag": "h1",
@@ -24,6 +25,7 @@
     },
     "171014248221776063": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "enable_reviews_integration": true,
         "color_text": "",
