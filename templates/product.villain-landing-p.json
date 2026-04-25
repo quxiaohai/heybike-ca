@@ -1,0 +1,1674 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "mc_page_color": {
+      "type": "mc_page-color",
+      "settings": {
+        "background_color": "#000000"
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "show_price": false,
+            "show_badge": false,
+            "show_rating": false,
+            "show_label": true,
+            "label_text": "New Arrival",
+            "label_color": "#f6be00"
+          }
+        },
+        "text_RHmxfj": {
+          "type": "text",
+          "settings": {
+            "text": "Intended for riders aged 16 and above; Default max speed limited to 20 mph",
+            "text_size": "text-base",
+            "disable_top_spacing": true
+          }
+        },
+        "price_jg6hbG": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_installment": false,
+            "show_rating": true
+          }
+        },
+        "countdown_Yb9jEM": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry!",
+            "subheading": "Sale ends in:",
+            "color_text": "#000000",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker_XmTAmi": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "variant_name_info": "",
+            "size_chart_title": "Size & Fit",
+            "size_chart_icon": "shopify://shop_images/Heybike_UI_Design_R5_Screenshot_Feb_15.png",
+            "size_chart_type": "drawer",
+            "size_chart": "",
+            "version_compare_title": "",
+            "version_type": "drawer",
+            "version": ""
+          }
+        },
+        "gsc_countdown_timer_countdown_yXj64c": {
+          "type": "shopify://apps/gsc-countdown-timer/blocks/countdown/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
+          "settings": {
+            "widget_id": "GSC-SMALL-KiNcWBaERqQr"
+          }
+        },
+        "bundle_collapse_tHHytT": {
+          "type": "bundle_collapse",
+          "settings": {
+            "show_recommendations": false,
+            "recommendations_title": "<p><strong>Popular Upgrades</strong></p>",
+            "recommendations_limit": 10,
+            "recommendations_expand": true,
+            "recommendations_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_1.value }}",
+            "recommendations_checked_metafield": [],
+            "show_complementary": false,
+            "complementary_title": "<p>More Accessories</p>",
+            "complementary_limit": 10,
+            "complementary_expand": false,
+            "complementary_metafield": "{{ product.metafields.custom.pdp_bundle_collapse_2.value }}",
+            "warranty_product": "extend-protection-plan"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "hide_on_mobile": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_info_icon_4tC4Uk": {
+          "type": "introduce_icon",
+          "settings": {
+            "use_icon_metafield": "pdc_icon",
+            "use_spec_metafield": "pdc_spec",
+            "icon_1": "shopify://shop_images/56a85e16a046cb332aca2019e675a194_e9afe442-dc15-42d8-8125-c42af40a31d7.png",
+            "title_1": "1600W",
+            "remark_1": "Peak Moter",
+            "icon_2": "shopify://shop_images/icon-speed.png",
+            "title_2": "32 MPH",
+            "remark_2": "Top Speed",
+            "icon_3": "shopify://shop_images/icon-range.png",
+            "title_3": "45 Miles",
+            "remark_3": "Max Range",
+            "icon_4": "shopify://shop_images/b37921b961e5adb84e66048a85bbee72_9845a821-3908-423b-b031-8c6e11c76168.png",
+            "title_4": "600Wh",
+            "remark_4": "Battery Capacity",
+            "icon_5": "shopify://shop_images/Product_Card_Icon_2.png",
+            "title_5": "330 lbs",
+            "remark_5": "Max Load",
+            "icon_6": "shopify://shop_images/3b49dcc1eb4b18b6fa150e99d1621f22_889799d0-0224-4cc6-92ac-8fd188183cb4.png",
+            "title_6": "20*4\"",
+            "remark_6": "Fat Tires"
+          }
+        },
+        "text_KAtDL8": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/product_card_icon_3643ab07-b162-4732-818c-c23aea490bc5.svg",
+            "text": "In Stock! Free, fast shipping within 2 business  days",
+            "text_size": "text-sm",
+            "disable_top_spacing": false
+          }
+        },
+        "text_NLFHz8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/icon_UL_f5820271-ce97-4ea4-88dc-27e012349cc4.png",
+            "text": "Safety Certified in Accordance with UL 2849",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_RtUYcF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/icon-cycle.png",
+            "text": "30-Day Free Trial",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "text_bWVdgQ": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Group.svg",
+            "text": "2-Year Warranty",
+            "text_size": "text-sm",
+            "disable_top_spacing": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "about-us"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_RHmxfj",
+        "price_jg6hbG",
+        "countdown_Yb9jEM",
+        "variant_picker_XmTAmi",
+        "gsc_countdown_timer_countdown_yXj64c",
+        "bundle_collapse_tHHytT",
+        "buy_buttons",
+        "sticky_buy_button",
+        "custom_info_icon_4tC4Uk",
+        "text_KAtDL8",
+        "text_NLFHz8",
+        "text_RtUYcF",
+        "text_bWVdgQ",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "thumbnail_classification": true,
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "mc_section_text_hypP4F": {
+      "type": "mc_section-text",
+      "blocks": {
+        "text_a8XcQX": {
+          "type": "text",
+          "settings": {
+            "padding": "0px 0px 0px 0px",
+            "mb_padding": "0px 0px 0px 0px",
+            "text": "<p><em><strong>RIDER REVIEWS</strong></em></p>",
+            "alignment": "left",
+            "mb_alignment": "left",
+            "style": "normal",
+            "weight": 400,
+            "line_height": 120,
+            "pc_size": 48,
+            "mb_size": 24,
+            "width": 100,
+            "mb_width": 100,
+            "color": "#ffffff",
+            "bold_color": "#ffffff",
+            "gradient_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_a8XcQX"
+      ],
+      "name": "MC Section Text",
+      "settings": {
+        "page_color": "#000000",
+        "page_top": 40,
+        "page_bottom": 0,
+        "layout": "column",
+        "mb_layout": "column"
+      }
+    },
+    "mc_multicolumn_video_slide_dc634x": {
+      "type": "mc_multicolumn-video-slide",
+      "blocks": {
+        "card_fzWiaL": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Review.jpg",
+            "mobile_image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Review.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=m4BCOLZ32qg",
+            "video_url_mobile": "https://www.youtube.com/watch?v=m4BCOLZ32qg",
+            "title": "Best 52V Electric Dirt Bike Under $1500? (This Thing RIPS) HeyBike Villain",
+            "text": "<p>This 52v Mini Electric Dirt bike is Sick!</p>",
+            "avatar": "shopify://shop_images/channels4_profile.jpg",
+            "author": "MOPBOYZ"
+          }
+        },
+        "card_MH4HCK": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault_2_d6d7b397-6996-4db0-826b-379b676d78e4.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault_2_d6d7b397-6996-4db0-826b-379b676d78e4.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=vAd3vcRigqg",
+            "video_url_mobile": "https://www.youtube.com/watch?v=vAd3vcRigqg",
+            "title": "THE BEST WHEELIE PIT BIKE - HeyBike Villain Review",
+            "text": "<p>This thing is a steal. Especially how good it rips wheelies.</p>",
+            "author": "MotoBroo"
+          }
+        },
+        "card_gjNqjR": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Mrcentral_review_cover_c06707f3-124a-4cb1-8cf2-b548786e08b2.jpg",
+            "mobile_image": "shopify://shop_images/Mrcentral_review_cover_c06707f3-124a-4cb1-8cf2-b548786e08b2.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=Uz6Wk1wpHyk",
+            "video_url_mobile": "https://www.youtube.com/watch?v=Uz6Wk1wpHyk",
+            "title": "I tuned the Heybike Villian and GAINED way more POWER",
+            "text": "<p>With swappable panels, you can customize the look, and its tunable controller lets...</p>",
+            "avatar": "shopify://shop_images/mrcentral_review_icon_bffab4de-6b0b-45ab-bd23-ca0feaf65e16.jpg",
+            "author": "MrCentralDriver"
+          }
+        },
+        "card_yzgkeF": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=mO6MRKT5IdY",
+            "video_url_mobile": "https://www.youtube.com/watch?v=mO6MRKT5IdY",
+            "title": "Better Than A Tuttio? Heybike Villain, The 1st 52V Pit Bike below $1,500",
+            "text": "<p>Unboxing assembly first impressions</p>",
+            "author": "Calthecool"
+          }
+        },
+        "card_p6ym8t": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault_06e9fd82-6e33-48f5-8667-e8a276d98624.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault_06e9fd82-6e33-48f5-8667-e8a276d98624.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=MYKqQto-h3E",
+            "video_url_mobile": "https://www.youtube.com/watch?v=MYKqQto-h3E",
+            "title": "Budget E-Bikes Have Officially Changed Forever…",
+            "text": "<p>I don't even know how like this is possibly as good of a bike as it is...</p>",
+            "avatar": "shopify://shop_images/channels4_profile_11799951-0c33-4429-a58e-e7f5c527e32e.jpg",
+            "author": "Etronnix"
+          }
+        },
+        "card_VLXpkE": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Mrcentral_review_cover.jpg",
+            "mobile_image": "shopify://shop_images/Mrcentral_review_cover.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=eM84GbZEgz8",
+            "video_url_mobile": "https://www.youtube.com/watch?v=eM84GbZEgz8",
+            "title": "Heybike Villain: E-Dirt Bike with Swappable Panels and Upgrade-Ready Potential!",
+            "text": "<p>An affordable electric dirt bike built for adventure...</p>",
+            "avatar": "shopify://shop_images/mrcentral_review_icon_bffab4de-6b0b-45ab-bd23-ca0feaf65e16.jpg",
+            "author": "MrCentralDriver"
+          }
+        },
+        "card_BrrTzE": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault_1_83293804-7467-428d-acef-ec60b73d5e2f.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault_1_83293804-7467-428d-acef-ec60b73d5e2f.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=9vifmTDetkY",
+            "video_url_mobile": "https://www.youtube.com/watch?v=9vifmTDetkY",
+            "title": "Testing the BEST Budget Mini E-Moto",
+            "text": "<p>This is genuinely my favorite mini e-moto that I've tested so far.</p>",
+            "avatar": "shopify://shop_images/unnamed_600a7c17-aee6-4dfa-ba33-f9394484061e.jpg",
+            "author": "Derek Hallman"
+          }
+        },
+        "card_HTHjFQ": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault_ee7affa8-71b3-42eb-87df-64cffd4665e5.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault_ee7affa8-71b3-42eb-87df-64cffd4665e5.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=NWU3Jcy4hNE",
+            "video_url_mobile": "https://www.youtube.com/watch?v=NWU3Jcy4hNE",
+            "title": "Heybike Villain review: 4.2kW pit bike hits 45+mph for $1400?!",
+            "text": "<p>the Villain is a real product, not a spec sheet fantasy.</p>",
+            "avatar": "shopify://shop_images/channels4_profile_00f2af21-39ae-4e65-8164-ffe5184bc22e.jpg",
+            "author": "Electrek.co"
+          }
+        },
+        "card_8GUjKk": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/maxresdefault_289affc2-e8e9-4b90-9365-282656f6dd8e.jpg",
+            "mobile_image": "shopify://shop_images/maxresdefault_289affc2-e8e9-4b90-9365-282656f6dd8e.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=gXulwuFPcu4",
+            "video_url_mobile": "https://www.youtube.com/watch?v=gXulwuFPcu4",
+            "title": "The Heybike villain goes fast for cheap.",
+            "text": "<p>This was lots of fun. Make sure to subscribe if you haven’t already! </p>",
+            "avatar": "shopify://shop_images/channels4_profile_1.jpg",
+            "author": "ENDOPRYSM"
+          }
+        },
+        "card_4kFwYj": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Ben_s_Outdoor_Youtube_Video_Cover.jpg",
+            "mobile_image": "shopify://shop_images/Ben_s_Outdoor_Youtube_Video_Cover.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=zfM6R1mEkSk",
+            "video_url_mobile": "https://www.youtube.com/watch?v=zfM6R1mEkSk",
+            "title": "52V MONSTER: HeyBike Villain 4160W Mid-Drive E-Bike With Reverse",
+            "text": "<p>🔥 HeyBike Villain Full Off-Road Test 🔥</p>",
+            "avatar": "shopify://shop_images/Ben_s_Outdoor.jpg",
+            "author": "Ben's Outdoor Boys"
+          }
+        },
+        "card_LFnCDc": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/The_Oh_Family_Review.jpg",
+            "mobile_image": "shopify://shop_images/The_Oh_Family_Review.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=d3PG60Vrweo",
+            "video_url_mobile": "https://www.youtube.com/watch?v=d3PG60Vrweo",
+            "title": "Heybike Villain Review: 4160W Mid-Drive Dirt Bike… TOO MUCH Power?",
+            "text": "<p>A crazy powerful mid-drive \"electric dirt bike\"....</p>",
+            "avatar": "shopify://shop_images/The_Oh_Family_Channel.jpg",
+            "author": "The Oh Family"
+          }
+        }
+      },
+      "block_order": [
+        "card_fzWiaL",
+        "card_MH4HCK",
+        "card_gjNqjR",
+        "card_yzgkeF",
+        "card_p6ym8t",
+        "card_VLXpkE",
+        "card_BrrTzE",
+        "card_HTHjFQ",
+        "card_8GUjKk",
+        "card_4kFwYj",
+        "card_LFnCDc"
+      ],
+      "name": "MC Multicolumn Video Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 0,
+        "show_title": false,
+        "title": "<p>RIDER <strong>REVIEWS</strong></p>",
+        "title_style": "italic",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": true,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 14,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 20,
+        "description_mb_margin_bottom": 10,
+        "card_loop": false,
+        "card_cells": 1,
+        "video_ratio": "",
+        "mb_video_ratio": "",
+        "card_content_alignment": "left",
+        "card_bg_color": "#121212",
+        "pc_card_title_size": 18,
+        "mb_card_title_size": 14,
+        "card_title_color": "#ffffff",
+        "pc_card_desc_size": 14,
+        "mb_card_desc_size": 9,
+        "card_desc_color": "#ffffff",
+        "author_color": "#ffffff"
+      }
+    },
+    "mc_section_text_GMKTmh": {
+      "type": "mc_section-text",
+      "blocks": {
+        "text_CQqWCx": {
+          "type": "text",
+          "settings": {
+            "padding": "0px 0px 0px 0px",
+            "mb_padding": "0px 0px 0px 0px",
+            "text": "<p>The Ultimate Electric Pit Bike for Big Attitudes</p>",
+            "alignment": "left",
+            "mb_alignment": "left",
+            "style": "normal",
+            "weight": 700,
+            "line_height": 120,
+            "pc_size": 48,
+            "mb_size": 28,
+            "width": 45,
+            "mb_width": 100,
+            "color": "#ffffff",
+            "bold_color": "#ffdb00",
+            "gradient_color": ""
+          }
+        },
+        "text_AbGyqF": {
+          "type": "text",
+          "settings": {
+            "padding": "0px 0px 0px 0px",
+            "mb_padding": "20px 0px 0px 0px",
+            "text": "<p>Heybike Villain is a 14/12-inch electric dirt bike built for the bold, style-driven new generation.<br/>It blends strong power, long-range capability, and responsive control, making it ideal for group rides, city open spaces, backyard fun, and trails.<br/><br/>It delivers real dirt-bike attitude in a compact, confidence-boosting package. More than a bike, Villain is a symbol of identity—loud energy, fearless fun, and a way for the young to stand out, connect, and express who they are.</p>",
+            "alignment": "left",
+            "mb_alignment": "left",
+            "style": "normal",
+            "weight": 400,
+            "line_height": 120,
+            "pc_size": 18,
+            "mb_size": 14,
+            "width": 55,
+            "mb_width": 100,
+            "color": "#cdcdcd",
+            "bold_color": "#ffffff",
+            "gradient_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_CQqWCx",
+        "text_AbGyqF"
+      ],
+      "name": "MC Section Text",
+      "settings": {
+        "page_color": "#000000",
+        "page_top": 70,
+        "layout": "row",
+        "mb_layout": "column"
+      }
+    },
+    "mc_media_video": {
+      "type": "mc_media-video",
+      "blocks": {
+        "media_video": {
+          "type": "video",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "show_border_image": false,
+            "play_button_icon": "shopify://shop_images/video-play-button_f972b4dc-41a9-4f50-ada1-be8cc1889379.png",
+            "play_button_size": "small",
+            "pc_border_image": "shopify://shop_images/video-border-image.jpg",
+            "pc_border_thickness": "27px 27px",
+            "mb_border_image": "shopify://shop_images/bg.png",
+            "mb_border_thickness": "12px 12px 12px 10px",
+            "video": "shopify://files/videos/Heybike Villain Electric Dirt Bike For Teens & Adults pc launch video.mp4",
+            "video_url": "",
+            "video_width": 100,
+            "video_ratio": "",
+            "video_mobile": "shopify://files/videos/Heybike Villain Electric Dirt Bike For Teens & Adults app launch video.mp4",
+            "video_url_mobile": "",
+            "mb_video_ratio": "9/11",
+            "show_button": false,
+            "product": "",
+            "show_button_buy": true,
+            "button_buy": "Buy Now",
+            "button_buy_bg_color": "#ffde00",
+            "button_buy_text_color": "#000000",
+            "show_button_cart": true,
+            "button_cart": "Add to Cart",
+            "button_cart_color": "#ffffff",
+            "show_icon": false,
+            "icon_hide_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "media_video"
+      ],
+      "name": "MC Media Video",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "page_bottom": 40,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30
+      }
+    },
+    "mc_media_image_ixbUFA": {
+      "type": "mc_media-image",
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "pc_image": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_Highlight_Features_pcc.jpg",
+        "mb_image": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_Highlight_Features_mbb.jpg",
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": false,
+        "mb_image_ratio": "",
+        "mb_image_fill": false
+      }
+    },
+    "mc_media_image_N7QKxx": {
+      "type": "mc_media-image",
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_bottom": 0,
+        "show_title": true,
+        "title": "<p><strong>A PUNCH ABOVE</strong> ITS CLASS</p>",
+        "title_style": "italic",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": true,
+        "description": "<p>Where others ride, you take over — every twist unleashing pure, controlled power. <br/><br/>With a <strong>mid-drive motor</strong> at the core, Villain stays planted under hard acceleration, steep climbs, and uneven off-road terrain<br/> — delivering precise control when it matters most.</p>",
+        "description_color": "#cdcdcd",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "pc_image": "shopify://shop_images/villain-electrical-image_cf98a98f-0ddc-42a2-ac73-d54eb62826d2.jpg",
+        "mb_image": "shopify://shop_images/villain-mb-electrical-image.jpg",
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": false,
+        "mb_image_ratio": "",
+        "mb_image_fill": false
+      }
+    },
+    "mc_media_image_xcMj7B": {
+      "type": "mc_media-image",
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "page_bottom": 20,
+        "show_title": true,
+        "title": "<p><em><strong>GO WILD</strong></em><em> WITH VILLAIN</em></p>",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": true,
+        "description": "<p>Ride bold. Ride fast. Ride your way. <strong>0–10 MPH in 0.9 seconds</strong> and a <strong>45 MPH top speed</strong> — sharp, <br/>loud, and always one twist away from your next story.</p>",
+        "description_color": "#cdcdcd",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "pc_image": "shopify://shop_images/villain-speed-image.jpg",
+        "mb_image": "shopify://shop_images/villain-mb-speed-image.jpg",
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": false,
+        "mb_image_ratio": "",
+        "mb_image_fill": false
+      }
+    },
+    "mc_image_fill_slide_hY9cfB": {
+      "type": "mc_image-fill-slide",
+      "blocks": {
+        "slide_DAMEUM": {
+          "type": "slide",
+          "settings": {
+            "title": "Built for Long Wheelie",
+            "show_text": true,
+            "text": "<p>Heybike Villain’s <strong>52V 26Ah(1352Wh)</strong> battery lets you play for <strong>up to 50 miles</strong> on a single charge. Long enough for every meet-up! It's ready to wheelie again and again!<br/><br/>Paired with the <strong>58.8V 5A</strong> charger, it fully charges in just 4–6 hours, keeping you riding with minimal downtime.</p>",
+            "pc_image": "shopify://shop_images/villain-slide-image1.jpg",
+            "mb_image": "shopify://shop_images/villain-mb-slide-image1.jpg"
+          }
+        },
+        "slide_mRJggy": {
+          "type": "slide",
+          "settings": {
+            "title": "Smart Power Return",
+            "show_text": true,
+            "text": "<p>Every brake <strong>puts energy back</strong> into your battery — ride longer and keep the fun going!</p>",
+            "pc_image": "shopify://shop_images/villain-slide-image2.jpg",
+            "mb_image": "shopify://shop_images/villain-mb-slide-image2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DAMEUM",
+        "slide_mRJggy"
+      ],
+      "name": "MC Image Fill Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "show_title": true,
+        "title": "<p><em>BUILT TO </em><em><strong>GO FAR</strong></em></p>",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 24,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "tab_display_position": "center",
+        "tab_color": "#cdcdcd",
+        "tab_hover_color": "#ffffff",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#313131",
+        "tab_active_bg_color": "#ffdb00",
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "pc_slide_text_size": 18,
+        "mb_slide_text_size": 14,
+        "slide_text_color": "#cdcdcd",
+        "slide_bold_text_color": "#ffffff"
+      }
+    },
+    "mc_media_image_Lc33DG": {
+      "type": "mc_media-image",
+      "disabled": true,
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "page_bottom": 0,
+        "show_title": true,
+        "title": "<p><em>LAND SOFT, RIDE HARD</em></p>",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": true,
+        "description": "<p>With a front hydraulic fork and rear nitrogen shock offering around 6inch of travel, Villain soaks up bumps, softens landings, and keeps wheelies and long sessions feeling comfortable.</p>",
+        "description_color": "#cdcdcd",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 0,
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": false,
+        "mb_image_ratio": "",
+        "mb_image_fill": false
+      }
+    },
+    "mc_section_text_Fen38U": {
+      "type": "mc_section-text",
+      "blocks": {
+        "text_GTPjFM": {
+          "type": "text",
+          "settings": {
+            "padding": "0px 0px 0px 0px",
+            "mb_padding": "0px 0px 0px 0px",
+            "text": "<p><em>LAND SOFT, RIDE HARD</em></p>",
+            "alignment": "center",
+            "mb_alignment": "center",
+            "style": "normal",
+            "weight": 700,
+            "line_height": 120,
+            "pc_size": 48,
+            "mb_size": 28,
+            "width": 100,
+            "mb_width": 100,
+            "color": "#ffffff",
+            "bold_color": "#ffdb00",
+            "gradient_color": ""
+          }
+        },
+        "text_BWj7YB": {
+          "type": "text",
+          "settings": {
+            "padding": "20px 0px 40px 0px",
+            "mb_padding": "20px 0px 30px 0px",
+            "text": "<p>With a front hydraulic fork and rear nitrogen shock offering around 6inch of travel,</p><p>Villain <strong>soaks up bumps</strong>, <strong>softens landings</strong>, and <strong>keeps wheelies and long sessions feeling comfortable</strong>.</p>",
+            "alignment": "center",
+            "mb_alignment": "center",
+            "style": "normal",
+            "weight": 400,
+            "line_height": 120,
+            "pc_size": 18,
+            "mb_size": 14,
+            "width": 100,
+            "mb_width": 100,
+            "color": "#a9a9a9",
+            "bold_color": "#ffffff",
+            "gradient_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_GTPjFM",
+        "text_BWj7YB"
+      ],
+      "name": "MC Section Text",
+      "settings": {
+        "page_color": "#000000",
+        "page_bottom": 0,
+        "layout": "column",
+        "mb_layout": "column"
+      }
+    },
+    "mc_media_video_abxCeE": {
+      "type": "mc_media-video",
+      "blocks": {
+        "video_LWVknJ": {
+          "type": "video",
+          "settings": {
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "show_border_image": false,
+            "play_button_size": "small",
+            "pc_border_thickness": "27px 27px",
+            "mb_border_thickness": "12px 12px 12px 10px",
+            "video": "shopify://files/videos/Heybike Villain Full Suspension pc.mp4",
+            "video_url": "",
+            "video_width": 100,
+            "video_ratio": "",
+            "video_mobile": "shopify://files/videos/Heybike Villain Full Suspension app.mp4",
+            "video_url_mobile": "",
+            "mb_video_ratio": "1/1",
+            "show_button": false,
+            "product": "",
+            "show_button_buy": true,
+            "button_buy": "Buy Now",
+            "button_buy_bg_color": "#ffde00",
+            "button_buy_text_color": "#000000",
+            "show_button_cart": true,
+            "button_cart": "Add to Cart",
+            "button_cart_color": "#ffffff",
+            "show_icon": false,
+            "icon_hide_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "video_LWVknJ"
+      ],
+      "name": "MC Media Video",
+      "settings": {
+        "page_color": "",
+        "page_top": 20,
+        "page_bottom": 40,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30
+      }
+    },
+    "mc_multicolumn_card_V443TM": {
+      "type": "mc_multicolumn-card",
+      "blocks": {
+        "card1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/safety-card-image1.jpg",
+            "mb_image": "shopify://shop_images/Tilt_Protection_HP_app.png",
+            "title": "Magnetic Emergency Switch",
+            "text": "<p>The magnetic emergency switch kills the power the moment you fall or step away. You just go fearless.</p>"
+          }
+        },
+        "card2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/safety-card-image2.jpg",
+            "mb_image": "shopify://shop_images/safety-mb-card-image2.jpg",
+            "title": "Safety Start",
+            "text": "<p>If the throttle isn’t fully reset, the display will warn you and bike will lock out the power. No jump starts, no surprise launches.</p>"
+          }
+        },
+        "card3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/safety-card-image3.jpg",
+            "mb_image": "shopify://shop_images/safety-mb-card-image3.jpg",
+            "title": "Heavy-Duty Hydraulic Brakes",
+            "text": "<p>Heavy-Duty Hydraulic Brakes (190mm Large, 4mm Thick) = Big Stopping Power. Fast or rough, they stop you smooth and safe every time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card1",
+        "card2",
+        "card3"
+      ],
+      "name": "MC Multicolumn Card",
+      "settings": {
+        "page_color": "",
+        "desktop_backdrop_image": "shopify://shop_images/Heybike_Villain_Safety_Features_pc.jpg",
+        "mobile_backdrop_image": "shopify://shop_images/Heybike_Villain_Safety_Features_mb.jpg",
+        "page_top": 540,
+        "mb_page_top": 180,
+        "page_bottom": 40,
+        "show_title": true,
+        "title": "<p>FREE TO GO <strong>FEARLESS</strong></p>",
+        "title_style": "italic",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 22,
+        "title_color": "#ffffff",
+        "title_bold_color": "#fbe313",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#cdcdcd",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "card_content_alignment": "left",
+        "card_bg_color": "#121212",
+        "pc_card_title_size": 26,
+        "mb_card_title_size": 20,
+        "card_title_color": "#ffffff",
+        "pc_card_desc_size": 18,
+        "mb_card_desc_size": 14,
+        "card_desc_color": "#cdcdcd"
+      }
+    },
+    "mc_media_image_FAC3Qh": {
+      "type": "mc_media-image",
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "page_bottom": 40,
+        "show_title": true,
+        "title": "<p><em>DESIGNED FOR </em><em><strong>ALL SKILL LEVELS</strong></em></p>",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffdb00",
+        "title_gradient_color": "",
+        "show_description": true,
+        "description": "<p>Heybike Villain is built to feel natural from the very first ride — and stay exciting as skills grow.<br/>A low frame, stable tires, and FarDriver Smart Controller deliver predictable, confidence-inspiring control, making it easy to<br/>start and rewarding to master.<br/><br/>Designed to fit riders from<strong> 3.9 ft to 6.1 ft (120–185 cm)</strong>, Villain supports everything from learning<br/>the basics to dialing in clean wheelies.</p>",
+        "description_color": "#cdcdcd",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "pc_image": "shopify://shop_images/Heybike_Villain_Reviews_pc.jpg",
+        "mb_image": "shopify://shop_images/Heybike_Villain_Reviews_mb.jpg",
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": false,
+        "mb_image_ratio": "",
+        "mb_image_fill": false
+      }
+    },
+    "mc_media_image_gE3DdB": {
+      "type": "mc_media-image",
+      "name": "MC Media Image",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "page_bottom": 0,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_bold_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "pc_image": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_for_Teens_Make_Out_Your_Lane_Homepage_pc_bd95a1e8-2b65-435c-8b85-b4ef754ac4cf.png",
+        "mb_image": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_for_Teens_Make_Out_Your_Lane_Homepage_app_4fe9f482-d049-4fba-9c0e-b85a0bba8f89.png",
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "image_width": 100,
+        "image_ratio": "",
+        "image_fill": true,
+        "mb_image_ratio": "",
+        "mb_image_fill": true
+      }
+    },
+    "mc_media_slide": {
+      "type": "mc_media-slide",
+      "blocks": {
+        "slide1": {
+          "type": "slide",
+          "settings": {
+            "title": "Build Your Own Style",
+            "intro": "Quick-swap panels let your style evolve\n—so your bike never has just one look. \nMore kits available soon.",
+            "pc_image": "shopify://shop_images/Villain_Custom_Panel_HP_pc.png"
+          }
+        },
+        "slide2": {
+          "type": "slide",
+          "settings": {
+            "title": "Ride to Your Own Beat",
+            "intro": "Switch between motorcycle engine\nsounds or play your own music over\nBluetooth. Optional speaker add-on available for separate purchase soon.",
+            "pc_image": "shopify://shop_images/Villain_Custom_Music_pc.png"
+          }
+        },
+        "slide3": {
+          "type": "slide",
+          "settings": {
+            "title": "Adapt to Any Terrain",
+            "intro": "Designed for easy swaps—switch tire\nsizes or styles to suit any terrain. More\noptions will be available on the\nstore soon",
+            "pc_image": "shopify://shop_images/Villain_Custom_Tires_HP_pc.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide1",
+        "slide2",
+        "slide3"
+      ],
+      "name": "MC Media Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 0,
+        "page_bottom": 40,
+        "show_title": true,
+        "title": "<p><em><strong>GO BEYOND</strong></em><em> THE STANDARD</em></p>",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#fbe313",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "slide_card_bg_color": "#121212",
+        "slide_title_color": "#737070",
+        "slide_title_active_color": "#fbe313",
+        "slide_intro_color": "#cdcdcd",
+        "mb_slide_card_bg_color": "#121212",
+        "mb_slide_progress_color": "#fbe313",
+        "mb_slide_title_color": "#fbe313",
+        "mb_slide_intro_color": "#cdcdcd",
+        "mb_slide_default_color": "#4a4a4a",
+        "pc_card_title_size": 24,
+        "mb_card_title_size": 20,
+        "pc_card_desc_size": 16,
+        "mb_card_desc_size": 14,
+        "auto_slide": true,
+        "duration": 4
+      }
+    },
+    "mc_multicolumn_card_slide_EFD32": {
+      "type": "mc_multicolumn-card-slide",
+      "blocks": {
+        "card_JkdVbz": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Heybike_Villain_Riders_Height_Recommendation.jpg",
+            "mb_image": "shopify://shop_images/Heybike_Villain_Riders_Height_Recommendation.jpg",
+            "title": "Fits Riders of All Sizes",
+            "text": "<p>Heybike Villain features a taller 29.5\" seat height and a slim, ergonomic frame, designed to provide a natural, comfortable riding position for riders from 3.9ft to 6.1ft—no cramped posture, no size limits.</p>"
+          }
+        },
+        "card_CbxQdj": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Motor_Feature_Highlights.png",
+            "title": "4160W Mid-Drive Motor",
+            "text": "<p>With 190N·m of torque and a 52V peak output, Heybike Villain outclasses standard 2kW pit bikes, delivering explosive acceleration, sharper control, and a ride that feels alive—just like a high-end gas dirt bike.</p>"
+          }
+        },
+        "card_kK7qXg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Battery_Feature_Highlights.png",
+            "title": "52V 26Ah Large Battery",
+            "text": "<p>With a high-capacity 52V 26Ah battery and rapid 58.8V 5A charger, Heybike Villain powers longer rides (up to 50 miles) and charges faster than most dirt bikes, keeping you ahead on every trail.</p>"
+          }
+        },
+        "card2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Full_Suspension_Air_Shock_Absorber_Feature_Highlights.png",
+            "title": "Nitrogen Rear Air Shock",
+            "text": "<p>The rear air shock reduces high-frequency vibration, easing hand and body fatigue while keeping the ride smooth on gravel and uneven ground.</p>"
+          }
+        },
+        "card_hmNYAE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Far_Drive_Controller_Feature_Highlights.png",
+            "title": "FarDriver Smart Controller",
+            "text": "<p>FarDriver controller delivers high-current punch with full App tuning — adjust throttle response, power ramp, regen, and even set or limit top speed to match your riding style, from smooth control to hard launch.</p>"
+          }
+        },
+        "card_GUtxyx": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_R_Return_Feature_Highlights.png",
+            "title": "R-Turn Reverse Assist",
+            "text": "<p>Press the R and turn throttle to reverse. Effortless rollback, making tight turns and quick repositioning easy.</p>"
+          }
+        },
+        "card_qmFBkC": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Fat_Tire_Feature_Highlights.png",
+            "title": "Puncture-Resistant Fat Tires",
+            "text": "<p>Wide 14″ front and 12″ rear fat tires deliver extra grip and stability, helping you stay balanced during wheelies and confident on dirt, street, or rough ground</p>"
+          }
+        },
+        "card3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Hydraulic_Front_Suspension_Feature_Highlights.png",
+            "title": "Hydraulic Front Suspension",
+            "text": "<p>Designed to handle deep bumps and hard landings, long travel keeps the ride composed, stable, and refined at speed.</p>"
+          }
+        },
+        "card_Em9gqN": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Throttle_Feature_Highlights.png",
+            "title": "Regenerative Braking System(RBS)",
+            "text": "<p>Throttle off, energy back: Villain’s regenerative braking preserves power and control, so every ride stays sharp and responsive—even during tricks and landings.</p>"
+          }
+        },
+        "card4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_LED_Display_Feature_Highlights.png",
+            "title": "LED Display",
+            "text": "<p>A bright, high-contrast LED display keeps key ride data clear in any light.</p>"
+          }
+        },
+        "card5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Tilt_Protection_Feature_Highlights.png",
+            "title": "Magnetic Emergency Switch",
+            "text": "<p>A magnetic emergency switch kills the power the moment you fall or step away. Perfect for new riders, tight spots, and real-world sketchy moments.</p>"
+          }
+        },
+        "card_8CJBph": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Villain_Electric_Dirt_Bike_Hydraulic_Disc_Brakes_Feature_Highlights.png",
+            "title": "Heavy-Duty Hydraulic Brakes",
+            "text": "<p>4mm thick brake rotors deliver strong, consistent stopping power, giving you confident control on dirt, pavement, and fast downhill runs.</p>"
+          }
+        },
+        "card_jUG9Q6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Heybike_Villain_Front_Light.jpg",
+            "title": "Own The Night",
+            "text": "<p>A factory-equipped LED headlight keeps the ride going after sunset. Bright and wide for streets and side paths, it lets the crew roll together after dark with clear visibility and extra confidence — the same routes and the same chaos, just later in the day.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_JkdVbz",
+        "card_CbxQdj",
+        "card_kK7qXg",
+        "card2",
+        "card_hmNYAE",
+        "card_GUtxyx",
+        "card_qmFBkC",
+        "card3",
+        "card_Em9gqN",
+        "card4",
+        "card5",
+        "card_8CJBph",
+        "card_jUG9Q6"
+      ],
+      "name": "MC Multicolumn Card Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 40,
+        "show_title": true,
+        "title": "<p><em>FEATURE </em><em><strong>HIGHLIGHTS</strong></em></p>",
+        "title_style": "italic",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#fbe313",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "card_loop": false,
+        "card_cells": 4,
+        "card_cols": "4",
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "card_content_alignment": "left",
+        "card_bg_color": "#121212",
+        "pc_card_title_size": 30,
+        "mb_card_title_size": 20,
+        "card_title_color": "#ffffff",
+        "pc_card_desc_size": 18,
+        "mb_card_desc_size": 14,
+        "card_desc_color": "#cdcdcd"
+      }
+    },
+    "mc_param_text_slide": {
+      "type": "mc_param-text-slide",
+      "blocks": {
+        "slide4": {
+          "type": "slide",
+          "settings": {
+            "title": "Geometry",
+            "pc_image": "shopify://shop_images/Villain_Geometry_HP_pc.png",
+            "mb_image": "shopify://shop_images/Villain_Geometry_HP_mb.png",
+            "image_ratio": "5/3",
+            "param_text": "<ul><li><strong>Recommended Height:</strong> 3'9\"~6'1\"</li><li><strong>A: Handlebar Width</strong>27.6\"</li><li><strong>B: Bike Height</strong>37\"</li><li><strong>C: Min.Seat Height</strong>29.5\"</li><li><strong>D: Ground Clearance</strong>9.8\"</li><li><strong>E:Wheelbase</strong>42.5\"</li><li><strong>Max Climbing</strong>30 Degrees</li></ul>"
+          }
+        },
+        "slide1": {
+          "type": "slide",
+          "settings": {
+            "title": "Electronics",
+            "pc_image": "shopify://shop_images/Villain_Specs_HP_pc.png",
+            "mb_image": "shopify://shop_images/Villain_Specs_HP_mb.png",
+            "image_ratio": "5/3",
+            "param_text": "<ul><li><strong>Motor</strong>52V 4160W Mid Drive Motor</li><li><strong>Battery</strong>52V 26Ah Lithium Battery(1352Wh)</li><li><strong>Charger</strong>58.8V 5A Charger</li><li><strong>Charger Voltage</strong>100-220V, 50-60Hz</li><li><strong>Controller</strong>52V 80A Smart Controller</li><li><strong>Display</strong>LED Display</li><li><strong>Light</strong>Front White Headlight</li><li><strong>Bluetooth</strong>Bluetooth Speaker(Optional)</li></ul>"
+          }
+        },
+        "slide2": {
+          "type": "slide",
+          "settings": {
+            "title": "Mechanical system",
+            "pc_image": "shopify://shop_images/Villain_Specs_HP_pc.png",
+            "mb_image": "shopify://shop_images/Villain_Specs_HP_mb.png",
+            "image_ratio": "5/3",
+            "param_text": "<ul><li><strong>Frame</strong>Carbon Steel</li><li><strong>Tires</strong>F:14\"x2.5\" Tire; R:12\"x3.0\" Tire</li><li><strong>Front Suspension</strong>Hydraulic Suspension</li><li><strong>Rear Suspension</strong>Nitrogen Shock Absorber</li><li><strong>Front Shocks Diameter</strong>40 mm Diameter Front Fork, 150 mm Travel</li><li><strong>Brake</strong>Hydraulic Heavy Duty Brakes(4mm thick)</li><li><strong>Drivetrain/Ride Mode</strong>Chain Drive/Three-speed Zero Start</li><li><strong>Chain / Belt</strong>114 links (420 chain) Heavy Duty Chain</li></ul>"
+          }
+        },
+        "slide3": {
+          "type": "slide",
+          "settings": {
+            "title": "Performance",
+            "pc_image": "shopify://shop_images/Villain_Specs_HP_pc.png",
+            "mb_image": "shopify://shop_images/Villain_Specs_HP_mb.png",
+            "image_ratio": "5/3",
+            "param_text": "<ul><li><strong>Max Speed</strong>45MPH (72km/h)</li><li><strong>Max Torque</strong>190N·m</li><li><strong>Range</strong>Up to 50 Miles</li><li><strong>Charging Time</strong>0%-100% 4-6h</li><li><strong>Waterproof</strong>IPX6</li><li><strong>Max Climbing</strong>30 Degrees</li></ul>"
+          }
+        },
+        "slide5": {
+          "type": "slide",
+          "settings": {
+            "title": "What's In the Box",
+            "pc_image": "shopify://shop_images/Villain_Package_Box-pc.jpg",
+            "mb_image": "shopify://shop_images/Box-App.jpg",
+            "image_ratio": "2.2277",
+            "param_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide4",
+        "slide1",
+        "slide2",
+        "slide3",
+        "slide5"
+      ],
+      "name": "MC Param Text Slide",
+      "settings": {
+        "page_color": "",
+        "pc_image": "shopify://shop_images/sport-param-bg.jpg",
+        "mb_image": "shopify://shop_images/sport-mb-param-bg.jpg",
+        "page_top": 80,
+        "show_title": true,
+        "title": "<p>SPECS & PARAMETERS</p>",
+        "title_style": "italic",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "tab_color": "#ffffff",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#313131",
+        "tab_active_bg_color": "#f8e737",
+        "param_text_size": 18,
+        "mb_param_text_size": 10,
+        "card_bg_color": "#121212",
+        "param_text_color": "#ffffff",
+        "border_color": "#383838"
+      }
+    },
+    "mc_multicolumn_video_slide_LBizph": {
+      "type": "mc_multicolumn-video-slide",
+      "blocks": {
+        "card_3YUJAJ": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/Tilt_Protection_HP_app.png",
+            "muted": true,
+            "video_desktop": "shopify://files/videos/Heybike Villain Electric Dirt Bike Quick Look pc.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        },
+        "card_aHyyxN": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/villain-electrical-image_cf98a98f-0ddc-42a2-ac73-d54eb62826d2.jpg",
+            "muted": true,
+            "video_desktop": "shopify://files/videos/HEYBIKE Electric Dirt Bike Preheat Video 15s HD pc.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        },
+        "card_a6hC8B": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/villain-speed-image.jpg",
+            "muted": true,
+            "video_desktop": "shopify://files/videos/Heybike Black Friday Sale 2025-pc.mp4",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        },
+        "card_xQzLRe": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/villain-electrical-image_cf98a98f-0ddc-42a2-ac73-d54eb62826d2.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=aE6JMTf3sE4&t=78s",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        },
+        "card_xeeYrD": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/villain-electrical-image_cf98a98f-0ddc-42a2-ac73-d54eb62826d2.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=1BWf9zQho1g",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        },
+        "card_TrXaxY": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/villain-electrical-image_cf98a98f-0ddc-42a2-ac73-d54eb62826d2.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "Free Shipping",
+            "text": "<p>Key Performance Card One Chart Key Key\nPerformance Key Performance Card One Chart</p>",
+            "avatar": "shopify://shop_images/Heybike_Villain_Electric_Dirt_Bike_About_Us4.png",
+            "author": "Hector&Rex"
+          }
+        }
+      },
+      "block_order": [
+        "card_3YUJAJ",
+        "card_aHyyxN",
+        "card_a6hC8B",
+        "card_xQzLRe",
+        "card_xeeYrD",
+        "card_TrXaxY"
+      ],
+      "disabled": true,
+      "name": "MC Multicolumn Video Slide",
+      "settings": {
+        "page_color": "",
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "card_loop": false,
+        "card_cells": 1,
+        "video_ratio": "",
+        "mb_video_ratio": "",
+        "play_button_icon": "shopify://shop_images/video-play-button_f972b4dc-41a9-4f50-ada1-be8cc1889379.png",
+        "card_content_alignment": "left",
+        "card_bg_color": "#121212",
+        "pc_card_title_size": 30,
+        "mb_card_title_size": 15,
+        "card_title_color": "#ffffff",
+        "pc_card_desc_size": 18,
+        "mb_card_desc_size": 9,
+        "card_desc_color": "#ffffff",
+        "author_color": "#ffffff"
+      }
+    },
+    "faq_phimFf1": {
+      "type": "faq",
+      "blocks": {
+        "question_An4mW9": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>When will my order be processed/shipped?</strong>",
+            "text": "<p>Fast & Free C.A. Shipping. Electric dirt Bike orders ship from our local C.A. warehouse, typically within 2–3 business days.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_NagCNb": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "<strong>What's included in the gift box?</strong>",
+            "text": "<p>🎁 Heybike Villain Limited Gift Box Includes</p><ul><li>Villain Knit Hat</li><li>Villain Logo Magnets</li><li>Villain Keychain</li><li>Lightning Necklace</li><li>Transfer Stickers for 12 Patterns</li><li>Magnetic Phone Mount</li></ul>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_WcAwad": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where can I ride the Heybike Villain?</strong>",
+            "text": "<p>The Heybike Villain electric dirt bike is designed for off-road use only. Always check your local laws before riding, yield to pedestrians, and obey traffic regulations.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_9GUa37": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What rider height is suitable for the Heybike Villain electric dirt bike?</strong>",
+            "text": "<p>Heybike Villain fits riders from 3.9ft (120cm) to 6.1ft (185cm). Its taller seat height combined with a slim, proportioned design supports a comfortable riding position across a wide range of rider sizes, as confirmed by real rider feedback.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_zrQbpK": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How far can I go on a single charge?</strong>",
+            "text": "<p>The 52V/26Ah lithium battery provides up to 50 miles per charge, depending on load, terrain, speed, and temperature.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Bxjbnh": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How long does it take to fully charge the battery?</strong>",
+            "text": "<p>The Heybike Villain electric dirt bike fully charges in 4–6 hours with the 58.8 V 5 A charger, minimizing downtime between rides.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_WRJGwA": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does the bike support multiple speed or riding modes?</strong>",
+            "text": "<p>Yes. The Heybike Villain features three adjustable riding modes, allowing you to choose the ideal balance between speed and range:<br/><br/><strong>Mode 1:</strong> 20 mph (32 km/h)<br/><strong>Mode 2:</strong> 38 mph (61 km/h)<br/><strong>Mode 3:</strong> 45 mph (72 km/h)</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_KwnWAz": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How does R-Turn Reverse Assist improve control?</strong>",
+            "text": "<p>R-Turn Reverse Assist helps you move the bike backward with ease. Simply <strong>press the R button and gently turn the throttle</strong> to engage reverse, allowing the bike to roll back smoothly. This makes <strong>tight turns, quick repositioning, and maneuvering in confined spaces</strong> much easier—without having to push or lift the bike.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_pJiJUK": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is the battery removable?</strong>",
+            "text": "<p>Yes. The battery is removable, but you don’t need to take it out to charge. Simply plug the charger into the bike for easy on-bike charging. You can also remove the battery and charge it separately if preferred.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_An4mW9",
+        "question_NagCNb",
+        "question_WcAwad",
+        "question_9GUa37",
+        "question_zrQbpK",
+        "question_Bxjbnh",
+        "question_WRJGwA",
+        "question_KwnWAz",
+        "question_pJiJUK"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "section_id": "",
+        "style": "with-border",
+        "heading": "FAQs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "17693203978f9c68f0": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_kNhmaL": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_kNhmaL"
+      ],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "mc_page_color",
+    "main-product",
+    "mc_section_text_hypP4F",
+    "mc_multicolumn_video_slide_dc634x",
+    "mc_section_text_GMKTmh",
+    "mc_media_video",
+    "mc_media_image_ixbUFA",
+    "mc_media_image_N7QKxx",
+    "mc_media_image_xcMj7B",
+    "mc_image_fill_slide_hY9cfB",
+    "mc_media_image_Lc33DG",
+    "mc_section_text_Fen38U",
+    "mc_media_video_abxCeE",
+    "mc_multicolumn_card_V443TM",
+    "mc_media_image_FAC3Qh",
+    "mc_media_image_gE3DdB",
+    "mc_media_slide",
+    "mc_multicolumn_card_slide_EFD32",
+    "mc_param_text_slide",
+    "mc_multicolumn_video_slide_LBizph",
+    "faq_phimFf1",
+    "17693203978f9c68f0"
+  ]
+}
