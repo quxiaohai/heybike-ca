@@ -1619,6 +1619,9 @@ class DetailsDropdown extends HTMLDetailsElement {
     }
 
     onSummaryClicked(event) {
+        if (event.target.classes('a')) {
+            return false;
+        }
         event.preventDefault(), this.open = !this.open
     }
 
