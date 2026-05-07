@@ -49,6 +49,14 @@ class HeybikeCommon {
         this.width.value = this.screenWidth;
     }
 
+    catch(fn, arg) {
+        try {
+            fn && fn(arg)
+        } catch (e) {
+            console.error('listener => ', e);
+        }
+    }
+
     on(event, fn, node) {
         node = this._getCurrentNode(event, node);
         if (!this._events.has(event)) {
@@ -63,16 +71,13 @@ class HeybikeCommon {
         }
 
         info.fns.push(fn);
-
         if (info.fns.length === 1) {
             if (event === "resize") {
                 if (node === window) {
                     info.listener = ev => {
                         this.debounce(() => {
                             this._winSize();
-                            info.fns.forEach(fn => {
-                                fn && fn(ev);
-                            });
+                            info.fns.forEach(fn => this.catch(fn, ev));
                         }, 100, info.key);
                     }
                     node.addEventListener("resize", info.listener);
@@ -98,20 +103,16 @@ class HeybikeCommon {
                     const isDoc = info.node === document;
                     const left = isDoc ? (window.scrollX || document.documentElement.scrollLeft) : info.node.scrollLeft;
                     const top = isDoc ? (window.scrollY || document.documentElement.scrollTop) : info.node.scrollTop;
-                    info.fns.forEach(fn => {
-                        fn && fn({
-                            left,
-                            top,
-                            event
-                        });
-                    });
+                    info.fns.forEach(fn => this.catch(fn, {
+                        left,
+                        top,
+                        event
+                    }));
                 }
                 node.addEventListener("scroll", info.listener);
             } else {
                 info.listener = ev => {
-                    info.fns.forEach(fn => {
-                        fn && fn(ev);
-                    });
+                    info.fns.forEach(fn => this.catch(fn, ev));
                 }
                 switch (event) {
                     case "resize:mobile":
@@ -128,7 +129,7 @@ class HeybikeCommon {
         }
 
         if ((this._domLoaded && event === "DOMContentLoaded") || (this._loaded && event === "load")) {
-            fn && fn();
+            this.catch(fn);
         }
     }
 
@@ -316,12 +317,10 @@ class HeybikeCommon {
     }
 
     debounce(fn, wait, key = '_timer') {
-        const off = () => clearTimeout(this._events.get(key));
-        off();
+        clearTimeout(this._events.get(key));
         this._events.set(key, setTimeout(() => {
             fn && fn();
         }, wait || 100));
-        return off;
     }
 
     load({type, index = 0, el}, fn) {
@@ -434,21 +433,24 @@ class HeybikeCommon {
             nodeList = nodeList || nl;
             const key = typeof group === 'string' ? group : 'group';
             const name = group ? elem.dataset[key] : null;
-            const elems = name ? nodeList[type]?.filter(n => n.dataset[key] === name) : nodeList[type];
-            const panels = name ? nodeList[panel]?.filter(n => n.dataset[key] === name) : nodeList[panel];
+            const es = [].concat(nodeList[type] || []);
+            const ps = [].concat(nodeList[panel] || []);
+            const elems = name ? es.filter(n => n.dataset[key] === name) : es;
+            const panels = name ? ps.filter(n => n.dataset[key] === name) : ps;
             const index = parseInt(elem.dataset.index || elems?.findIndex(e => e === elem), 10);
-            if (elems?.[index]?.classList.contains(selector)) {
+            if (elems[index]?.classList.contains(selector)) {
+                cb && cb({elem, nodeList, index, self: true});
                 return false;
             }
 
-            elems?.forEach((tab, i) => {
+            elems.forEach((tab, i) => {
                 const isActive = i === index;
                 tab.classList.toggle(selector, isActive);
-                panels?.[i]?.classList.toggle(selector, isActive);
+                panels[i]?.classList.toggle(selector, isActive);
             });
 
             device && scrollTo(elem);
-            cb && cb({elem, nodeList, index});
+            cb && cb({elem, nodeList, index, self: false});
         }, !nl);
     }
 
