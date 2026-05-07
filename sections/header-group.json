@@ -16,9 +16,10 @@
       "blocks": {
         "announcement_FX9gUF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "⚡<strong>Weekend Flash Sale: Mars 3.0 Extra C$100 off at checkout. Shop now>></strong>",
+            "text": "⚡<strong>Weekend Flash Sale: X series Extra C$100 off at checkout. Shop now>></strong>",
             "link": "shopify://products/mars-3-0",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -173,7 +174,7 @@
             "promo_image_1": "shopify://shop_images/Anniversary_Sale_banner.jpg",
             "promo_image_ratio_1": "square",
             "promo_heading_1": "Up to $1000 Off!",
-            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Spring Sale!",
+            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Anniversary Sale!",
             "promo_overlay_content_1": true,
             "promo_link_1": "shopify://collections/electric-bikes",
             "promo_tag_1": "Sale",
@@ -228,7 +229,7 @@
             "promo_image_1": "shopify://shop_images/Anniversary_Sale_banner.jpg",
             "promo_image_ratio_1": "adapt",
             "promo_heading_1": "Up to $1000 OFF",
-            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Spring Sale!",
+            "promo_subtext_1": "Lock In the Record-Low eBike Prices this Anniversary Sale!",
             "promo_overlay_content_1": true,
             "promo_link_1": "shopify://collections/electric-bikes",
             "promo_tag_1": "Sale",

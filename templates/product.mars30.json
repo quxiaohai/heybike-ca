@@ -27,7 +27,7 @@
         "text_RHmxfj": {
           "type": "text",
           "settings": {
-            "text": "Upgraded 20\" x 4\" fat tire ebike with folding design",
+            "text": "The Ultimate Powerful Folding Fat-tire Ebike",
             "text_size": "text-base",
             "disable_top_spacing": true
           }
@@ -65,12 +65,6 @@
             "version_compare_title": "",
             "version_type": "drawer",
             "version": ""
-          }
-        },
-        "profy_banner_countdown_timer_app_block_T4zqCF": {
-          "type": "shopify://apps/profy-banner-timer/blocks/app_block/243a639f-ca73-4afe-b6aa-3a23277fb424",
-          "settings": {
-            "banner_id": "892e478c-4fe8-11ef-b337-2ae23544d6fe"
           }
         },
         "gsc_countdown_timer_countdown_yXj64c": {
@@ -190,7 +184,6 @@
         "price_jg6hbG",
         "countdown_Yb9jEM",
         "variant_picker_XmTAmi",
-        "profy_banner_countdown_timer_app_block_T4zqCF",
         "gsc_countdown_timer_countdown_yXj64c",
         "bundle_collapse_tHHytT",
         "buy_buttons",
