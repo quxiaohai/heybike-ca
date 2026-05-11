@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_FX9gUF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "⚡<strong>Weekend Flash Sale: X series and Venus Extra C$100 off at checkout. Shop now>></strong>",
