@@ -219,6 +219,7 @@
         },
         "image_jQgFqY": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lQDPJwxYV4RTy13NBRTNDwCwNByprJ6dtn8JlFC-jxaDAA_3840_1300.jpg",
             "image_height": "650px",
