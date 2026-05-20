@@ -88,15 +88,15 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/US___PC_3.jpg",
+            "image": "shopify://shop_images/banner_ab062e64-362b-47fe-aaec-9c74ebdf6165.jpg",
             "image_height": "650px",
             "content_width": "small",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
+            "content_position": "md:items-start md:justify-center",
+            "text_alignment": "center",
             "image_mobile": "shopify://shop_images/US___mob_2.jpg",
             "image_height_mobile": "auto",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
+            "content_position_mobile": "items-start justify-center",
+            "text_alignment_mobile": "center",
             "color_text": "#ffffff",
             "color_highlight": "#e0a580",
             "gradient_highlight": "",
@@ -105,7 +105,7 @@
             "color_button_gradient": "",
             "block_color_overlay": "#171717",
             "overlay_opacity": 70,
-            "subheading": "Sign up for early access to our sale & e-bike giveaway!",
+            "subheading": "",
             "subheading_size": "subtitle-md",
             "secondary_color": true,
             "heading": "Sign up for early access to our sale & e-bike giveaway!",
@@ -131,6 +131,7 @@
         },
         "image_aEmQFn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/US___PC_3_9b8a82bf-06b9-48cb-be54-e50dc3a5a96b.jpg",
             "image_height": "700px",
@@ -175,6 +176,7 @@
         },
         "image_pCkcAc": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "750px",
@@ -219,6 +221,7 @@
         },
         "image_jQgFqY": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lQDPJwxYV4RTy13NBRTNDwCwNByprJ6dtn8JlFC-jxaDAA_3840_1300.jpg",
             "image_height": "650px",
@@ -263,6 +266,7 @@
         },
         "image_3W4dbw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3840X1300.jpg",
             "image_height": "650px",
