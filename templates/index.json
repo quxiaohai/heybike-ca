@@ -133,7 +133,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/banner_ab062e64-362b-47fe-aaec-9c74ebdf6165.jpg",
-            "image_height": "550px",
+            "image_height": "600px",
             "content_width": "small",
             "content_position": "md:items-start md:justify-center",
             "text_alignment": "center",
