@@ -175,6 +175,7 @@
         },
         "image_pCkcAc": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "750px",
@@ -264,6 +265,7 @@
         },
         "image_3W4dbw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3840X1300.jpg",
             "image_height": "650px",
