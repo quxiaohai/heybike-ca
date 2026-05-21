@@ -363,7 +363,7 @@
       "settings": {
         "transparent_header": true,
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "padding_top": 0,
         "padding_bottom": 0,
