@@ -175,7 +175,6 @@
         },
         "image_pCkcAc": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "750px",
@@ -220,7 +219,6 @@
         },
         "image_jQgFqY": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lQDPJwxYV4RTy13NBRTNDwCwNByprJ6dtn8JlFC-jxaDAA_3840_1300.jpg",
             "image_height": "650px",
@@ -265,7 +263,6 @@
         },
         "image_3W4dbw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3840X1300.jpg",
             "image_height": "650px",
@@ -365,7 +362,7 @@
       "settings": {
         "transparent_header": true,
         "autoplay": true,
-        "autoplay_speed": 6,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "padding_top": 0,
         "padding_bottom": 0,
