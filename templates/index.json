@@ -131,6 +131,7 @@
         },
         "image_aEmQFn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner_ab062e64-362b-47fe-aaec-9c74ebdf6165.jpg",
             "image_height": "100vh",
@@ -179,8 +180,8 @@
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "750px",
             "content_width": "small",
-            "content_position": "md:items-center md:justify-start",
-            "text_alignment": "left",
+            "content_position": "md:items-start md:justify-center",
+            "text_alignment": "center",
             "image_mobile": "shopify://shop_images/banner-app_d3c90b94-0638-441e-b305-6e23906f4fee.png",
             "image_height_mobile": "500px",
             "content_position_mobile": "items-start justify-center",
@@ -196,19 +197,19 @@
             "subheading": "",
             "subheading_size": "subtitle-md",
             "secondary_color": true,
-            "heading": "<em><strong>Unleash the Ride. Meet Villain.</strong></em>",
+            "heading": "<em><strong>Limited-time Villain offer — get an extra $100 off at checkout.</strong></em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "text",
             "highlighted_scribble": "basic-underline",
-            "text": "<p><em><strong>All-New Villain</strong></em></p>",
+            "text": "<p><strong>Anniversary Best Deals</strong></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color_text": false,
             "highlighted_text_text": "scribble",
             "highlighted_scribble_text": "circle",
-            "button_label": "Start Ride",
+            "button_label": "Shop Villain",
             "button_link": "shopify://products/villain",
             "button_size": "md",
             "button_secondary_style": false,
@@ -219,6 +220,7 @@
         },
         "image_jQgFqY": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lQDPJwxYV4RTy13NBRTNDwCwNByprJ6dtn8JlFC-jxaDAA_3840_1300.jpg",
             "image_height": "650px",
@@ -263,6 +265,7 @@
         },
         "image_3W4dbw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3840X1300.jpg",
             "image_height": "650px",
@@ -362,7 +365,7 @@
       "settings": {
         "transparent_header": true,
         "autoplay": true,
-        "autoplay_speed": 3,
+        "autoplay_speed": 4,
         "show_navigation": true,
         "padding_top": 0,
         "padding_bottom": 0,
