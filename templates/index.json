@@ -802,87 +802,60 @@
     "testimonials_mUYTyV": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_wMckqe": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Heybike Ranger S is a killer city cruiser with one unfortunate quirk. Heybike continues to produce quality e-bikes, and this one really packs a punch.</p>",
-            "author": "CNET",
-            "image": "shopify://shop_images/CNET.png",
-            "image_ratio": "rounded",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "testimonial_mJQm9n": {
+        "testimonial_YFmRqt": {
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Mars 2.0: Solidly built and fun to ride. It’s indeed a capable commuter for city dwellers and van lifers.</p>",
-            "author": "Tom's Guide",
-            "image": "shopify://shop_images/Tom_s_Guide.png",
-            "image_ratio": "rounded",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "testimonial_CUtjf9": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Mars 2.0 is an affordable multi-purpose folding bike with a smooth ride and fast speed!  </p>",
-            "author": "Electricbike Report",
-            "image": "shopify://shop_images/Electricbike_report.png",
-            "image_ratio": "rounded",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "testimonial_h3VVAf": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Horizon is more than just a pretty paint job. It is a versatile ebike with beautiful red, orange, and yellow colors. It stands out among all the ebikes on the market.</p>",
-            "author": "Eletreck",
-            "image": "shopify://shop_images/Eletreck.png",
-            "image_ratio": "rounded",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "squiggle-underline"
-          }
-        },
-        "testimonial_NkxBAM": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Heybike Horizon comes fully loaded with front and rear suspension, wide 4.0” tires, and the ability to collapse down during storage or transport.</p>",
-            "author": "Mounatin Weekly News",
-            "image": "shopify://shop_images/Mounatin_Weekly_News.png",
-            "image_ratio": "rounded",
+            "text": "<p>The new Mars 3.0 features a fully reworked frame with an internally housed battery and a Horst-link suspension system—something you almost never see on a folding e-bike.</p>",
+            "author": "",
+            "image": "shopify://shop_images/Electric.jpg",
+            "image_ratio": "adapt",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "testimonial_ArgjGU": {
+        "testimonial_aenwVm": {
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Heybike Tyson Review: This comfortable fat-tire ebike is an affordable way to dip your toes into the electric bike lifestyle, without breaking the bank.</p>",
-            "author": "WIRED",
-            "image": "shopify://shop_images/WIRED.png",
-            "image_ratio": "rounded",
+            "text": "<p>With real power, actual suspension, and smart features that make it more refined and useful, this is a folding e-bike that doesn’t ride like a compromise.</p>",
+            "author": "",
+            "image": "shopify://shop_images/electrek_1.jpg",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_kxb6Lh": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>So while you can go mountain biking with the Hero, you’ll be best served keeping the pace reasonable.</p>",
+            "author": "",
+            "image": "shopify://shop_images/Forbes.jpg",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_AnUCGK": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Even at the fifth and highest level of pedal assist, the Alpha is smooth and easy to control, making you feel like you’re pedaling a traditional push bike. There’s nothing jerky about the acceleration.</p>",
+            "author": "",
+            "image": "shopify://shop_images/tech.jpg",
+            "image_ratio": "adapt",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "testimonial_wMckqe",
-        "testimonial_mJQm9n",
-        "testimonial_CUtjf9",
-        "testimonial_h3VVAf",
-        "testimonial_NkxBAM",
-        "testimonial_ArgjGU"
+        "testimonial_YFmRqt",
+        "testimonial_aenwVm",
+        "testimonial_kxb6Lh",
+        "testimonial_AnUCGK"
       ],
       "settings": {
         "heading": "",
