@@ -26,7 +26,6 @@
         },
         "column_wc3PL7": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "icon": "shield",
             "column_heading": "<p>TUV Certified</p>",
