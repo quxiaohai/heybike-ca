@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_FX9gUF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "⚡<strong>Anniversary Flash Sale: X series and Venus Extra C$100 off at checkout. Shop now>></strong>",
@@ -43,8 +42,8 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>Heybike 5th Anniversary Sale Is Live >></strong>",
-            "link": "shopify://collections/electric-bikes",
+            "text": "Limited-Time Offer: Extra $100 Off Villain<strong>>></strong>",
+            "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
