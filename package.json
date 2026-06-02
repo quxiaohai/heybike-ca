@@ -7,8 +7,8 @@
     "dev": "shopify theme dev --store iheybikeca",
     "pull": "shopify theme pull --store iheybikeca",
     "prod:push": "shopify theme push --store iheybikeca",
-    "ug:theme": "uglifyjs assets/theme.js -o assets/theme.min.js -c -m",
-    "ug:comm": "uglifyjs assets/heybike-common.js -o snippets/heybike-common.liquid -c -m"
+    "ug:theme": "terser assets/theme.js -o assets/theme.min.js -c -m",
+    "ug:comm": "terser assets/heybike-common.js -o snippets/heybike-common.liquid -c -m"
   },
   "repository": {
     "type": "git",

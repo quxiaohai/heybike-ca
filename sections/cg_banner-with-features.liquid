@@ -1,0 +1,348 @@
+{% comment %}
+  Adjusted by CLEARgo
+{% endcomment %}
+{%- assign ss = section.settings -%}
+{% style %}
+  #shopify-section-{{ section.id }} {
+    background-color: #FFFFFF; 
+  }
+  
+  .section-{{ section.id }} { 
+    
+  }
+
+  .section-{{ section.id }} .section-wrapper { 
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 100px 20px; 
+  }
+
+  .section-{{ section.id }} .section-heading, 
+  .section-{{ section.id }} .banner { 
+    margin-bottom: calc(56vw / 19.2); 
+  }
+
+  .section-{{ section.id }} .banner {
+    border-radius: 18px; 
+  }
+
+  .section-{{ section.id }} .banner.mobile { 
+    display: none; 
+  }
+  
+  .section-{{ section.id }} .feature-list { 
+    display: flex; 
+    gap: calc(200vw / 19.2); 
+  }
+
+  .section-{{ section.id }} .feature { 
+    flex: 1; 
+  }
+
+  .section-{{ section.id }} .feature-heading { 
+    margin-bottom: 30px; 
+    font-size: {{ ss.pc_heading_size }}px;
+    font-weight: {{ ss.heading_weight }};
+  }
+
+  .section-{{ section.id }} .feature p { 
+    font-size: {{ ss.pc_description_size }}px;
+    font-weight: {{ ss.description_weight }};
+  }
+
+  /* Responsive */
+  /* Mobile */
+  @media (max-width: 767px) { 
+    .section-{{ section.id }} .section-wrapper { 
+      padding: 50px 0; 
+    }
+
+    .section-{{ section.id }} .section-header { 
+      /* padding: 0 20px; */
+      padding: 0 12.5px; 
+    }
+
+    .section-{{ section.id }} .section-heading { 
+      margin-bottom: 32px; 
+    }
+
+    .section-{{ section.id }} .feature-list-wrapper { 
+      max-width: 100%; 
+      overflow-x: auto; 
+    }
+
+    .section-{{ section.id }} .feature-list { 
+      width: fit-content; 
+      gap: 60px; 
+    }
+
+    .section-{{ section.id }} .feature-list::-webkit-scrollbar-track { 
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+
+    .section-{{ section.id }} .feature:first-child {
+      /* padding-left: 20px; */
+      padding-left: 12.5px; 
+    }
+
+    .section-{{ section.id }} .feature:last-child {
+      /* padding-right: 20px; */
+      padding-right: 12.5px; 
+    }
+
+    .section-{{ section.id }} .feature { 
+      width: 50vw; 
+      flex: unset; 
+    }
+
+    .section-{{ section.id }} .feature-heading { 
+      font-size: {{ ss.mb_heading_size }}px;
+    }
+
+    .section-{{ section.id }} .feature p { 
+      font-size: {{ ss.mb_description_size }}px;
+    }
+
+    .section-{{ section.id }} .banner.desktop { 
+      display: none; 
+    }
+
+    .section-{{ section.id }} .banner.mobile { 
+      display: block; 
+    }
+
+  .section-{{ section.id }} .control-box {
+    padding-top: 0.625rem;
+    }
+
+  .section-{{ section.id }} .progress {
+    height: 2px;
+    background: #D9D9D9;
+    }
+
+  .section-{{ section.id }} .progress .bar {
+    transform: translateX(-100%);
+    border-radius: 4px;
+    background: #FFDB00;
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1366px) { 
+    .section-{{ section.id }} .section-wrapper {
+      padding: 50px 20px; 
+    }
+    .section-{{ section.id }} .section-heading { 
+      margin-bottom: calc(56vw / 13.66); 
+    }
+
+    .section-{{ section.id }} .feature-list { 
+      gap: 20px; 
+    }
+
+    .section-{{ section.id }} .feature-heading { 
+      margin-bottom: 20px; 
+      font-size: calc({{ ss.pc_heading_size }}vw / 13.66);
+    }
+
+    .section-{{ section.id }} .feature p { 
+      font-size: calc({{ ss.pc_description_size }}vw / 13.66);
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1920px) { 
+    .section-{{ section.id }} .section-heading { 
+      margin-bottom: 56px; 
+    }
+
+    .section-{{ section.id }} .feature-list { 
+      gap: 200px; 
+    }
+  }
+{% endstyle %}
+
+<!-- View -->
+<div class="section-{{ section.id }} mc--main banner-with-features-container" id="{{ section.id }}-features">
+  <div class="section-wrapper">
+    <div class="section-header">
+      {% if section.settings.section_heading != blank %}
+        <h2 class="section-heading">{{ section.settings.section_heading }}</h2>
+      {% endif %}
+      {% if section.settings.banner_img != blank %}
+        <img width="1600" height="auto" class="banner desktop" alt="{{ section.settings.banner_img.alt | default: 'banner image' }}" src="{{ section.settings.banner_img | image_url: width: 1600 }}" />
+      {% endif %}
+      {% if section.settings.banner_img_mobile != blank %}
+        <img width="768" height="auto" class="banner mobile" alt="{{ section.settings.banner_img_mobile.alt | default: 'banner image' }}" src="{{ section.settings.banner_img_mobile | image_url: width: 768 }}" />
+      {% elsif section.settings.banner_img != blank %}
+        <img width="768" height="auto" class="banner mobile" alt="{{ section.settings.banner_img.alt | default: 'banner image' }}" src="{{ section.settings.banner_img | image_url: width: 768 }}" />
+      {% endif %}
+    </div>
+    <div class="feature-list-wrapper hide-scroll-bar" node-name="scroll">
+      <ul class="feature-list">
+        {% for block in section.blocks %}
+          <li class="feature feature-{{ forloop.index }}">
+            {% if block.settings.heading != blank %}
+              <h3 class="feature-heading">{{ block.settings.heading }}</h3>
+            {% endif %}
+            {% if block.settings.description != blank %}
+              {{ block.settings.description }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="page-width w-full control-box mobile-done">
+      <div class="progress overflow-hidden w-full" node-name="progress">
+        <div node-name="bar" class="bar w-full h-full">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $heybike.on('DOMContentLoaded', () => {
+    const node = document.getElementById('{{ section.id }}-features');
+    const nodeList = $heybike.getNodeList(node);
+    const initBoxScroll = (mobile) => {
+      if (!mobile) return false;
+      const elem = nodeList.scroll;
+      const sw = elem.scrollWidth;
+      const ew = elem.offsetWidth;
+      if (!elem.hasAttribute('scroll')) {
+        nodeList.bar.style.transform = `translateX(${ew * 100 / sw - 100}%)`;
+        elem.addEventListener('scroll', function (ev) {
+          if ($heybike.isMobile) {
+            nodeList.bar.style.transform = `translateX(${(ev.target.scrollLeft + ew) * 100 / sw - 100}%)`;
+          }
+        });
+      }
+
+      elem.setAttribute('scroll', 'true');
+    };
+    $heybike.on('resize:mobile', initBoxScroll);
+  });
+</script>
+{% schema %}
+{
+  "name": "CG Banner with Features",
+  "class": "cg-banner-with-features",
+  "settings": [
+    { 
+      "type": "text", 
+      "id": "section_heading", 
+      "label": "Heading", 
+      "default": "Discover ALPHA"
+    }, 
+    { 
+      "type": "image_picker", 
+      "id": "banner_img", 
+      "label": "Banner image (desktop)"
+    }, 
+    { 
+      "type": "image_picker", 
+      "id": "banner_img_mobile", 
+      "label": "Banner image (mobile)"
+    },
+    {
+      "type": "header",
+      "content": "Feature"
+    },
+    {
+      "type": "range",
+      "id": "pc_heading_size",
+      "label": "Desktop feature heading size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mb_heading_size",
+      "label": "Mobile feature heading size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "heading_weight",
+      "label": "Feature heading weight",
+      "min": 200,
+      "max": 900,
+      "step": 100,
+      "unit": "w",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "pc_description_size",
+      "label": "Desktop feature description size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mb_description_size",
+      "label": "Mobile feature description size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "description_weight",
+      "label": "Feature description weight",
+      "min": 200,
+      "max": 900,
+      "step": 100,
+      "unit": "w",
+      "default": 400
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [ 
+        { 
+          "type": "text", 
+          "id": "heading", 
+          "label": "Heading", 
+          "default": "Mid-Drive Motor"
+        }, 
+        { 
+          "type": "richtext", 
+          "id": "description", 
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "CG Banner with Features", 
+      "blocks": [
+        { 
+          "type": "feature"
+        }, 
+        { 
+          "type": "feature"
+        }, 
+        { 
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

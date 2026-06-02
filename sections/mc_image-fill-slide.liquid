@@ -5,7 +5,7 @@
 <style>
     .{{ cid }} {
         padding: 80px 0;
-        background: #000000;
+        background: #FFFFFF;
     }
 
     .{{ cid }} .slide-tabs {
@@ -13,16 +13,20 @@
     }
 
     .{{ cid }} .slide-tabs .button-incline {
-        min-width: 330px;
         --button-height: 53px;
-        --button-size: 16px;
-        margin: 0;
+        --button-size: {{ ss.pc_tab_size }}px;
         --button-color: {{ ss.tab_color }};
+        --button-weight: {{ ss.tab_weight }};
+        --button-background-color: {{ ss.tab_bg_color }};
         transition: color 0.3s;
     }
-
+    .{{ cid }} .slide-tabs .incline-text {
+        min-width: 280px;
+    }
     .{{ cid }} .slide-tabs .button-incline.active {
         --button-color: {{ ss.tab_active_color }};
+        --button-weight: {{ ss.tab_active_weight }};
+        --button-background-color: {{ ss.tab_active_bg_color }};
     }
 
     .{{ cid }} .slide-tabs .button-incline:not(.active):hover {
@@ -53,7 +57,7 @@
 
     .{{ cid }} .image {
         width: 100%;
-        aspect-ratio: {% if ss.image_ratio != blank %}{{ ss.image_ratio }}{% else %}var(--aspect-ratio, 2.4){% endif %};
+        aspect-ratio: {% if ss.image_ratio != blank %}{{ ss.image_ratio }}{% else %}var(--desktop-aspect-ratio, 2.4){% endif %};
     }
 
     @media screen and (max-width: 1023px) {
@@ -63,12 +67,18 @@
 
         .{{ cid }} .slide-tabs {
             padding-bottom: 1rem;
+            justify-content: flex-start !important;
+            overflow-x: auto;
+            white-space: nowrap;
         }
 
         .{{ cid }} .slide-tabs .button-incline {
-            min-width: 8.5rem;
             --button-height: 36px;
-            --button-size: 10px;
+            --button-size: {{ ss.mb_tab_size }}px;
+        }
+
+        .{{ cid }} .slide-tabs .incline-text {
+            min-width: 8.5rem;
         }
 
         .{{ cid }} .intro {
@@ -79,7 +89,7 @@
         }
 
         .{{ cid }} .image {
-            aspect-ratio: {% if ss.mb_image_ratio != blank %}{{ ss.mb_image_ratio }}{% else %}var(--mb-aspect-ratio, 0.8){% endif %};
+            aspect-ratio: {% if ss.mb_image_ratio != blank %}{{ ss.mb_image_ratio }}{% else %}var(--mobile-aspect-ratio, 0.8){% endif %};
         }
     }
 
@@ -97,11 +107,13 @@
                         node-name="tab"
                         data-index="{{ forloop.index0 }}"
                         class="button-incline flex-center relative {% if forloop.first %}active{% endif %}">
-                        <span class="btn-text">{{ bs.title }}</span>
+                            <span class="incline-text">{{ bs.title }}</span>
                     </button>
                 {%- endfor -%}
             </div>
         {%- endif -%}
+    </div>
+    <div class="w-full{% unless ss.image_fill %} page-width{% endunless %}">
         {%- for block in section.blocks -%}
             {%- assign bs = block.settings -%}
             <animate-element
@@ -115,9 +127,7 @@
                 {%- endif -%}
                 {%- render 'global-image',
                     desktop_img: bs.pc_image,
-                    desktop_size: 1440,
                     mobile_img: bs.mb_image,
-                    mobile_size: 750,
                     show_size: true
                 -%}
             </animate-element>
@@ -212,13 +222,13 @@
       "type": "color",
       "id": "title_color",
       "label": "Title color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "color",
       "id": "title_bold_color",
       "label": "Title Bold color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "color_background",
@@ -240,7 +250,7 @@
       "type": "color",
       "id": "description_color",
       "label": "Description color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "range",
@@ -285,6 +295,46 @@
       "default": "left"
     },
     {
+      "type": "range",
+      "id": "pc_tab_size",
+      "label": "Desktop tab text size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mb_tab_size",
+      "label": "Mobile tab text size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "tab_weight",
+      "label": "Tab text weight",
+      "min": 200,
+      "max": 900,
+      "step": 100,
+      "unit": "w",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "tab_active_weight",
+      "label": "Tab active text weight",
+      "min": 200,
+      "max": 900,
+      "step": 100,
+      "unit": "w",
+      "default": 500
+    },
+    {
       "type": "color",
       "id": "tab_color",
       "label": "Tab text color",
@@ -317,6 +367,12 @@
     {
       "type": "header",
       "content": "Slide box"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_fill",
+      "label": "Image fill",
+      "default": false
     },
     {
       "type": "text",

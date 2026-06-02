@@ -1,0 +1,548 @@
+{% comment %}
+  Created by CLEARgo
+{% endcomment %}
+{%- liquid
+    assign ss = section.settings
+    assign cid = section.id | split: '__' | last
+-%}
+<style>
+    .mc_media-grids-text {
+        background-color: #ffffff;
+        padding: 80px 0;
+    }
+    .mc_media-grids-text .media-grids-wrapper {
+        max-width: 1648px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    .mc_media-grids-text .section-heading {
+        font-size: 46px;
+        color: {{ ss.footer_heading_color }};
+        flex: 1;
+        font-weight: 700;
+    }
+    .mc_media-grids-text .section-footer {
+        padding: 50px 60px;
+        gap: 20px;
+        background-color: {{ ss.footer_bg_color }};
+        border-radius: 12px;
+    }
+    .mc_media-grids-text .section-footer-column {
+        font-size: 18px;
+        color: {{ ss.footer_text_color }};
+        width: 60%;
+    }
+    .mc_media-grids-text .media-grids {
+        display: grid;
+        grid-template-columns: 33% auto auto auto 18% auto;
+        grid-template-rows: 1fr 1fr;
+        aspect-ratio: 1600/500;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    .mc_media-grids-text .media-grid {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .mc_media-grids-text .info {
+        left: 0;
+        text-align: var(--align);
+        padding: var(--padding);
+    }
+    .mc_media-grids-text .info.top {
+        top: 0;
+    }
+    .mc_media-grids-text .info.center {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .mc_media-grids-text .info.bottom {
+        bottom: 0;
+    }
+    .mc_media-grids-text .info .name {
+        font-size: var(--max-font);
+        color: #000000;
+    }
+    .mc_media-grids-text .info .desc {
+        font-size: var(--max-font);
+        color: #000000;
+    }
+    .mc_media-grids-text .grid1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .mc_media-grids-text .grid2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .mc_media-grids-text .grid3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .mc_media-grids-text .grid4 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .mc_media-grids-text .grid5 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .mc_media-grids-text .grid6 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .mc_media-grids-text .grid7 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .mc_media-grids-text .grid8 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    @media screen and (max-width: 1920px) {
+        .mc_media-grids-text {
+            padding: 4.1666666667vw 0;
+        }
+        .mc_media-grids-text .info .name {
+            font-size: var(--font);
+        }
+        .mc_media-grids-text .info .desc {
+            font-size: var(--font);
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        .mc_media-grids-text {
+            padding: 2.5rem 0;
+        }
+        .mc_media-grids-text .media-grids-wrapper {
+            padding: 0 12px;
+        }
+        .mc_media-grids-text .section-heading {
+            font-size: 1.125rem;
+        }
+        .mc_media-grids-text .section-footer {
+            padding: 1.5625rem 1.875rem;
+            gap: 0.625rem;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .mc_media-grids-text .section-footer-column {
+            font-size: 0.75rem;
+            width: 100%;
+        }
+        .mc_media-grids-text .media-grids {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            aspect-ratio: 500/1200;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .mc_media-grids-text .media-grid {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .mc_media-grids-text .info {
+            text-align: var(--mb-align);
+            padding: var(--mb-padding);
+        }
+        .mc_media-grids-text .info.mb-top {
+            top: 0;
+        }
+        .mc_media-grids-text .info.mb-center {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .mc_media-grids-text .info.mb-bottom {
+            bottom: 0;
+        }
+        .mc_media-grids-text .info .name {
+            font-size: var(--sm-font);
+        }
+        .mc_media-grids-text .info .desc {
+            font-size: var(--sm-font);
+        }
+        .mc_media-grids-text .grid1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .mc_media-grids-text .grid2 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .mc_media-grids-text .grid3 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .mc_media-grids-text .grid4 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .mc_media-grids-text .grid5 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .mc_media-grids-text .grid6 {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .mc_media-grids-text .grid7 {
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .mc_media-grids-text .grid8 {
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+    {% render 'page-wrap-style' %}
+</style>
+
+<!-- View -->
+<div class="mc_media-grids-text section--page w-full">
+    {%- render 'section-title', info: ss -%}
+    <div class="media-grids-wrapper">
+        <ul class="media-grids">
+            {% for block in section.blocks %}
+                {%- assign bs = block.settings -%}
+                <li class="media-grid relative grid{{ forloop.index }}">
+                    {%- render 'global-image',
+                        desktop_img: bs.bg_image,
+                        desktop_size: 500,
+                        mobile_img: bs.bg_image_mobile,
+                        mobile_size: 700 -%}
+                    <div
+                        class="info w-full {{ bs.vertical_alignment }} mb-{{ bs.mb_vertical_alignment }} absolute z-1"
+                        style="--padding: {{ bs.padding }}px; --mb-padding: {{ bs.mb_padding }}px; --align: {{ bs.horizontal_alignment }}; --mb-align: {{ bs.mb_horizontal_alignment }};">
+                        {%- if bs.grid_heading != blank -%}
+                            <div class="name lh-2 fw-700"
+                                 style="color: {{ bs.grid_heading_color }}; --max-font: {{ bs.grid_heading_font_size }}px; --font: {{ bs.grid_heading_font_size | divided_by: 19.2 }}vw; --sm-font: {{ bs.grid_heading_font_size_mobile }}px;">{{ bs.grid_heading }}</div>
+                        {%- endif -%}
+                        {% if bs.grid_subheading != blank %}
+                            <div
+                                style="color: {{ bs.grid_subheading_color }};--max-font: {{ bs.grid_subheading_font_size }}px; --font: {{ bs.grid_subheading_font_size | divided_by: 19.2 }}vw; --sm-font: {{ bs.grid_subheading_font_size_mobile }}px;"
+                                class="desc lh-2 fw-500">{{ bs.grid_subheading }}</div>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="section-footer flex-between">
+            {% if ss.heading != blank %}
+                <h3 class="section-heading">{{ ss.heading }}</h3>
+            {% endif %}
+            <div class="section-footer-column">
+                {% if ss.content != blank %}
+                    <p class="section-content">{{ ss.content }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "MC Media Grids Text",
+  "class": "mc--main",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why ALPHA"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "ALPHA is for those looking for exceptional and straightforward. With high performance and ease-of-use as a key feature focus, the ALPHA is meant to appeal to both newcomers and seasoned riders. Built with all-terrain tires, a powerful mid-drive motor, and a torque sensor that makes pedaling feel more natural, ALPHA bikes give each rider the means to conquer all types of terrain with ease."
+    },
+    {
+      "type": "color",
+      "id": "footer_bg_color",
+      "label": "Footer background color",
+      "default": "#FAF9F5"
+    },
+    {
+      "type": "color",
+      "id": "footer_heading_color",
+      "label": "Footer heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Footer text color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media-grid",
+      "name": "Media grid",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background image (Desktop)"
+        },
+        {
+          "type": "image_picker",
+          "id": "bg_image_mobile",
+          "label": "Background image (Mobile)"
+        },
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "grid_heading",
+          "label": "Text",
+          "default": "500W"
+        },
+        {
+          "type": "color",
+          "id": "grid_heading_color",
+          "label": "Font color",
+          "default": "#FFA000"
+        },
+        {
+          "type": "range",
+          "id": "grid_heading_font_size",
+          "label": "Font size (desktop)",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "grid_heading_font_size_mobile",
+          "label": "Font size (mobile)",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "header",
+          "content": "Subheading"
+        },
+        {
+          "type": "text",
+          "id": "grid_subheading",
+          "label": "Text",
+          "default": "Mid-Drive Motor"
+        },
+        {
+          "type": "color",
+          "id": "grid_subheading_color",
+          "label": "Font color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "grid_subheading_font_size",
+          "label": "Font size (desktop)",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "grid_subheading_font_size_mobile",
+          "label": "Font size (mobile)",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "select",
+          "id": "vertical_alignment",
+          "label": "Desktop vertical alignment",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "bottom"
+        },
+        {
+          "type": "select",
+          "id": "horizontal_alignment",
+          "label": "Desktop horizontal alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "range",
+          "id": "padding",
+          "label": "Padding",
+          "min": 0,
+          "max": 120,
+          "step": 4,
+          "default": 16
+        },
+        {
+          "type": "select",
+          "id": "mb_vertical_alignment",
+          "label": "Mobile vertical alignment",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "bottom"
+        },
+        {
+          "type": "select",
+          "id": "mb_horizontal_alignment",
+          "label": "Mobile horizontal alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "range",
+          "id": "mb_padding",
+          "label": "Mobile padding",
+          "min": 0,
+          "max": 120,
+          "step": 4,
+          "default": 16
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MC Media Grids Text",
+      "blocks": [
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        },
+        {
+          "type": "media-grid"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -108,6 +108,54 @@
         "rounded": true
       }
     },
+    "announcement-slide-bar": {
+      "type": "announcement-slide-bar",
+      "disabled": true,
+      "blocks": {
+        "message_mkExeQ": {
+          "type": "message",
+          "settings": {
+            "icon": "shopify://shop_images/67C0912F-4305-45DF-AC5A-B850E7536084.png",
+            "text": "<p>Villain Classic Now $200 Off — Limited Time</p>",
+            "url": "shopify://products/heybike-villain"
+          }
+        },
+        "message_AQgU4d": {
+          "type": "message",
+          "settings": {
+            "icon": "shopify://shop_images/67C0912F-4305-45DF-AC5A-B850E7536084.png",
+            "text": "<p>Midnight Black Unlocked!</p>",
+            "url": "shopify://products/heybike-villain"
+          }
+        },
+        "message_43xPMD": {
+          "type": "message",
+          "settings": {
+            "icon": "shopify://shop_images/67C0912F-4305-45DF-AC5A-B850E7536084.png",
+            "text": "<p>Free Fast Shipping on All Dirt Bikes!</p>",
+            "url": "shopify://products/heybike-villain"
+          }
+        }
+      },
+      "block_order": [
+        "message_mkExeQ",
+        "message_AQgU4d",
+        "message_43xPMD"
+      ],
+      "settings": {
+        "padding": 12,
+        "enable_bar": true,
+        "hide_homepage": false,
+        "background": "#ffdb00",
+        "background_gradient": "linear-gradient(57deg, rgba(249, 119, 255, 1) 8%, rgba(255, 219, 0, 1) 46%, rgba(43, 252, 135, 1) 83%)",
+        "message_color": "#110700",
+        "message_bold_color": "#110700",
+        "message_size": 16,
+        "message_mb_size": 14,
+        "slide_direction": "normal",
+        "loop_speed": 1
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -414,6 +462,7 @@
   },
   "order": [
     "announcement-bar",
+    "announcement-slide-bar",
     "header"
   ]
 }

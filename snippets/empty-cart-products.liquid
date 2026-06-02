@@ -1,0 +1,108 @@
+{%- assign ss = section.settings -%}
+{% stylesheet %}
+    .empty-cart-products {
+        margin-top: 24px;
+    }
+
+    .empty-cart-products .title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .empty-cart-products .product__accordion {
+        background-color: #F5F4F0;
+        padding-top: 24px;
+    }
+
+    .empty-cart-products .product__accordion[aria-expanded=true] .details__summary > .icon {
+        --tw-rotate: 0
+    }
+
+    .empty-cart-products .product__accordion[aria-expanded=false] .details__summary > .icon {
+        --tw-rotate: 180deg
+    }
+
+    .empty-cart-products .product-bundle__info {
+        border: 0 none;
+        border-radius: 0;
+        border-top: 1px solid rgb(var(--color-border-light));
+        cursor: default;
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    .empty-cart-products .product-bundle__title {
+        font-size: 18px;
+    }
+
+    .empty-cart-products .price__regular {
+        font-weight: 700;
+    }
+
+    .empty-cart-products .product-bundle__info .button {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        background-color: #f6be00;
+        color: #000;
+        --color-button-border: #f6be00;
+    }
+
+    .empty-cart-products .product-bundle__info img {
+        width: 100px;
+        height: 68px;
+        object-fit: contain;
+    }
+
+    .empty-cart-products .product__accordion .details__content {
+        padding-bottom: 8px;
+    }
+
+    .empty-cart-products .product-bundle-inner {
+        flex: 1;
+    }
+{% endstylesheet %}
+<div class="empty-cart-products">
+    <details class="product__accordion details" is="accordion-details" open="" aria-expanded="true">
+        <summary class="details__summary flex-between gap-2 cursor-pointer">
+            <span class="leading-none title flex-center">
+                {{ ss.empty_cart_recommendations_products_title }}
+            </span>
+            <svg class="icon icon-arrow-collapse icon-xs flex-auto" xmlns="http://www.w3.org/2000/svg" width="14"
+                 height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M13 9.01001L7 3.51001L1 9.01001" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+            </svg>
+        </summary>
+        <div class="details__content">
+            {%- for product in ss.empty_cart_recommendations_products -%}
+                <div class="product-bundle__info flex-left">
+                    {%- liquid
+                        if product.featured_media
+                            echo product.featured_media | image_url: width: 100 | image_tag: loading: 'lazy', widths: '100', is: 'lazy-image'
+                        else
+                            echo 'image' | placeholder_svg_tag
+                        endif
+                    -%}
+                    <a href="{{ product.url }}" class="product-bundle-inner">
+                        <div class="product-bundle__title fw-500">
+                            {{ product.title }}
+                        </div>
+                        {% render 'product-price', product: product, showFree: true, class: 'flex items-end gap-2 text-sm' %}
+                    </a>
+                    <button type="button"
+                            onclick="$heybike.addToCart({items:[{quantity: 1, id: '{{ product.selected_or_first_available_variant.id }}'}], button: this}, false)"
+                            data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                            class="button button--primary"
+                            is="hover-button"
+                            aria-label="{{ 'products.product.choose_options' | t | escape }}">
+                        <span class="btn-fill" data-fill></span>
+                        <span class="btn-text">
+                                  {%- render 'icon', icon: 'cart', size: 'sm' -%}
+                                </span>
+                    </button>
+                </div>
+            {%- endfor -%}
+        </div>
+    </details>
+</div>

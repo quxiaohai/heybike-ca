@@ -4,7 +4,7 @@
 -%}
 <style>
     .{{ cid }} {
-        background: #000000;
+        background: #FFFFFF;
         padding: 60px 0;
         overflow-x: hidden;
     }
@@ -13,7 +13,8 @@
         gap: 0 40px;
     }
     .{{ cid }} .slide-content .text-slide-items {
-        width: 400px;
+        min-width: 400px;
+        width: {{ 100 | minus: ss.slide_image_width }}%;
     }
 
     .{{ cid }} .slide-content .text-slide-items .item {
@@ -125,6 +126,9 @@
             margin-right: 0.625rem;
             align-items: stretch;
         }
+        .{{ cid }} .slide-content>.slide-item~.slide-item {
+            display: none;
+        }
         .{{ cid }} .slide-content .slide-item.is-selected .name {
             color: {{ ss.mb_slide_title_color }};
         }
@@ -178,12 +182,13 @@
         .{{ cid }} .slide-content .flickity-page-dots {
             padding-top: 1rem;
             margin-block: 0;
+            display: flex;
         }
         .{{ cid }} .slide-content .flickity-page-dots .flickity-page-dot {
             width: 8px;
             height: 8px;
             border-radius: 8px;
-            background-color: #ffffff;
+            background-color: {{ ss.mb_slide_default_color }};
             transition: width 0.5s;
             transition-property: width, background-color;
             margin: 0 4px;
@@ -235,7 +240,7 @@
         </div>
     </div>
     <div class="slide-content page-width mobile-done">
-        <slide-element loop class="slider block" node-name="slider">
+        <div class="slider" node-name="slider">
             {%- for block in section.blocks -%}
                 {%- assign bs = block.settings -%}
                 <div class="slide-item">
@@ -261,14 +266,15 @@
                     </div>
                 </div>
             {%- endfor -%}
-        </slide-element>
+        </div>
     </div>
 </div>
 {%- if section.blocks.size > 1 -%}
     <script>
-        $heybike.ready(() => {
+        (async function () {
+            await $heybike.bind('VENDOR.LOADED');
             const node = document.getElementById('{{ section.id }}-slide');
-            let current = 0;
+            let current = 0, slider = null;
             const {nodeList, trigger} = $heybike.tabSwitch({
                 root: node,
                 device: 'mobile',
@@ -314,7 +320,7 @@
                     if (i >= 100) {
                         clearInterval(timer);
                         if ($heybike.isMobile) {
-                            nodeList.slider.next();
+                            slider?.next();
                         } else {
                             let next = current + 1;
                             if (next >= {{ section.blocks.size }}) {
@@ -337,14 +343,26 @@
             });
             {%- endif -%}
 
-            {%- if ss.auto_slide -%}
-            nodeList.slider.addEventListener('slider:change', ev => {
-                updateProgress(0);
-                current = ev.detail.index;
-                startSlide();
+            $heybike.inView(nodeList.slider, () => {
+                slider = new Flickity(nodeList.slider, {
+                    accessibility: false,
+                    prevNextButtons: false,
+                    wrapAround: true,
+                    autoPlay: false,
+                    cellAlign: false,
+                    pageDots: true,
+                    on: {
+                        change: (index) => {
+                            {%- if ss.auto_slide -%}
+                            updateProgress(0);
+                            current = index;
+                            startSlide();
+                            {%- endif -%}
+                        }
+                    }
+                }, {margin: '300px 0 300px 0'});
             });
-            {%- endif -%}
-        });
+        })();
     </script>
 {%- endif -%}
 {% schema %}
@@ -430,13 +448,13 @@
       "type": "color",
       "id": "title_color",
       "label": "Title color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "color",
       "id": "title_bold_color",
       "label": "Title Bold color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "color_background",
@@ -458,7 +476,7 @@
       "type": "color",
       "id": "description_color",
       "label": "Description color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "range",
@@ -613,6 +631,16 @@
       "step": 1,
       "unit": "s",
       "default": 4
+    },
+    {
+      "type": "range",
+      "id": "slide_image_width",
+      "label": "Desktop slide image width",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 70
     }
   ],
   "blocks": [

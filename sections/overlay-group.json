@@ -13,6 +13,79 @@
   "sections": {
     "cart-drawer": {
       "type": "cart-drawer",
+      "blocks": {
+        "cart_progress": {
+          "type": "cart_progress",
+          "disabled": true,
+          "settings": {
+            "color_background": "#fffbe2",
+            "gradient_background": "",
+            "padding": "12px 40px 12px 40px",
+            "mb_padding": "12px 40px 12px 40px",
+            "alignment": "left",
+            "show_border": false,
+            "border_color": "#ffdb00",
+            "start_text": "<p>You are <strong>$xx.xx</strong> away from Free Shipping!</p>",
+            "full_text": "<p>You’re eligible for a <strong>FREE</strong> shipping!</p>",
+            "full_money": 2000,
+            "text_color": "#000000",
+            "text_bold_color": "#000000",
+            "text_pc_size": 14,
+            "text_mb_size": 12,
+            "show_progress": true,
+            "progress_bg_color": "#cfcfcf",
+            "progress_color": "#ffdb00"
+          }
+        },
+        "countdown_timer": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "color_background": "#fffbe2",
+            "gradient_background": "",
+            "margin": "16px 24px 8px 24px",
+            "mb_margin": "16px 24px 8px 24px",
+            "padding": "12px 20px 12px 20px",
+            "mb_padding": "12px 20px 12px 20px",
+            "heading_alignment": "left",
+            "countdown_alignment": "right",
+            "show_border": true,
+            "border_color": "#ffdb00",
+            "show_heading": true,
+            "heading": "<p>🛒 Ranger 3.0 Pro Flash Sale Ends In:</p>",
+            "show_underline": false,
+            "heading_color": "#ff0000",
+            "heading_style": "normal",
+            "heading_weight": 700,
+            "heading_pc_size": 16,
+            "heading_mb_size": 12,
+            "show_countdown": true,
+            "countdown_padding_top": 20,
+            "mb_countdown_padding_top": 13,
+            "countdown_num_width": 1,
+            "countdown_num_height": 1,
+            "countdown_num_size": 1,
+            "countdown_name_size": 1,
+            "mb_countdown_num_width": 1,
+            "mb_countdown_num_height": 1,
+            "mb_countdown_num_size": 1,
+            "mb_countdown_name_size": 1,
+            "end_time": "2026-06-08 02:00:00",
+            "day": "DAYS",
+            "hour": "HOURS",
+            "minute": "MINS",
+            "second": "SECS",
+            "countdown_fill_color": "#ffdb00",
+            "countdown_num_color": "#323232",
+            "countdown_text_color": "#000000",
+            "countdown_dot_color": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "cart_progress",
+        "countdown_timer"
+      ],
       "settings": {
         "show_vendor": false,
         "show_cart_note": true,

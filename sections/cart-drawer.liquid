@@ -1,3 +1,215 @@
+<style>
+    {%- assign ss = section.settings -%}
+    {%- assign progress = section.blocks | where: 'type', 'cart_progress' | first -%}
+    {%- if progress != blank -%}
+    {%- assign ps = progress.settings -%}
+    .cart-shipping-progress {
+        padding: {{ ps.padding }};
+        background-color: {{ ps.color_background }};
+    {%- if ps.gradient_background != blank -%} background-image: {{ ps.gradient_background }};
+        background-size: 100% 100%;
+    {%- endif -%}{%- if ps.show_border -%} border: 1px solid{{ ps.border_color }};
+    {%- endif -%}
+    }
+
+    .cart-shipping-progress .delivery-shipping {
+        font-size: {{ ps.text_pc_size }}px;
+        text-align: {{ ps.alignment }};
+        color: {{ ps.text_color }};
+    }
+
+    .cart-shipping-progress .delivery-shipping strong {
+        color: {{ ps.text_bold_color }};
+    }
+
+    {%- if ps.show_progress -%}
+    .cart-drawer-progress-wrapper {
+        padding-top: 12px;
+        margin-top: 5px;
+    }
+
+    .cart-drawer-progress-wrapper .progress {
+        height: 2px;
+        background-color: {{ ps.progress_bg_color }};
+    }
+
+    .cart-drawer-progress-wrapper .progress-bar {
+        background-color: {{ ps.progress_color }};
+        width: var(--point-left);
+    }
+
+    .cart-drawer-progress-wrapper .progress-icon {
+        width: 26px;
+        height: 26px;
+        background-color: {{ ps.progress_color }};
+        top: 0;
+        transform: translateX(-50%);
+        left: var(--point-left);
+    }
+
+    .cart-drawer-progress-wrapper .progress-icon .svg-icon {
+        width: 18px;
+        height: 10px;
+    }
+    {%- endif -%}
+    @media screen and (max-width: 639px) {
+        .cart-shipping-progress {
+            padding: {{ ps.mb_padding }};
+        }
+
+        .cart-shipping-progress .delivery-shipping {
+            font-size: {{ ps.text_mb_size }}px;
+        }
+    }
+
+    {%- endif -%}
+    {%- assign countdown = section.blocks | where: 'type', 'countdown' | first -%}
+    {%- if countdown != blank -%}
+    {%- assign cs = countdown.settings -%}
+    .countdown-cart {
+        padding: {{ cs.margin }};
+        background: #FAF9F5;
+    }
+
+    .countdown-cart .countdown__content {
+        border-radius: 10px;
+        padding: {{ cs.padding }};
+        background-color: {{ cs.color_background }};
+    {%- if cs.gradient_background != blank -%} background-image: {{ cs.gradient_background }};
+        background-size: 100% 100%;
+    {%- endif -%}{%- if cs.show_border -%} border: 1px solid{{ cs.border_color }};
+    {%- endif -%}
+    }
+
+    {%- if cs.show_heading -%}
+    .countdown-cart .title {
+        font-size: {{ cs.heading_pc_size }}px;
+        font-weight: {{ cs.heading_weight }};
+        color: {{ cs.heading_color }};
+        font-style: {{ cs.heading_style }};
+        text-align: {{ cs.heading_alignment }};
+        flex: 1;
+    {%- if cs.show_underline -%} text-decoration: underline;
+    {%- endif -%}{%- if cs.heading_color != blank -%} background: {{ cs.heading_color }};
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    {%- endif -%}
+    }
+
+    {%- endif -%}
+    {%- if cs.show_countdown -%}
+    .countdown-cart .countdown__header ~ .countdown-plugin {
+        flex: 1;
+        transform: translateY(3px);
+    }
+
+    .countdown-cart .countdown__timer {
+        gap: 0;
+    }
+
+    {%- assign width = 36 | times: cs.countdown_num_width -%}
+    .countdown-cart .countdown-item {
+        flex-direction: column;
+        position: relative;
+        width: {{ width | plus: 16 }}px;
+    }
+
+    .countdown-cart .countdown-item .num {
+        width: {{ 36 | times: cs.countdown_num_width }}px;
+        height: {{ 28 | times: cs.countdown_num_height }}px;
+        background-color: {{ cs.countdown_fill_color }};
+        border-radius: 5px;
+        color: {{ cs.countdown_num_color }};
+        opacity: 1;
+        font-size: {{ 17 | times: cs.countdown_num_size }}px;
+        font-weight: 600;
+        text-align: center;
+        box-sizing: border-box;
+        line-height: 1.2;
+        border: 0 none;
+    }
+
+    .countdown-cart .countdown-item .num:disabled {
+        opacity: 1;
+    }
+
+    .countdown-cart .countdown-item .name {
+        font-size: {{ 12 | times: cs.countdown_name_size }}px;
+        line-height: 1;
+        font-weight: 700;
+        color: {{ cs.countdown_text_color }};
+        text-align: center;
+        padding-top: 4px;
+        transform-origin: top center;
+        transform: scale(0.7);
+    }
+
+    .countdown-cart .countdown-item:last-of-type:before {
+        display: none;
+    }
+
+    .countdown-cart .countdown-item:before {
+        content: ":";
+        font-size: 16px;
+        font-weight: 700;
+        color: {{ cs.countdown_dot_color }};
+        position: absolute;
+        right: -2px;
+        top: 28%;
+        transform: translateY(-50%);
+    }
+
+    {%- endif -%}
+    @media screen and (max-width: 639px) {
+    {%- if cs.show_heading -%}
+        .countdown-cart {
+            padding: {{ cs.mb_margin }};
+            border-radius: 0.46875rem;
+        }
+
+        .countdown-cart .countdown__header .title {
+            font-size: {{ cs.heading_mb_size }}px;
+        }
+
+    {%- endif -%}
+    {%- if cs.show_countdown -%}
+        .countdown-cart .countdown__header ~ .countdown-plugin {
+            transform: translateY(0);
+        }
+
+        .countdown-cart .countdown__content {
+            padding: {{ cs.mb_padding }};
+        }
+
+    {%- assign width = 29 | times: cs.mb_countdown_num_width -%}
+        .countdown-cart .countdown-item {
+            width: {{ width | plus: 12 }}px;
+        }
+
+        .countdown-cart .countdown__timer .countdown-item .num {
+            width: {{ 29 | times: cs.mb_countdown_num_width }}px;
+            height: {{ 24 | times: cs.mb_countdown_num_height }}px;
+            font-size: {{ 14 | times: cs.mb_countdown_num_size }}px;
+            border-radius: 4px;
+        }
+
+        .countdown-cart .countdown__timer .countdown-item .name {
+            font-size: {{ 7 | times: cs.mb_countdown_name_size }}px;
+            transform: scale(1);
+            padding-top: 0.25rem;
+        }
+
+        .countdown-cart .countdown__timer .countdown-item:before {
+            font-size: 0.875rem;
+            top: 30%;
+        }
+
+    {%- endif -%}
+    }
+
+    {%- endif -%}
+</style>
 {%- if request.page_type != 'cart' and settings.cart_type == 'drawer' -%}
   <script src="{{ 'cart.js' | asset_url }}" defer></script>
   {%- if linklists.gift-wrapping.links != blank and linklists.gift-wrapping.links.first.type == 'product_link' -%}
@@ -37,7 +249,88 @@
           </span>
         </button>
       </gesture-element>
-
+        {%- for block in section.blocks -%}
+            {%- assign bs = block.settings -%}
+            {%- case block.type -%}
+                {%- when 'cart_progress' -%}
+                    <div class="cart-shipping-progress">
+                        {%- liquid
+                            assign total_num = bs.full_money
+                            unless bs.full_money contains '.'
+                                assign total_num = bs.full_money | append: '.0'
+                            endunless
+                            assign pro = cart.total_price | divided_by: total_num | round
+                            assign before_num = bs.full_money | times: 100
+                            assign diff = before_num | minus: cart.total_price
+                            assign diffMoney = diff | money
+                        -%}
+                        <div class="delivery-shipping lh-2">
+                            {%- if pro < 100 -%}
+                                {{ bs.start_text | replace: '$xx.xx', diffMoney }}
+                            {%- else -%}
+                                {{ bs.full_text }}
+                            {%- endif -%}
+                        </div>
+                        {%- if bs.show_progress -%}
+                            <div class="cart-drawer-progress-wrapper relative"
+                                 style="--point-left: {% if pro > 100 %}100{% else %}{{ pro }}{% endif %}%">
+                                <div class="progress w-full overflow-hidden">
+                                    <div class="progress-bar h-full">&nbsp;</div>
+                                </div>
+                                <div
+                                    class="flex-center progress-icon absolute rounded-full">
+                                    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 10"
+                                         fill="none">
+                                        <path
+                                            d="M14.5496 2.93061C14.1013 2.93043 13.6574 3.01992 13.2426 3.19409L11.9528 0.725084H12.9563V0H11.3625L11.0503 0.533547L11.7114 1.79946H6.93587L6.37388 0.725084H7.37742V0H5.78361L5.47131 0.533547L6.30188 2.12397L5.27005 3.46235C4.63084 3.05704 3.87985 2.87643 3.13123 2.94798C2.38259 3.01949 1.67724 3.3393 1.12238 3.85872C0.567535 4.37814 0.193526 5.06879 0.05721 5.82568C-0.0791056 6.58261 0.0297258 7.36437 0.367161 8.05217C0.704597 8.73996 1.25219 9.29619 1.92669 9.63631C2.6012 9.97639 3.36573 10.0818 4.10408 9.93639C4.84247 9.79104 5.51425 9.40288 6.0174 8.8309C6.52054 8.25897 6.82748 7.5345 6.89159 6.76761H8.94171L9.21681 6.6335L12.2409 2.81461L12.6181 3.53487C11.9326 4.00832 11.4359 4.71791 11.2185 5.5346C11.001 6.35128 11.0772 7.22074 11.4332 7.98474C11.7893 8.74874 12.4014 9.35655 13.1583 9.69747C13.9151 10.0384 14.7665 10.0899 15.5573 9.84246C16.3481 9.59508 17.0258 9.06526 17.4672 8.34943C17.9086 7.6336 18.0842 6.77941 17.9622 5.94219C17.8401 5.10498 17.4285 4.34046 16.8022 3.78778C16.1759 3.23506 15.3765 2.93087 14.5496 2.93061ZM6.66904 2.82185L8.35139 6.04253H6.87981C6.78347 5.22698 6.41228 4.47141 5.83024 3.90588L6.66904 2.82185ZM6.16847 6.04253H4.18268L5.38988 4.47751C5.80521 4.9009 6.07705 5.4494 6.16551 6.04253H6.16847ZM3.45309 9.27526C3.03165 9.2757 2.61578 9.17673 2.2377 8.98616C1.85963 8.79554 1.52951 8.51837 1.27293 8.17614C1.01635 7.83387 0.840201 7.43575 0.758138 7.01262C0.676075 6.58945 0.690304 6.15268 0.799714 5.73605C0.909124 5.31946 1.11078 4.93424 1.38905 4.61021C1.66733 4.28623 2.01475 4.03218 2.40439 3.8678C2.79402 3.70338 3.21541 3.63301 3.63589 3.66214C4.05638 3.69127 4.46464 3.81915 4.8291 4.03582L3.17624 6.18028L3.45427 6.76761H6.18325C6.10954 7.45654 5.79004 8.0934 5.28604 8.5561C4.78204 9.01884 4.12894 9.27491 3.45191 9.27526H3.45309ZM9.00192 5.7543L7.31545 2.52459H11.5597L9.00192 5.7543ZM14.5508 9.27526C13.9694 9.27522 13.4031 9.08614 12.9335 8.73531C12.464 8.38448 12.1154 7.89002 11.9381 7.32331C11.7608 6.75655 11.7639 6.1468 11.947 5.58202C12.1301 5.01724 12.4838 4.52655 12.9569 4.18081L14.2397 6.63653L14.8642 6.29452L13.5785 3.837C13.9547 3.69153 14.3576 3.63248 14.7586 3.66398C15.1596 3.69548 15.5489 3.81682 15.899 4.01937C16.2492 4.22192 16.5515 4.5008 16.7848 4.83619C17.018 5.17157 17.1764 5.55535 17.2487 5.96031C17.321 6.36528 17.3054 6.78156 17.2032 7.17972C17.101 7.57789 16.9145 7.9482 16.6571 8.26441C16.3996 8.58067 16.0773 8.83516 15.7131 9.00981C15.349 9.1845 14.9517 9.27513 14.5496 9.27526H14.5508Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        {%- endif -%}
+                    </div>
+                {%- when 'countdown' -%}
+                    <div class="countdown-cart w-full mc--main">
+                        <div class="countdown__content flex-between">
+                            {%- if bs.show_heading -%}
+                                <div class="countdown__header w-full flex-{{ bs.heading_alignment }}">
+                                    <div class="title lh-2">{{ bs.heading }}</div>
+                                </div>
+                            {%- endif -%}
+                            {%- if bs.show_countdown -%}
+                                <countdown-timer
+                                    class="countdown-plugin flex-{{ bs.countdown_alignment }}"
+                                    data-custom="true"
+                                    data-store="{{ 'now' | date: '%Y-%m-%dT%H:%M:%S' }}"
+                                    data-expires="{{ bs.end_time }}">
+                                    <div class="countdown__timer flex-left">
+                                        <label class="countdown-item flex-center">
+                                            <input node-name="day" disabled type="text" class="num"
+                                                   value="00"/>
+                                            <span class="name">{{ bs.day }}</span>
+                                        </label>
+                                        <label class="countdown-item flex-center">
+                                            <input node-name="hour" disabled type="text" class="num"
+                                                   value="00"/>
+                                            <span class="name">{{ bs.hour }}</span>
+                                        </label>
+                                        <label class="countdown-item flex-center">
+                                            <input node-name="minute" disabled type="text" class="num"
+                                                   value="00"/>
+                                            <span class="name">{{ bs.minute }}</span>
+                                        </label>
+                                        <label class="countdown-item flex-center">
+                                            <input node-name="second" disabled type="text" class="num"
+                                                   value="00"/>
+                                            <span class="name">{{ bs.second }}</span>
+                                        </label>
+                                    </div>
+                                </countdown-timer>
+                            {%- endif -%}
+                        </div>
+                    </div>
+            {%- endcase -%}
+        {%- endfor -%}
       <div class="drawer__content opacity-0 invisible flex flex-col h-full grow shrink">
         <details id="MiniCart-{{ section.id }}" class="drawer__panel opacity-0 flex flex-col overflow-hidden" open>
           <summary class="sr-only" tabindex="-1">{{ 'general.cart.title' | t }}</summary>
@@ -78,6 +371,9 @@
                   </ul>
                 </div>
               </div>
+                {%- if ss.empty_cart_recommendations_products != blank -%}
+                    {%- render 'empty-cart-products' -%}
+                {%- endif -%}
             {%- endif -%}
             <div class="drawer__scrollable relative flex flex-col gap-9 grow shrink{% if cart == empty %} hidden{% endif %}">
               {%- liquid
@@ -683,6 +979,17 @@
       "label": "t:sections.cart-drawer.settings.empty_cart_collections.label"
     },
     {
+      "type": "text",
+      "id": "empty_cart_recommendations_products_title",
+      "label": "Empty cart recommendations products title",
+      "default": "Recommended for You"
+    },
+    {
+      "type": "product_list",
+      "id": "empty_cart_recommendations_products",
+      "label": "Empty cart recommendations products"
+    },
+    {
       "type": "header",
       "content": "t:sections.cart-drawer.settings.header__recent_products.content"
     },
@@ -718,6 +1025,430 @@
       "id": "show_recent_products_price",
       "label": "t:sections.cart-drawer.settings.show_recent_products_price.label",
       "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "countdown",
+      "name": "t:sections.main-product.blocks.countdown.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.countdown.settings.paragraph.content"
+        },
+        {
+          "type": "color",
+          "id": "color_background",
+          "label": "t:sections.global.settings.color_background.label",
+          "default": "#fbf0aa"
+        },
+        {
+          "type": "color_background",
+          "id": "gradient_background",
+          "label": "t:sections.global.settings.gradient_background.label"
+        },
+        {
+          "type": "text",
+          "id": "margin",
+          "default": "16px 24px 8px 24px",
+          "label": "Desktop margin"
+        },
+        {
+          "type": "text",
+          "id": "mb_margin",
+          "default": "16px 24px 8px 24px",
+          "label": "Mobile margin"
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "default": "12px 20px 12px 20px",
+          "label": "Desktop padding"
+        },
+        {
+          "type": "text",
+          "id": "mb_padding",
+          "default": "20px 20px 20px 20px",
+          "label": "Mobile padding"
+        },
+        {
+          "type": "text_alignment",
+          "id": "heading_alignment",
+          "label": "Heading alignment",
+          "default": "left"
+        },
+        {
+          "type": "text_alignment",
+          "id": "countdown_alignment",
+          "label": "Countdown alignment",
+          "default": "right"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_border",
+          "default": false,
+          "label": "Show border"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color",
+          "default": "#FFDB00"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_heading",
+          "default": true,
+          "label": "Show heading"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "default": "<p>Hurry up!</p>",
+          "label": "t:sections.global.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_underline",
+          "label": "Show underline",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "heading_style",
+          "label": "Heading font style",
+          "options": [
+            {
+              "label": "Normal",
+              "value": "normal"
+            },
+            {
+              "label": "Italic",
+              "value": "italic"
+            }
+          ],
+          "default": "normal"
+        },
+        {
+          "type": "range",
+          "id": "heading_weight",
+          "label": "Heading font weight",
+          "min": 200,
+          "max": 900,
+          "step": 100,
+          "unit": "w",
+          "default": 700
+        },
+        {
+          "type": "range",
+          "id": "heading_pc_size",
+          "label": "Desktop heading size",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "heading_mb_size",
+          "label": "Mobile heading size",
+          "min": 6,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "checkbox",
+          "id": "show_countdown",
+          "default": true,
+          "label": "Show countdown"
+        },
+        {
+          "type": "number",
+          "id": "countdown_padding_top",
+          "label": "Desktop countdown padding top",
+          "default": 20
+        },
+        {
+          "type": "number",
+          "id": "mb_countdown_padding_top",
+          "label": "Mobile countdown padding top",
+          "default": 13
+        },
+        {
+          "type": "range",
+          "id": "countdown_num_width",
+          "label": "Desktop countdown num width scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "countdown_num_height",
+          "label": "Desktop countdown num height scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "countdown_num_size",
+          "label": "Desktop countdown num size scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "countdown_name_size",
+          "label": "Desktop countdown name size scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "mb_countdown_num_width",
+          "label": "Mobile countdown num width scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "mb_countdown_num_height",
+          "label": "Mobile countdown num height scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "mb_countdown_num_size",
+          "label": "Mobile countdown num size scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "mb_countdown_name_size",
+          "label": "Mobile countdown name size scale",
+          "min": 0.5,
+          "max": 2,
+          "step": 0.1,
+          "unit": "m",
+          "default": 1
+        },
+        {
+          "type": "text",
+          "id": "end_time",
+          "label": "Countdown end date",
+          "default": "2026-04-28 12:01:01",
+          "info": "Format: yyyy-MM-dd HH:mm:ss"
+        },
+        {
+          "type": "text",
+          "id": "day",
+          "label": "Day",
+          "default": "DAYS"
+        },
+        {
+          "type": "text",
+          "id": "hour",
+          "label": "Hour",
+          "default": "HOURS"
+        },
+        {
+          "type": "text",
+          "id": "minute",
+          "label": "Minute",
+          "default": "MINS"
+        },
+        {
+          "type": "text",
+          "id": "second",
+          "label": "Second",
+          "default": "SECS"
+        },
+        {
+          "type": "header",
+          "content": "Countdown Color",
+          "info": "t:sections.global.settings.header__colors.info"
+        },
+        {
+          "label": "Countdown fill color",
+          "type": "color",
+          "id": "countdown_fill_color",
+          "default": "#FFDB00"
+        },
+        {
+          "label": "countdown num color",
+          "type": "color",
+          "id": "countdown_num_color",
+          "default": "#ffffff"
+        },
+        {
+          "label": "Countdown text color",
+          "type": "color",
+          "id": "countdown_text_color",
+          "default": "#000000"
+        },
+        {
+          "label": "Countdown dot color",
+          "type": "color",
+          "id": "countdown_dot_color",
+          "default": "#FFDB00"
+        }
+      ]
+    },
+    {
+      "type": "cart_progress",
+      "name": "Cart progress",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.countdown.settings.paragraph.content"
+        },
+        {
+          "type": "color",
+          "id": "color_background",
+          "label": "t:sections.global.settings.color_background.label",
+          "default": "#FFFBE2"
+        },
+        {
+          "type": "color_background",
+          "id": "gradient_background",
+          "label": "t:sections.global.settings.gradient_background.label"
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "default": "12px 40px 12px 40px",
+          "label": "Desktop padding"
+        },
+        {
+          "type": "text",
+          "id": "mb_padding",
+          "default": "12px 40px 12px 40px",
+          "label": "Mobile padding"
+        },
+        {
+          "type": "text_alignment",
+          "id": "alignment",
+          "label": "Text alignment",
+          "default": "left"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_border",
+          "default": false,
+          "label": "Show border"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color",
+          "default": "#FFDB00"
+        },
+        {
+          "type": "richtext",
+          "id": "start_text",
+          "default": "<p>You are <strong>$xx.xx</strong> away from Free Shipping!</p>",
+          "label": "Start text"
+        },
+        {
+          "type": "richtext",
+          "id": "full_text",
+          "default": "<p>You’re eligible for a <strong>FREE</strong> shipping!</p>",
+          "label": "Full text"
+        },
+        {
+          "type": "number",
+          "id": "full_money",
+          "default": 500,
+          "label": "Full money"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "text_bold_color",
+          "label": "Text bold color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "text_pc_size",
+          "label": "Desktop text size",
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "text_mb_size",
+          "label": "Mobile text size",
+          "min": 6,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type": "checkbox",
+          "id": "show_progress",
+          "label": "Show progress",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Progress color"
+        },
+        {
+          "label": "Progress background color",
+          "type": "color",
+          "id": "progress_bg_color",
+          "default": "#cfcfcf"
+        },
+        {
+          "label": "Progress color",
+          "type": "color",
+          "id": "progress_color",
+          "default": "#FFDB00"
+        }
+      ]
     }
   ],
   "enabled_on": {

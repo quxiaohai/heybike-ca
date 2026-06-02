@@ -3252,19 +3252,47 @@ customElements.define("tabs-element", TabsElement);
 
 class CountdownTimer extends HTMLElement {
     constructor() {
-        super(), Motion.inView(this, this.init.bind(this), {margin: "200px 0px 200px 0px"})
+        super();
+        Motion.inView(this, this.init.bind(this), {margin: "200px 0px 200px 0px"});
     }
 
     get date() {
-        return this._date = this._date || new Date(`${this.dataset.month}/${this.dataset.day}/${this.dataset.year} ${this.dataset.hour}:${this.dataset.minute}:00`)
+        return this._date = this._date || new Date(this.hasAttribute('data-expires') ? this.getAttribute('data-expires') : `${this.dataset.month}/${this.dataset.day}/${this.dataset.year} ${this.dataset.hour}:${this.dataset.minute}:00`)
+    }
+
+    get storeDate() {
+        return this.getAttribute('data-store');
+    }
+
+    get isCustom() {
+        return this._custom = this._custom || this.getAttribute('data-custom') === 'true';
     }
 
     init() {
-        this.calculate(), this.timerInterval = setInterval(this.calculate.bind(this), 1e3)
+        if (this.isCustom) {
+            this.nodeList = $heybike.getNodeList(this);
+        }
+        if (this.isCustom && this.storeDate) {
+            const storeNow = new Date(this.storeDate).getTime(); // 初始店铺时间
+            this.timeOffset = storeNow - Date.now();
+        } else {
+            this.timeOffset = 0;
+        }
+        this.startNow = new Date(this.date).getTime();// 目标时间
+        this.calculate();
+        this.timerInterval = setInterval(this.calculate.bind(this), 1e3);
+    }
+
+    getDoubleDigit(val) {
+        if (val < 10) {
+            return `0${val}`;
+        }
+        return val;
     }
 
     calculate() {
-        const now = new Date, countTo = new Date(this.date), timeDifference = countTo - now;
+        const now = Date.now(),
+            timeDifference = (this.startNow - now - this.timeOffset);
         if (timeDifference < 0) {
             this.complete();
             return
@@ -3274,7 +3302,12 @@ class CountdownTimer extends HTMLElement {
             hours = Math.floor(timeDifference % secondsInADay / secondsInAHour * 1),
             mins = Math.floor(timeDifference % secondsInADay % secondsInAHour / (60 * 1e3) * 1),
             secs = Math.floor(timeDifference % secondsInADay % secondsInAHour % (60 * 1e3) / 1e3 * 1);
-        if (this.dataset.compact === "true") {
+        if (this.isCustom) {
+            this.nodeList.day.value = this.getDoubleDigit(days);
+            this.nodeList.hour.value = this.getDoubleDigit(hours);
+            this.nodeList.minute.value = this.getDoubleDigit(mins);
+            this.nodeList.second.value = this.getDoubleDigit(secs);
+        }else if (this.dataset.compact === "true") {
             const dayHTML = days > 0 ? `<div class="countdown__item"><p>${days}${theme.dateStrings.d}</p></div>` : "",
                 hourHTML = `<div class="countdown__item"><p>${hours}${theme.dateStrings.h}</p></div>`,
                 minHTML = `<div class="countdown__item"><p>${mins}${theme.dateStrings.m}</p></div>`,
