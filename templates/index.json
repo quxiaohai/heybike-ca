@@ -152,19 +152,19 @@
             "subheading": "",
             "subheading_size": "subtitle-lg",
             "secondary_color": false,
-            "heading": "Limited-time offers on select ebikes and accessories.",
+            "heading": "Limited-time extra $100 savings   this weekend only.",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "text": "<p><strong>Still Riding the Anniversary Savings</strong></p>",
+            "text": "<p>Your Weekend Upgrade Starts Here</p>",
             "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color_text": false,
             "highlighted_text_text": "half_text",
             "highlighted_scribble_text": "circle",
-            "button_label": "Shop Anniversary Deals",
+            "button_label": "Shop now",
             "button_link": "shopify://collections/electric-bikes",
             "button_size": "md",
             "button_secondary_style": false,
@@ -175,6 +175,7 @@
         },
         "image_pCkcAc": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "100vh",
@@ -219,6 +220,7 @@
         },
         "image_3W4dbw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3840X1300.jpg",
             "image_height": "700px",

@@ -110,7 +110,6 @@
     },
     "announcement-slide-bar": {
       "type": "announcement-slide-bar",
-      "disabled": true,
       "blocks": {
         "message_mkExeQ": {
           "type": "message",
@@ -142,6 +141,7 @@
         "message_AQgU4d",
         "message_43xPMD"
       ],
+      "disabled": true,
       "settings": {
         "padding": 12,
         "enable_bar": true,
