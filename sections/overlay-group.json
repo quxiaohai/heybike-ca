@@ -52,7 +52,7 @@
             "show_border": true,
             "border_color": "#ffdb00",
             "show_heading": true,
-            "heading": "<p>🛒 Ranger 3.0 Pro Flash Sale Ends In:</p>",
+            "heading": "<p>🛒 Villain & X series Flash  Sale Ends In:</p>",
             "show_underline": false,
             "heading_color": "#ff0000",
             "heading_style": "normal",
@@ -107,6 +107,8 @@
           "off-road-electric-bikes",
           "folding-bikes"
         ],
+        "empty_cart_recommendations_products_title": "Recommended for You",
+        "empty_cart_recommendations_products": [],
         "recent_products_enabled": true,
         "recent_products_heading": "Recently viewed",
         "recent_products_limit": 5,
