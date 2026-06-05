@@ -709,7 +709,7 @@
       ],
       "name": "MC Image Fill Slide",
       "settings": {
-        "page_color": "",
+        "page_color": "#000000",
         "page_top": 40,
         "show_title": true,
         "title": "<p><em>BUILT TO </em><em><strong>GO FAR</strong></em></p>",
@@ -728,11 +728,16 @@
         "description_pc_margin_bottom": 40,
         "description_mb_margin_bottom": 30,
         "tab_display_position": "center",
+        "pc_tab_size": 16,
+        "mb_tab_size": 10,
+        "tab_weight": 400,
+        "tab_active_weight": 500,
         "tab_color": "#cdcdcd",
         "tab_hover_color": "#ffffff",
         "tab_active_color": "#000000",
         "tab_bg_color": "#313131",
         "tab_active_bg_color": "#ffdb00",
+        "image_fill": false,
         "image_ratio": "",
         "mb_image_ratio": "",
         "pc_slide_text_size": 18,
@@ -1100,7 +1105,8 @@
         "pc_card_desc_size": 16,
         "mb_card_desc_size": 14,
         "auto_slide": true,
-        "duration": 4
+        "duration": 4,
+        "slide_image_width": 70
       }
     },
     "mc_multicolumn_card_slide_EFD32": {
