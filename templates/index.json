@@ -175,7 +175,6 @@
         },
         "image_pCkcAc": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/02-Banner_ed946665-64c6-498d-8f0b-773ed48a2a5b.png",
             "image_height": "100vh",
@@ -197,12 +196,12 @@
             "subheading": "",
             "subheading_size": "subtitle-md",
             "secondary_color": true,
-            "heading": "<em><strong>Built for riders who want more from every mile.</strong></em>",
+            "heading": "<em>Take an extra $100 off Villain for a limited time.</em>",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "text",
             "highlighted_scribble": "basic-underline",
-            "text": "<p><strong>Go Further With Villain</strong></p>",
+            "text": "<p><strong>Power Through the Weekend</strong></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
