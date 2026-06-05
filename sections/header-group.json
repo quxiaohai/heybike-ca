@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>Limited-Time Weekend Flash ⚡ Save an Extra $100</strong>",
+            "text": "<strong>Limited-Time Weekend Flash ⚡ Save an Extra C$100</strong>",
             "link": "shopify://products/ranger-3-0-pro",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -42,7 +42,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "Limited-Time Offer: Extra $100 Off Villain<strong>>></strong>",
+            "text": "<strong>Limited-Time Offer: Extra C$100 Off Villain>></strong>",
             "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
