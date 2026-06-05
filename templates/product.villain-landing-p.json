@@ -43,7 +43,7 @@
           "settings": {
             "show_taxes_notice": false,
             "show_installment": false,
-            "show_rating": true
+            "show_rating": false
           }
         },
         "countdown_Yb9jEM": {
