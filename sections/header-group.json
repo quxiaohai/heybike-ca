@@ -30,8 +30,8 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>Limited-Time Weekend Flash ⚡ Save an Extra C$100</strong>",
-            "link": "shopify://products/ranger-3-0-pro",
+            "text": "Adventure Is Better Together — Save C$200 on 2 Rides",
+            "link": "shopify://collections/electric-bikes",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
