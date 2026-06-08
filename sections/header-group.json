@@ -18,8 +18,8 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>Take the Long Way Home — Ride the X Series</strong>",
-            "link": "shopify://collections/electric-bikes",
+            "text": "100 Miles of Freedom 🚴 Explore Hybrid",
+            "link": "shopify://products/hybrid",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -42,7 +42,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>Limited-Time Offer: Extra C$100 Off Villain>></strong>",
+            "text": "100 Miles of Freedom 🚴 Explore Hybrid<strong>>></strong>",
             "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
