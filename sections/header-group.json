@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "100 Miles of Freedom 🚴 Explore Hybrid",
+            "text": "<strong>100 Miles of Freedom 🚴 Explore Hybrid</strong>",
             "link": "shopify://products/hybrid",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "Adventure Is Better Together — Save C$200 on 2 Rides",
+            "text": "<strong>Adventure Is Better Together — Save C$200 on 2 Rides</strong>",
             "link": "shopify://collections/electric-bikes",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -42,7 +42,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "100 Miles of Freedom 🚴 Explore Hybrid<strong>>></strong>",
+            "text": "<strong>Power Meets Attitude ⚡ Explore Villain</strong>",
             "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
