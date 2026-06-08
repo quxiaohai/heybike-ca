@@ -39,6 +39,7 @@
         },
         "countdown_timer": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "color_background": "#fffbe2",
             "gradient_background": "",
