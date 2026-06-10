@@ -561,6 +561,31 @@
         "footer_text_color": "#ffffff"
       }
     },
+    "cg_product_video_UTYVFp": {
+      "type": "cg_product-video",
+      "blocks": {
+        "slide_Y3LzDk": {
+          "type": "slide",
+          "settings": {
+            "media_video": "shopify://files/videos/Saturn 广告 1min  2560x1066.mp4",
+            "media_video_mobile": "shopify://files/videos/Saturn 广告 1min  2560x1066.mp4",
+            "slide_heading": "",
+            "font_size": 48,
+            "font_size_mobile": 30,
+            "heading_color": "#FFDB00",
+            "ratio_width": "1920",
+            "ratio_height": "1080",
+            "ratio_width_mobile": "375",
+            "ratio_height_mobile": "500"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Y3LzDk"
+      ],
+      "name": "CG Product Video",
+      "settings": {}
+    },
     "rich_text_HeceQ6": {
       "type": "rich-text",
       "blocks": {
@@ -1573,6 +1598,7 @@
     "help-drawer",
     "sticky_navigation_rQrgTj",
     "mc_media_grids_text_WrxQP7",
+    "cg_product_video_UTYVFp",
     "rich_text_HeceQ6",
     "cg_product_video_Gh6NTL",
     "timeline_rAgziH",
