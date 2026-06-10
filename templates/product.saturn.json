@@ -460,12 +460,14 @@
         "card_NWFFgy": {
           "type": "card",
           "settings": {
+            "desktop_image": "shopify://shop_images/W_muRNW5zJI-HD.jpg",
             "muted": true,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_url_mobile": "",
-            "title": "",
+            "video_url": "https://youtube.com/watch?v=W_muRNW5zJI",
+            "video_url_mobile": "https://youtube.com/watch?v=W_muRNW5zJI",
+            "title": "35+ MPH and an Absolute BLAST to Ride...Heybike Saturn Review",
             "text": "",
-            "author": ""
+            "avatar": "shopify://shop_images/Ride_Along_With_Bri.jpg",
+            "author": "Ride Along With Bri"
           }
         }
       },
