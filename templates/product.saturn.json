@@ -561,158 +561,91 @@
         "footer_text_color": "#ffffff"
       }
     },
-    "image_with_text_x9i9By": {
-      "type": "image-with-text",
+    "rich_text_HeceQ6": {
+      "type": "rich-text",
       "blocks": {
-        "heading_Q8kyik": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em><strong>Tektro Hydraulic Brakes</strong></em>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text_FRNyW8": {
+        "text_rdGyyc": {
           "type": "text",
           "settings": {
-            "text": "<p>Responsive, consistent stopping power in wet or dry conditions—built for reliable performance over time.</p>",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
+            "text": "<h2><strong>1800W Peak Power</strong></h2>",
+            "text_size": "subtext-lg",
+            "text_max_size": 128,
             "text_font": "body",
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
         },
-        "text_PmqF8C": {
+        "text_fQKUWK": {
           "type": "text",
           "settings": {
-            "text": "",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": true,
-            "highlighted_text": "half_text",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Q8kyik",
-        "text_FRNyW8",
-        "text_PmqF8C"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/1000_601_Tektro_Hydraulic_Brakes_7ba97d00-98b4-4950-b407-256ae0da6e50.png",
-        "image_height": "adapt",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/1000_601_Tektro_Hydraulic_Brakes_7ba97d00-98b4-4950-b407-256ae0da6e50.png",
-        "image_height_mobile": "200px",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "#fafafa",
-        "gradient_background": "",
-        "color_background_2": "rgba(0,0,0,0)",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "image_with_text_yJHEzB": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_HxrfN3": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/folded_aaf51a25-2021-461c-8686-090090849dff_1.png",
-            "image_width": "custom",
-            "image_max_width": 150,
-            "image_max_width_mobile": 50
-          }
-        },
-        "heading_ByHnMy": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em><strong>UL 2849 & 2271 Certified</strong></em>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text_GGVaTm": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ride with added peace of mind. Both the battery and electrical system meet rigorous UL safety standards.</p>",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_3ArUWR": {
-          "type": "text",
-          "settings": {
-            "text": "",
+            "text": "<h5>52V Galaxy eDrive hub motor delivering <em><strong>1000W continuous</strong></em> and <em><strong>1800W peak</strong></em>  power, with <em><strong>95 N·m</strong></em> of torque. </h5><h5><em><strong>Saturn is ready on demand, anytime, anywhere.</strong></em></h5>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
-            "highlighted_text": "half_text",
+            "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "image_HxrfN3",
-        "heading_ByHnMy",
-        "text_GGVaTm",
-        "text_3ArUWR"
+        "text_rdGyyc",
+        "text_fQKUWK"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1000_601_UL_Certified.png",
-        "image_height": "450px",
-        "image_width": "medium",
-        "layout": "text_first",
         "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/1000_601_UL_Certified.png",
-        "image_height_mobile": "200px",
         "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "#fafafa",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "",
         "gradient_background": "",
-        "color_background_2": "rgba(0,0,0,0)",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
+        "color_highlight": "#f5efcf",
+        "gradient_highlight": "linear-gradient(91deg, rgba(182, 170, 109, 1), rgba(154, 134, 120, 1) 92%)",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 48,
+        "padding_top": 16,
+        "padding_bottom": 60,
         "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
+        "narrow": true,
+        "rounded": false
       }
+    },
+    "cg_product_video_Gh6NTL": {
+      "type": "cg_product-video",
+      "blocks": {
+        "slide_MPRgRn": {
+          "type": "slide",
+          "settings": {
+            "media_video": "shopify://files/videos/动力-UHD.mp4",
+            "media_video_mobile": "shopify://files/videos/动力竖版UHD.mp4",
+            "slide_heading": "",
+            "font_size": 48,
+            "font_size_mobile": 30,
+            "heading_color": "#FFDB00",
+            "ratio_width": "1920",
+            "ratio_height": "1080",
+            "ratio_width_mobile": "375",
+            "ratio_height_mobile": "500"
+          }
+        }
+      },
+      "block_order": [
+        "slide_MPRgRn"
+      ],
+      "name": "CG Product Video",
+      "settings": {}
     },
     "timeline_rAgziH": {
       "type": "timeline",
@@ -877,65 +810,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "image_with_text_TL4JXJ": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_WfNh9e": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em><strong>Front & Rear Lighting</strong></em>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text_KdwtxW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A bright headlight, brake light, and turn signals enhance visibility: so you can see and be seen.</p>",
-            "text_size": "subtext-lg",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WfNh9e",
-        "text_KdwtxW"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/e33469cfe8c5aefb5a5bd9ea966217e7.jpg",
-        "image_height": "adapt",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/e33469cfe8c5aefb5a5bd9ea966217e7.jpg",
-        "image_height_mobile": "auto",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
       }
     },
     "multicolumn_HJ8kPr": {
@@ -1488,11 +1362,10 @@
     "help-drawer",
     "sticky_navigation_rQrgTj",
     "mc_media_grids_text_WrxQP7",
-    "image_with_text_x9i9By",
-    "image_with_text_yJHEzB",
+    "rich_text_HeceQ6",
+    "cg_product_video_Gh6NTL",
     "timeline_rAgziH",
     "lookbook_Geh8Xd",
-    "image_with_text_TL4JXJ",
     "multicolumn_HJ8kPr",
     "product-details",
     "image_with_text_overlay_xXhBtW",
