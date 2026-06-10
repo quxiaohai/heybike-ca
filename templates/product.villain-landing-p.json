@@ -258,6 +258,20 @@
     "mc_multicolumn_video_slide_dc634x": {
       "type": "mc_multicolumn-video-slide",
       "blocks": {
+        "card_PNB8GW": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/HUwW1RG3qm0-HD.jpg",
+            "mobile_image": "shopify://shop_images/HUwW1RG3qm0-HD.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=HUwW1RG3qm0",
+            "video_url_mobile": "https://www.youtube.com/watch?v=HUwW1RG3qm0",
+            "title": "This Mini Emoto SMOKES My Talaria…// Heybike Villan",
+            "text": "",
+            "avatar": "shopify://shop_images/HDuke_Rides.jpg",
+            "author": "HDuke Rides"
+          }
+        },
         "card_fzWiaL": {
           "type": "card",
           "settings": {
@@ -282,6 +296,7 @@
             "video_url_mobile": "https://www.youtube.com/watch?v=vAd3vcRigqg",
             "title": "THE BEST WHEELIE PIT BIKE - HeyBike Villain Review",
             "text": "<p>This thing is a steal. Especially how good it rips wheelies.</p>",
+            "avatar": "shopify://shop_images/MotoBroo.jpg",
             "author": "MotoBroo"
           }
         },
@@ -309,6 +324,7 @@
             "video_url_mobile": "https://www.youtube.com/watch?v=mO6MRKT5IdY",
             "title": "Better Than A Tuttio? Heybike Villain, The 1st 52V Pit Bike below $1,500",
             "text": "<p>Unboxing assembly first impressions</p>",
+            "avatar": "shopify://shop_images/Calthecool.jpg",
             "author": "Calthecool"
           }
         },
@@ -412,6 +428,7 @@
         }
       },
       "block_order": [
+        "card_PNB8GW",
         "card_fzWiaL",
         "card_MH4HCK",
         "card_gjNqjR",
