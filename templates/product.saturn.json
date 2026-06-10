@@ -1401,8 +1401,8 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>What is the difference between Hybrid and Venus?</strong>",
-            "text": "<p>Hybrid and Venus are designed for different riding preferences.<br/><br/><strong>Venus</strong> is lighter, requires a lower inseam, and feels more nimble, which isideal for riders with a smaller build or those who prefer agile city cruising.<br/><strong>Hybrid </strong>offers a more grounded, stable ride with a higher <strong>440 lb payload</strong> capacity (vs. 350 lb on Venus). It also features a larger<strong> 864Wh battery</strong> for extended range, while Venus is equipped with a 680Wh battery. In addition, Hybrid comes with a hydraulic suspension fork, whereas Venus uses a rigid aluminum fork.<br/><br/>In short:<br/>- Choose <strong>Hybrid</strong> for longer range, greater payload, and a sturdier ride feel.<br/>- Choose <strong>Venus</strong> for lighter weight and nimble everyday riding.</p>",
+            "title": "<strong>Does Saturn comes with a rear rack and fenders?</strong>",
+            "text": "<p>Yes. The rear fender comes pre-installed. The <strong>front fender</strong> and <strong>rear rack</strong> are included in the box and requires installation.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1410,8 +1410,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is Hyrbrid's fork adjustable?</strong>",
-            "text": "<p>Yes. The fork features <strong>adjustable suspension stiffness</strong> and <strong>a lockout function</strong>, controlled by knobs on the top of the fork.</p>",
+            "title": "<strong>How to set Saturn to Class 2 or Class 3? Can I customize the speed for each PAS level?</strong>",
+            "text": "<p>You can adjust the riding speed and classes in <strong>two ways</strong>:</p><p><strong>- Via the Heybike app</strong><br/>Speed settings for PAS and throttle can be adjusted under Personalize → Speed Settings.<br/><br/><strong>- Via the display settings</strong><br/>On the display, the change can be made through manual adjustment of top speed.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1464,7 +1464,7 @@
       "settings": {
         "section_id": "faqs",
         "style": "with-border",
-        "heading": "FAQs - Hybrid",
+        "heading": "FAQs - Saturn",
         "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
