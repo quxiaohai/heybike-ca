@@ -314,7 +314,7 @@
           "type": "url",
           "settings": {
             "link_text": "Why Saturn",
-            "link_url": ""
+            "link_url": "#template--20759390978126__mc_media_grids_text_WrxQP7"
           }
         },
         "url_xE8ckQ": {
@@ -328,28 +328,28 @@
           "type": "url",
           "settings": {
             "link_text": "Highlights",
-            "link_url": "product_information"
+            "link_url": "template--20759390978126__rich_text_HeceQ6"
           }
         },
         "url_XmgBkM": {
           "type": "url",
           "settings": {
             "link_text": "Discover",
-            "link_url": "judgeme_product_reviews"
+            "link_url": "template--20759390978126__multicolumn_HJ8kPr"
           }
         },
         "url_mdXKx7": {
           "type": "url",
           "settings": {
             "link_text": "Spec&Size",
-            "link_url": "specifications"
+            "link_url": "template--20759390978126__image_with_text_overlay_xXhBtW"
           }
         },
         "url_gxRn9e": {
           "type": "url",
           "settings": {
             "link_text": "FAQs",
-            "link_url": "faqs"
+            "link_url": "#template--20759390978126__faq"
           }
         }
       },
