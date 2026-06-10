@@ -429,6 +429,20 @@
             "author": "Maximum Charge"
           }
         },
+        "card_f4PqNr": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/vX54ZrHNmTo-HD.jpg",
+            "mobile_image": "shopify://shop_images/vX54ZrHNmTo-HD.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=vX54ZrHNmTo",
+            "video_url_mobile": "https://www.youtube.com/watch?v=vX54ZrHNmTo",
+            "title": "The FASTEST E-Bike I've Tested This Year! (Heybike Saturn 40MPH Secret) Review",
+            "text": "",
+            "avatar": "shopify://shop_images/EV_Tech_Steven.jpg",
+            "author": "EV Tech Steven"
+          }
+        },
         "card_EKVh8M": {
           "type": "card",
           "settings": {
@@ -473,6 +487,7 @@
       },
       "block_order": [
         "card_pdPEUC",
+        "card_f4PqNr",
         "card_EKVh8M",
         "card_P9UCeh",
         "card_NWFFgy"
