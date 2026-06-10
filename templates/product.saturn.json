@@ -316,10 +316,17 @@
             "link_url": ""
           }
         },
+        "url_xE8ckQ": {
+          "type": "url",
+          "settings": {
+            "link_text": "Video",
+            "link_url": ""
+          }
+        },
         "url_DiEcP6": {
           "type": "url",
           "settings": {
-            "link_text": "Features",
+            "link_text": "Highlights",
             "link_url": "product_information"
           }
         },
@@ -347,6 +354,7 @@
       },
       "block_order": [
         "url_W4f68W",
+        "url_xE8ckQ",
         "url_DiEcP6",
         "url_mdXKx7",
         "url_gxRn9e",
