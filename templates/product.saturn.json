@@ -330,6 +330,13 @@
             "link_url": "product_information"
           }
         },
+        "url_XmgBkM": {
+          "type": "url",
+          "settings": {
+            "link_text": "Discover",
+            "link_url": "judgeme_product_reviews"
+          }
+        },
         "url_mdXKx7": {
           "type": "url",
           "settings": {
@@ -343,22 +350,15 @@
             "link_text": "FAQs",
             "link_url": "faqs"
           }
-        },
-        "url_XmgBkM": {
-          "type": "url",
-          "settings": {
-            "link_text": "Reviews",
-            "link_url": "judgeme_product_reviews"
-          }
         }
       },
       "block_order": [
         "url_W4f68W",
         "url_xE8ckQ",
         "url_DiEcP6",
+        "url_XmgBkM",
         "url_mdXKx7",
-        "url_gxRn9e",
-        "url_XmgBkM"
+        "url_gxRn9e"
       ],
       "settings": {
         "enable_show_price": false,
