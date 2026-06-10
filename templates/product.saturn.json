@@ -1213,6 +1213,38 @@
         "hide_desktop": false
       }
     },
+    "image_with_text_overlay_xXhBtW": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Size_Fit-1.png",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "enable_stack": false,
+        "mobile_image_position": "top",
+        "image_mobile": "shopify://shop_images/Size_Fit_3.png",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "product-details": {
       "type": "product-details",
       "blocks": {
@@ -1267,8 +1299,8 @@
         "specification_DGqJjp": {
           "type": "specification",
           "settings": {
-            "icon": "shopify://shop_images/4_aa3d6905-eb8d-4d0e-81e0-0e865934e600.jpg",
-            "heading": "Hybrid"
+            "icon": "shopify://shop_images/Saturn-1.png",
+            "heading": "Saturn"
           }
         },
         "specification_bgB4bi": {
@@ -1344,78 +1376,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "image_with_text_overlay_xXhBtW": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_cgf8nL": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Add a tagline",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_Cj4aKq": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text overlay",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_ij37TH": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_cgf8nL",
-        "heading_Cj4aKq",
-        "text_ij37TH"
-      ],
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/Size_Fit.png",
-        "image_height": "adapt",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "enable_stack": false,
-        "mobile_image_position": "top",
-        "image_mobile": "shopify://shop_images/Size_Fit_2.png",
-        "image_height_mobile": "adapt",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
       }
     },
     "faq": {
@@ -1626,8 +1586,8 @@
     "mc_image_fill_slide_9KJ9mi",
     "mc_image_fill_slide_UxwmbT",
     "multicolumn_HJ8kPr",
-    "product-details",
     "image_with_text_overlay_xXhBtW",
+    "product-details",
     "faq",
     "product-recommendations",
     "recently-viewed",
