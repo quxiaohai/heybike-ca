@@ -1251,8 +1251,8 @@
         "collapsible_tab_w9zHha": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Frameset",
-            "content": "<p><strong>Frame:</strong> 6061 Aluminum Alloy<br/><strong>Fork: </strong>Hydraulic Front Fork, T: 100mm</p>",
+            "heading": "Suspension",
+            "content": "<p><strong>Fork: </strong>Hydraulic Front Fork, T: 140mm<br/><strong>Rear: </strong>Rear Spring Suspension. T: 55mm</p>",
             "metafields": ""
           }
         },
@@ -1260,7 +1260,15 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wheels & Braking",
-            "content": "<p><strong>Tires: </strong>KENDA 27.5 x 2.4\"<br/><strong>Brakes:</strong> Tektro Hydraulic Disc Brakes<br/><strong>Rotor: </strong>180 × 1.9 mm</p>",
+            "content": "<p><strong>Tires: </strong>20 x 4.0\"<br/><strong>Brakes:</strong> 2-Piston Hydraulic Disc Brakes with <strong>Motor Cut-Off</strong><br/><strong>Rotor: </strong>180 × 2.0 mm</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab_9gkiG3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Motor & Drivetrain",
+            "content": "<p><strong>Motor:</strong> 1000W Hub Motor <br/><strong>Torque: </strong>95 N.m<br/><strong>Chainring: </strong>48T<br/><strong>Pedal Assist: </strong>Cadence</p>",
             "metafields": ""
           }
         },
@@ -1268,7 +1276,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Battery & Performance",
-            "content": "<p><strong>Battery:</strong> 864Wh <br/><strong>Certification: </strong>UL 2849 (Whole Bike), UL 2271 (Battery)<br/><strong>Charger: </strong>54.6V / 3A<br/><strong>Max Speed:</strong> 28 MPH<br/><strong>Max Range:</strong> Up to 100 Miles (Tested with a 155 lb rider using PAS 1)</p>",
+            "content": "<p><strong>Battery:</strong><br/>956.8Wh (Single Battery Ver.)<br/>1913.6Wh (Dual Battery Ver.)<br/><strong>Certification: </strong>UL 2849<br/><strong>Charger: </strong>58.8V / 3A<br/><strong>Max Speed:</strong> 28 MPH+<br/><strong>Max Range:</strong> <br/>30-50 Miles (Single Battery Ver.)<br/>55-90 Miles (Dual Battery Ver.)</p>",
             "metafields": ""
           }
         },
@@ -1276,7 +1284,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Display & Connectivity",
-            "content": "<p><strong>Display: </strong>LCD Color Display<br/><strong>App: </strong>Heybike Smart App (iOS & Android)</p>",
+            "content": "<p><strong>Display:</strong> TFT<strong> </strong>Color Display<br/><strong>App: </strong>Heybike Smart App (iOS & Android)</p>",
             "metafields": ""
           }
         },
@@ -1284,7 +1292,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Lighting & Utility",
-            "content": "<p><strong>Front Light:</strong> White Light with Horn<br/><strong>Rear Light:</strong> Taillight with Brake & Turn Signals<br/><strong>Rack Capacity: </strong>66 lb<br/><strong>Payload Capacity: </strong>440 lb<br/><strong>Fenders & Rear Rack:</strong> Included</p>",
+            "content": "<p><strong>Front Light:</strong> White Light with Horn<br/><strong>Rear Light:</strong> Taillight with Brake & Turn Signals<br/><strong>Payload Capacity: </strong>330 lb<br/><strong>Fenders & Rear Rack & Rear Mirrors:</strong> Included</p>",
             "metafields": ""
           }
         },
@@ -1292,7 +1300,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Weight & Dimensions",
-            "content": "<p><strong>Bike Weight: </strong>69 lb<br/><strong>Dimension: </strong>75.8×27.6×42.1–44.9\"</p>",
+            "content": "<p><strong>Bike Weight: </strong><br/>103 lb (Single Battery Ver.)<br/>115 lb (Dual Battery Ver.)<br/><strong>Dimension: </strong>70.9×26.8×48–48.8\"</p>",
             "metafields": ""
           }
         },
@@ -1301,6 +1309,13 @@
           "settings": {
             "icon": "shopify://shop_images/Saturn-1.png",
             "heading": "Saturn"
+          }
+        },
+        "specification_b7HN7d": {
+          "type": "specification",
+          "settings": {
+            "icon": "shopify://shop_images/Saturn_-_1.png",
+            "heading": "Back mirror"
           }
         },
         "specification_bgB4bi": {
@@ -1343,11 +1358,13 @@
       "block_order": [
         "collapsible_tab_w9zHha",
         "collapsible_tab_Tx7jh4",
+        "collapsible_tab_9gkiG3",
         "collapsible_tab_weW7dP",
         "collapsible_tab_8UV3wm",
         "collapsible_tab_4Mk4Nz",
         "collapsible_tab_fJybz6",
         "specification_DGqJjp",
+        "specification_b7HN7d",
         "specification_bgB4bi",
         "specification_J8tFJW",
         "specification_nATwAj",
