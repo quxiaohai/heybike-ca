@@ -1419,8 +1419,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does Hybrid comes with a rear rack and fenders?</strong>",
-            "text": "<p>Yes. The rear rack and rear fender come pre-installed. The front fender is included in the box and requires installation.</p>",
+            "title": "<strong>What is the warranty for Saturn?</strong>",
+            "text": "<p>Saturn purchased from our official website comes with a 2-year limited warranty. For full details, <a href=\"/pages/warranty\" title=\"Warranty\">visit our Warranty page. </a></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1428,25 +1428,7 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>How to switch between Class 2 and Class 3 modes? Can I customize the speed for each PAS level?</strong>",
-            "text": "<p>You can switch riding classes in two ways:<br/><strong>- Via the Heybike app</strong><br/> On the home screen, choose from three riding profiles: Eco, Sport, or Custom.<br/>   Eco = Class 2<br/>   Sport = Class 3<br/> Speed settings for PAS and throttle can be adjusted under Personalize → Speed Settings.<br/> <br/><strong>- Via the display settings</strong><br/>  On the display, the change can be made through manual adjustment of top speed.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_dcK38j": {
-          "type": "question",
-          "settings": {
-            "title": "<strong>What is the warranty for Hybrid?</strong>",
-            "text": "<p>Hybrid purchased from our official website comes with a 2-year limited warranty. For full details, <a href=\"/pages/warranty\" title=\"Warranty\">visit our Warranty page. </a></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_CLnUik": {
-          "type": "question",
-          "settings": {
-            "title": "<strong>Where can I find the Hybrid manual and video assembly instruction?</strong>",
+            "title": "<strong>Where can I find the Saturn manual and video assembly instruction?</strong>",
             "text": "<p>A user manual card is included in the product package. Scan the QR code on the card to access our <a href=\"https://heybike.nextop.com/\" target=\"_blank\" title=\"https://heybike.nextop.com/\">user manual page</a>. You can also download from here. </p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1457,9 +1439,7 @@
         "question-4",
         "question-1",
         "question-2",
-        "question-3",
-        "question_dcK38j",
-        "question_CLnUik"
+        "question-3"
       ],
       "settings": {
         "section_id": "faqs",
