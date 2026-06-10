@@ -812,6 +812,260 @@
         "rounded": false
       }
     },
+    "mc_image_fill_slide_Bafjpd": {
+      "type": "mc_image-fill-slide",
+      "blocks": {
+        "slide_yxphBz": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "show_text": false,
+            "text": "",
+            "pc_image": "shopify://shop_images/Saturn_d39818d8-ee65-48a1-9c5d-f0f23627a5c2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yxphBz"
+      ],
+      "name": "MC Image Fill Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 0,
+        "page_bottom": 0,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#000000",
+        "title_bold_color": "#000000",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#000000",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "tab_display_position": "left",
+        "pc_tab_size": 16,
+        "mb_tab_size": 10,
+        "tab_weight": 400,
+        "tab_active_weight": 500,
+        "tab_color": "#a9a9a9",
+        "tab_hover_color": "#ffffff",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#313131",
+        "tab_active_bg_color": "#f8e737",
+        "image_fill": true,
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "pc_slide_text_size": 16,
+        "mb_slide_text_size": 12,
+        "slide_text_color": "#a9a9a9",
+        "slide_bold_text_color": "#ffffff"
+      }
+    },
+    "rich_text_HXhwXz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_brbdMm": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Full Suspension Comfort</h2>",
+            "text_size": "subtext-lg",
+            "text_max_size": 128,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_rPmbFK": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><em><strong>140 mm front suspension</strong></em> and <em><strong>55 mm rear travel</strong></em> absorb bumps with ease, ensuring a <em><strong>smoother, more controlled ride</strong></em> on any terrain.</h5>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_brbdMm",
+        "text_rPmbFK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#b6aa6dff",
+        "gradient_highlight": "linear-gradient(90deg, rgba(182, 170, 109, 1), rgba(154, 134, 120, 1) 100%)",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 16,
+        "padding_bottom": 60,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "cg_product_video_aajAdh": {
+      "type": "cg_product-video",
+      "blocks": {
+        "slide_eNLrCK": {
+          "type": "slide",
+          "settings": {
+            "media_video": "shopify://files/videos/减震透明B-UHD.mp4",
+            "media_video_mobile": "shopify://files/videos/减震竖版A_UHD.mp4",
+            "slide_heading": "",
+            "font_size": 48,
+            "font_size_mobile": 30,
+            "heading_color": "#FFDB00",
+            "ratio_width": "1920",
+            "ratio_height": "1080",
+            "ratio_width_mobile": "375",
+            "ratio_height_mobile": "500"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eNLrCK"
+      ],
+      "name": "CG Product Video",
+      "settings": {}
+    },
+    "mc_image_fill_slide_9KJ9mi": {
+      "type": "mc_image-fill-slide",
+      "blocks": {
+        "slide_qkqpB7": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "show_text": false,
+            "text": "",
+            "pc_image": "shopify://shop_images/Saturn_-03.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_qkqpB7"
+      ],
+      "name": "MC Image Fill Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 0,
+        "page_bottom": 0,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#000000",
+        "title_bold_color": "#000000",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#000000",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "tab_display_position": "left",
+        "pc_tab_size": 16,
+        "mb_tab_size": 10,
+        "tab_weight": 400,
+        "tab_active_weight": 500,
+        "tab_color": "#a9a9a9",
+        "tab_hover_color": "#ffffff",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#313131",
+        "tab_active_bg_color": "#f8e737",
+        "image_fill": true,
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "pc_slide_text_size": 16,
+        "mb_slide_text_size": 12,
+        "slide_text_color": "#a9a9a9",
+        "slide_bold_text_color": "#ffffff"
+      }
+    },
+    "mc_image_fill_slide_UxwmbT": {
+      "type": "mc_image-fill-slide",
+      "blocks": {
+        "slide_fbhFkH": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "show_text": false,
+            "text": "",
+            "pc_image": "shopify://shop_images/Saturn_-02.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_fbhFkH"
+      ],
+      "name": "MC Image Fill Slide",
+      "settings": {
+        "page_color": "",
+        "page_top": 0,
+        "page_bottom": 0,
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#000000",
+        "title_bold_color": "#000000",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#000000",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "tab_display_position": "left",
+        "pc_tab_size": 16,
+        "mb_tab_size": 10,
+        "tab_weight": 400,
+        "tab_active_weight": 500,
+        "tab_color": "#a9a9a9",
+        "tab_hover_color": "#ffffff",
+        "tab_active_color": "#000000",
+        "tab_bg_color": "#313131",
+        "tab_active_bg_color": "#f8e737",
+        "image_fill": true,
+        "image_ratio": "",
+        "mb_image_ratio": "",
+        "pc_slide_text_size": 16,
+        "mb_slide_text_size": 12,
+        "slide_text_color": "#a9a9a9",
+        "slide_bold_text_color": "#ffffff"
+      }
+    },
     "multicolumn_HJ8kPr": {
       "type": "multicolumn",
       "blocks": {
@@ -821,15 +1075,15 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Rectangle_50064.jpg",
+            "image": "shopify://shop_images/Rectangle_50065.jpg",
             "image_ratio": "square",
             "video_url": "",
             "description": "",
             "enable_video_autoplay": false,
             "enable_video_looping": false,
-            "heading": "440 LB Max Load",
+            "heading": "330 LB Max Load",
             "heading_size": "text-lg-2xl",
-            "text": "<p>Built for more. With a high total payload capacity, bring your gear, tools, or cargo—just load up and ride.</p>",
+            "text": "<p>Built to carry more, with a <strong>330 lb</strong> payload and an extendable rear rack. Add optional accessories to expand your cargo capacity for more potential.</p>",
             "button_label": "",
             "button_link": "",
             "highlighted_text": "none",
@@ -842,15 +1096,15 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Rectangle_50064-1.jpg",
+            "image": "shopify://shop_images/Rectangle_50066.jpg",
             "image_ratio": "square",
             "video_url": "",
             "description": "",
             "enable_video_autoplay": false,
             "enable_video_looping": false,
-            "heading": "Shimano Altus 8-Speed",
+            "heading": "Turnsignals, Lighting & Horn",
             "heading_size": "text-lg-2xl",
-            "text": "<p>From fast flats to steady hill climbs, the rom fast flats to steady hill climbs</p>",
+            "text": "<p>Stay seen and heard with a <strong>full lighting system</strong>, turn signals, and an <strong>electric horn</strong>. Designed for confident riding in any condition.</p>",
             "button_label": "",
             "button_link": "",
             "highlighted_text": "none",
@@ -863,7 +1117,7 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Group_128721198.jpg",
+            "image": "shopify://shop_images/Group_128721200.jpg",
             "image_ratio": "square",
             "video_url": "",
             "description": "",
@@ -871,7 +1125,7 @@
             "enable_video_looping": false,
             "heading": "IPX6/IPX5 Water-resistance",
             "heading_size": "text-lg-2xl",
-            "text": "<p>IPX6-rated electrical components and IPX5-rated whole bike help you ride confidently through rain and splashes.</p>",
+            "text": "<p><strong>IPX6</strong>-rated electrical components and <strong>IPX5</strong>-rated whole bike help protect against rain and splashes. So your ride is unstoppable even when the weather turns.</p>",
             "button_label": "",
             "button_link": "",
             "highlighted_text": "none",
@@ -884,15 +1138,15 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Rectangle_50064-2.jpg",
+            "image": "shopify://shop_images/Rectangle_50067.jpg",
             "image_ratio": "square",
             "video_url": "",
             "description": "",
             "enable_video_autoplay": false,
             "enable_video_looping": false,
-            "heading": "Durable Rear Rack",
+            "heading": "Twist Throttle",
             "heading_size": "text-lg-2xl",
-            "text": "<p>Carry more with a rear rack rated for up to 66 lbs. Compatible with child seats for added versatility.</p>",
+            "text": "<p>Twist and go for instant power. <strong>Smooth and intuitive control</strong> that brings a familiar moped-style riding feel.</p>",
             "button_label": "",
             "button_link": "",
             "highlighted_text": "none",
@@ -905,15 +1159,15 @@
             "show_border": false,
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/Rectangle_50064-3.jpg",
+            "image": "shopify://shop_images/Rectangle_50064_952c005e-e398-41fc-9cc9-e15640811516.jpg",
             "image_ratio": "square",
             "video_url": "",
             "description": "",
             "enable_video_autoplay": false,
             "enable_video_looping": false,
-            "heading": "27.5 x 2.4\" KENDA Tires",
+            "heading": "20 x 4.0\" Fat Tires",
             "heading_size": "text-lg-2xl",
-            "text": "<p>Balanced for grips, rolling efficiency, and comfort for everyday journey.</p>",
+            "text": "<p>Wide, cushioned tires provide stability and grip across mixed terrain. Built for comfort on city streets and beyond.</p>",
             "button_label": "",
             "button_link": "",
             "highlighted_text": "none",
@@ -1366,6 +1620,11 @@
     "cg_product_video_Gh6NTL",
     "timeline_rAgziH",
     "lookbook_Geh8Xd",
+    "mc_image_fill_slide_Bafjpd",
+    "rich_text_HXhwXz",
+    "cg_product_video_aajAdh",
+    "mc_image_fill_slide_9KJ9mi",
+    "mc_image_fill_slide_UxwmbT",
     "multicolumn_HJ8kPr",
     "product-details",
     "image_with_text_overlay_xXhBtW",
