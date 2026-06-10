@@ -421,9 +421,9 @@
             "desktop_image": "shopify://shop_images/ivZosEFOvdc-HD.jpg",
             "mobile_image": "shopify://shop_images/ivZosEFOvdc-HD.jpg",
             "muted": true,
-            "video_url": "https://www.youtube.com/watch?v=8ZxI7Ix93_Q",
-            "video_url_mobile": "https://www.youtube.com/watch?v=8ZxI7Ix93_Q",
-            "title": "",
+            "video_url": "https://www.youtube.com/watch?v=ivZosEFOvdc",
+            "video_url_mobile": "https://www.youtube.com/watch?v=ivZosEFOvdc",
+            "title": "🔋 Heybike Saturn⚡Are They Secretly Building The Best Batteries?",
             "text": "",
             "avatar": "shopify://shop_images/Maximum_Charge.jpg",
             "author": "Maximum Charge"
@@ -446,12 +446,15 @@
         "card_P9UCeh": {
           "type": "card",
           "settings": {
+            "desktop_image": "shopify://shop_images/9oqlCESw2Q-HD.jpg",
+            "mobile_image": "shopify://shop_images/9oqlCESw2Q-HD.jpg",
             "muted": true,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_url_mobile": "",
-            "title": "",
+            "video_url": "https://www.youtube.com/watch?v=-9oqlCESw2Q",
+            "video_url_mobile": "https://www.youtube.com/watch?v=-9oqlCESw2Q",
+            "title": "⚡Heybike SATURN Single Or Dual Battery Moped Style E Bike",
             "text": "",
-            "author": ""
+            "avatar": "shopify://shop_images/Samko_Trad_Bow.jpg",
+            "author": "Samko Trad Bow"
           }
         },
         "card_NWFFgy": {
@@ -496,10 +499,10 @@
         "video_ratio": "",
         "mb_video_ratio": "",
         "card_content_alignment": "left",
-        "card_bg_color": "#ffffff",
+        "card_bg_color": "#94867e",
         "pc_card_title_size": 26,
         "mb_card_title_size": 15,
-        "card_title_color": "#FFFFFF",
+        "card_title_color": "#ffffff",
         "pc_card_desc_size": 18,
         "mb_card_desc_size": 9,
         "card_desc_color": "#FFFFFF",
