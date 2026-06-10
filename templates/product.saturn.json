@@ -521,7 +521,7 @@
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 36,
             "grid_heading_font_size_mobile": 24,
-            "grid_subheading": "1800W Peak95 N-m torque",
+            "grid_subheading": "1800W Peak<br>95 N-m torque",
             "grid_subheading_color": "#FFFFFF",
             "grid_subheading_font_size": 20,
             "grid_subheading_font_size_mobile": 12,
