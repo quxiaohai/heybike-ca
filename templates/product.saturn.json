@@ -374,11 +374,12 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/motor-PC.png",
+            "bg_image_mobile": "shopify://shop_images/680_421-8_2eeb2152-bf31-44b3-94f3-2a54226db1fc.png",
             "grid_heading": "1000W Motor",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 36,
             "grid_heading_font_size_mobile": 24,
-            "grid_subheading": "1800W Peak<br>95 N-m torque",
+            "grid_subheading": "1800W Peak95 N-m torque",
             "grid_subheading_color": "#FFFFFF",
             "grid_subheading_font_size": 20,
             "grid_subheading_font_size_mobile": 12,
@@ -394,6 +395,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078_46344f47-de92-439f-b4df-32bfb476f0f0.png",
+            "bg_image_mobile": "shopify://shop_images/1098_1078_46344f47-de92-439f-b4df-32bfb476f0f0.png",
             "grid_heading": "Full Suspension",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 24,
@@ -414,6 +416,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078_Tektro_Hydraulic_Disc_Brkaes_e401af5f-6fb7-4886-9db4-fdce66761536.png",
+            "bg_image_mobile": "shopify://shop_images/680_421_Tektro_Hydraulic_Disc_Brkaes_b6c32e4f-3d64-49e0-95ec-de3bf429d7c9.png",
             "grid_heading": "Hydraulic Disc Brakes",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 24,
@@ -434,6 +437,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078-3.png",
+            "bg_image_mobile": "shopify://shop_images/680_421-UL_1389e8fa-ca66-4962-ba33-da4dcb20c7a9.png",
             "grid_heading": "",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 36,
@@ -454,6 +458,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078-4_56237f59-c9bd-4e9a-8407-dfd161e240c0.png",
+            "bg_image_mobile": "shopify://shop_images/680_421-APP-1.png",
             "grid_heading": "App Compatible",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 24,
@@ -474,6 +479,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/633_1098_Battery_65f3e766-ba72-45ca-8fc3-e028853368ce.png",
+            "bg_image_mobile": "shopify://shop_images/680_421_d31c02be-e10f-4f84-8990-b1d36acd8707.png",
             "grid_heading": "956.8Wh*2",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 36,
@@ -494,6 +500,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078-1-2.png",
+            "bg_image_mobile": "shopify://shop_images/680_421-2_af5b2380-d524-4170-9cab-171fd5e580fc.png",
             "grid_heading": "Throttle",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 24,
@@ -514,6 +521,7 @@
           "type": "media-grid",
           "settings": {
             "bg_image": "shopify://shop_images/1098_1078-1_922a3ac0-66f2-42df-b401-ee4a436c490e.png",
+            "bg_image_mobile": "shopify://shop_images/680-421-7.png",
             "grid_heading": "Front & RearLighting",
             "grid_heading_color": "#ffffff",
             "grid_heading_font_size": 24,
@@ -544,11 +552,13 @@
       "name": "MC Media Grids Text",
       "settings": {
         "page_color": "",
-        "heading": "Why ALPHA",
-        "content": "ALPHA is for those looking for exceptional and straightforward. With high performance and ease-of-use as a key feature focus, the ALPHA is meant to appeal to both newcomers and seasoned riders. Built with all-terrain tires, a powerful mid-drive motor, and a torque sensor that makes pedaling feel more natural, ALPHA bikes give each rider the means to conquer all types of terrain with ease.",
-        "footer_bg_color": "#FAF9F5",
-        "footer_heading_color": "#000000",
-        "footer_text_color": "#000000"
+        "page_top": 120,
+        "page_bottom": 120,
+        "heading": "What is Saturn?",
+        "content": "Saturn is a moped-style e built for strong performance, long-range flexibility, and all-situationpracticality. The name Saturn evokes strength, scale, and long-distance performance: a bold fit for a bikedesigned to power through challenges and stand out.",
+        "footer_bg_color": "#9a8678",
+        "footer_heading_color": "#ffffff",
+        "footer_text_color": "#ffffff"
       }
     },
     "image_with_text_x9i9By": {
