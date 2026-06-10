@@ -366,6 +366,146 @@
         "hidden_sticky_nav": true
       }
     },
+    "rich_text_JqdbQx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UGayMR": {
+          "type": "heading",
+          "settings": {
+            "heading": "RIDER REVIEWS",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UGayMR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "mc_multicolumn_video_slide_ynKRxP": {
+      "type": "mc_multicolumn-video-slide",
+      "blocks": {
+        "card_pdPEUC": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/ivZosEFOvdc-HD.jpg",
+            "mobile_image": "shopify://shop_images/ivZosEFOvdc-HD.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=8ZxI7Ix93_Q",
+            "video_url_mobile": "https://www.youtube.com/watch?v=8ZxI7Ix93_Q",
+            "title": "",
+            "text": "",
+            "avatar": "shopify://shop_images/Maximum_Charge.jpg",
+            "author": "Maximum Charge"
+          }
+        },
+        "card_EKVh8M": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/1rqtY3H5qi4-HD.jpg",
+            "mobile_image": "shopify://shop_images/1rqtY3H5qi4-HD.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=1rqtY3H5qi4",
+            "video_url_mobile": "https://www.youtube.com/watch?v=1rqtY3H5qi4",
+            "title": "Is The HEYBIKE Saturn Dual Battery ebike TOO MUCH FUN??",
+            "text": "",
+            "avatar": "shopify://shop_images/Monterey_Magnet_Man.jpg",
+            "author": "Monterey Magnet Man"
+          }
+        },
+        "card_P9UCeh": {
+          "type": "card",
+          "settings": {
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "",
+            "text": "",
+            "author": ""
+          }
+        },
+        "card_NWFFgy": {
+          "type": "card",
+          "settings": {
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_url_mobile": "",
+            "title": "",
+            "text": "",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_pdPEUC",
+        "card_EKVh8M",
+        "card_P9UCeh",
+        "card_NWFFgy"
+      ],
+      "name": "MC Multicolumn Video Slide",
+      "settings": {
+        "page_color": "#ffffff",
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "card_loop": false,
+        "card_cells": 1,
+        "video_ratio": "",
+        "mb_video_ratio": "",
+        "card_content_alignment": "left",
+        "card_bg_color": "#ffffff",
+        "pc_card_title_size": 26,
+        "mb_card_title_size": 15,
+        "card_title_color": "#FFFFFF",
+        "pc_card_desc_size": 18,
+        "mb_card_desc_size": 9,
+        "card_desc_color": "#FFFFFF",
+        "author_color": "#ffffff"
+      }
+    },
     "mc_media_grids_text_WrxQP7": {
       "type": "mc_media-grids-text",
       "blocks": {
@@ -1596,6 +1736,8 @@
     "main-product",
     "help-drawer",
     "sticky_navigation_rQrgTj",
+    "rich_text_JqdbQx",
+    "mc_multicolumn_video_slide_ynKRxP",
     "mc_media_grids_text_WrxQP7",
     "cg_product_video_UTYVFp",
     "rich_text_HeceQ6",
