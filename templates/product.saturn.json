@@ -584,7 +584,7 @@
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
-            "highlighted_text": "none",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
         }
@@ -610,7 +610,7 @@
         "color_text": "#000000",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "#f5efcf",
+        "color_highlight": "#b6aa6dff",
         "gradient_highlight": "linear-gradient(91deg, rgba(182, 170, 109, 1), rgba(154, 134, 120, 1) 92%)",
         "color_button_text": "",
         "color_button_background": "",
