@@ -12,16 +12,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "klarna_on_site_messaging_app_block_qK9BdF": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "settings": {
-            "data_key": "credit-promotion-badge",
-            "theme": "custom",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -40,6 +30,16 @@
             "text": "Our Longest Range Commuter",
             "text_size": "text-base lg:text-xl",
             "disable_top_spacing": true
+          }
+        },
+        "klarna_on_site_messaging_app_block_qK9BdF": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "custom",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
           }
         },
         "price_jg6hbG": {
@@ -188,9 +188,9 @@
         }
       },
       "block_order": [
-        "klarna_on_site_messaging_app_block_qK9BdF",
         "title",
         "text_RHmxfj",
+        "klarna_on_site_messaging_app_block_qK9BdF",
         "price_jg6hbG",
         "countdown_iK6xXK",
         "variant_picker",
