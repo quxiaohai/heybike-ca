@@ -16,7 +16,6 @@
       "blocks": {
         "cart_progress": {
           "type": "cart_progress",
-          "disabled": true,
           "settings": {
             "color_background": "#fffbe2",
             "gradient_background": "",
@@ -39,7 +38,6 @@
         },
         "countdown_timer": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
             "color_background": "#fffbe2",
             "gradient_background": "",
@@ -70,7 +68,7 @@
             "mb_countdown_num_height": 1,
             "mb_countdown_num_size": 1,
             "mb_countdown_name_size": 1,
-            "end_time": "2026-06-08 02:00:00",
+            "end_time": "2026-06-15 00:00:00",
             "day": "DAYS",
             "hour": "HOURS",
             "minute": "MINS",
