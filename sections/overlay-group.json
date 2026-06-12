@@ -26,7 +26,7 @@
             "border_color": "#ffdb00",
             "start_text": "<p>You are <strong>$xx.xx</strong> away from Free Shipping!</p>",
             "full_text": "<p>You’re eligible for a <strong>FREE</strong> shipping!</p>",
-            "full_money": 2000,
+            "full_money": 120.0,
             "text_color": "#000000",
             "text_bold_color": "#000000",
             "text_pc_size": 14,
