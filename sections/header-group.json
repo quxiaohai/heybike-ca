@@ -18,8 +18,8 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>100 Miles of Freedom 🚴 Explore Hybrid</strong>",
-            "link": "shopify://products/hybrid",
+            "text": "<strong>Limited-Time Weekend Flash ⚡ Save an Extra C$100</strong>",
+            "link": "shopify://collections/electric-bikes",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
