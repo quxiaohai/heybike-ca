@@ -131,7 +131,6 @@
         },
         "image_aEmQFn": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/CA_PC_23f6c4d2-3b51-4567-b4b5-56fd180db147.jpg",
             "image_height": "650px",
@@ -190,7 +189,7 @@
             "color_highlight": "#e0a580",
             "gradient_highlight": "",
             "color_button_text": "#000000",
-            "color_button_background": "#F6BE00",
+            "color_button_background": "#f6be00",
             "color_button_gradient": "",
             "block_color_overlay": "#171717",
             "overlay_opacity": 0,
@@ -220,7 +219,6 @@
         },
         "image_3W4dbw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2800X1000.jpg",
             "image_height": "650px",
