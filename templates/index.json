@@ -177,7 +177,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/banner_367e6173-4758-4554-b964-9aa91da83976.jpg",
-            "image_height": "700px",
+            "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-end md:justify-center",
             "text_alignment": "center",
