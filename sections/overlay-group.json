@@ -26,7 +26,7 @@
             "border_color": "#ffdb00",
             "start_text": "<p>You are <strong>$xx.xx</strong> away from Free Shipping!</p>",
             "full_text": "<p>You’re eligible for a <strong>FREE</strong> shipping!</p>",
-            "full_money": 120.0,
+            "full_money": 120,
             "text_color": "#000000",
             "text_bold_color": "#000000",
             "text_pc_size": 14,
@@ -38,6 +38,7 @@
         },
         "countdown_timer": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "color_background": "#fffbe2",
             "gradient_background": "",
