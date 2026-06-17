@@ -1,0 +1,346 @@
+{%- assign ss = section.settings -%}
+{% stylesheet %}
+    .mc_testimonial-slide {
+        background: #ffffff;
+        padding: 80px 0;
+    }
+    .mc_testimonial-slide .slide-box {
+        background-color: var(--box-color);
+        border-radius: 24px;
+        padding: 60px 48px;
+    }
+    .mc_testimonial-slide .icon-slide-items {
+        gap: 32px;
+    }
+    .mc_testimonial-slide .icon-slide-items .item .image {
+        max-height: 50px;
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: filter 0.5s ease-in-out;
+        transition-property: filter, opacity;
+    }
+    .mc_testimonial-slide .icon-slide-items .active .image {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+    .mc_testimonial-slide .text-slide-items {
+        padding-top: 8px;
+    }
+    .mc_testimonial-slide .text-slide-items .slide-item {
+        display: none;
+        padding: 36px 72px 24px;
+        color: #000;
+        font-size: 24px;
+    }
+    .mc_testimonial-slide .text-slide-items .slide-item.active {
+        display: block;
+    }
+    .mc_testimonial-slide .dot-items {
+        padding-top: 24px;
+        gap: 8px;
+    }
+    .mc_testimonial-slide .dot-items .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: #bbbbbe;
+    }
+    .mc_testimonial-slide .dot-items .dot.active {
+        width: 40px;
+    }
+    .mc_testimonial-slide .dot-items .dot.active:before {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .mc_testimonial-slide .dot-items .dot:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        background-color: #000000;
+        opacity: 0;
+        transform: translateX(var(--transform-x));
+        transition: transform var(--duration) linear;
+    }
+    @media screen and (max-width: 1023px) {
+        .mc_testimonial-slide {
+            padding: 2.5rem 0;
+        }
+        .mc_testimonial-slide .slide-box {
+            padding: 1.875rem 1.5rem;
+            border-radius: 16px;
+        }
+        .mc_testimonial-slide .slide-item {
+            min-height: 100%;
+            gap: 1.125rem;
+        }
+        .mc_testimonial-slide .slide-item .image {
+            max-height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+        .mc_testimonial-slide .slide-item .text {
+            color: #000;
+            font-size: 1.1875rem;
+        }
+    }
+{% endstylesheet %}
+{% render 'page-wrap-style', load_style: true %}
+<div class="mc_testimonial-slide section--page" id="{{ section.id }}-slide">
+    {%- render 'section-title', info: ss -%}
+    <div class="slide-content page-width w-full" style="--duration: {{ ss.slide_duration }}s;--transform-x: {% if ss.auto_slide %}-100%{% else %}0{% endif %};--box-color: {{ ss.slide_color }};">
+        <tab-panel node-name="pcSlide" autoplay-speed="{{ ss.slide_duration }}"{% if ss.auto_slide %} autoplay{% endif %} class="slide-box desktop-done flex-center-col">
+            <div class="icon-slide-items w-full flex-center">
+                {%- for block in section.blocks -%}
+                    {%- liquid
+                        assign bs = block.settings
+                    -%}
+                    <div
+                        node-name="tab"
+                        data-proxy="tab"
+                        class="item flex-center cursor-pointer{% if forloop.first %} active{% endif %}">
+                        {%- render 'global-image', image: bs.icon, image_size: 300 -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+            <div class="text-slide-items w-full">
+                {%- for block in section.blocks -%}
+                    {%- assign bs = block.settings -%}
+                    <animate-element data-repeat
+                        node-name="panel"
+                        data-proxy="panel"
+                        class="slide-item block relative text-center{% if forloop.first %} active{% endif %}">
+                        {{ bs.content }}
+                    </animate-element>
+                {%- endfor -%}
+            </div>
+        </tab-panel>
+        <slide-element node-name="mbSlide" autoplay-speed="{{ ss.slide_duration }}"{% if ss.auto_slide %} autoplay loop{% endif %} class="slide-box mobile-done flex-left">
+            {%- for block in section.blocks -%}
+                {%- assign bs = block.settings -%}
+                <div class="slide-item flex-center-col">
+                    {%- render 'global-image', image: bs.icon, image_size: 300 -%}
+                    <div class="text relative fw-500 lh-2 text-center active">
+                        {{ bs.content }}
+                    </div>
+                </div>
+            {%- endfor -%}
+        </slide-element>
+        <div class="dot-items flex-center">
+            {%- for block in section.blocks -%}
+                {%- assign bs = block.settings -%}
+                <span node-name="dot" class="dot relative overflow-hidden">&nbsp;</span>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+<script>
+    $heybike.ready(() => {
+        const node = document.getElementById('{{ section.id }}-slide');
+        const nodeList = $heybike.getNodeList(node);
+        const dots = [].concat(nodeList.dot);
+        dots[0].classList.add('active');
+        nodeList.pcSlide.addEventListener('slider:change', ({detail}) => {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === detail.index);
+            });
+        });
+        nodeList.mbSlide.addEventListener('slider:change', ({detail}) => {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === detail.index);
+            });
+        });
+    });
+</script>
+{% schema %}
+{
+  "name": "MC Testimonial Slide",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "MC Testimonial Slide"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Title",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "Title font style",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "italic",
+          "value": "italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "title_pc_size",
+      "label": "Desktop title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_mb_size",
+      "label": "Mobile title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "title_margin_bottom",
+      "label": "Title margin bottom",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "title_bold_color",
+      "label": "Title Bold color",
+      "default": "#000000"
+    },
+    {
+      "type": "color_background",
+      "id": "title_gradient_color",
+      "label": "Title gradient color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show description",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "description_pc_size",
+      "label": "Desktop description size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_mb_size",
+      "label": "Mobile description size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "number",
+      "id": "description_pc_margin_bottom",
+      "label": "Desktop description margin bottom",
+      "default": 0
+    },
+    {
+      "type": "number",
+      "id": "description_mb_margin_bottom",
+      "label": "Mobile description margin bottom",
+      "default": 38
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_slide",
+      "label": "Auto slide",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_duration",
+      "label": "Slide duration",
+      "min": 1,
+      "max": 50,
+      "step": 1,
+      "unit": "s",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "slide_color",
+      "label": "Slide background color",
+      "default": "#f8f9fd"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

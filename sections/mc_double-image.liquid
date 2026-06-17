@@ -120,7 +120,7 @@
 </style>
 <div class="{{ cid }} section--page w-full">
     {%- render 'section-title', info: ss -%}
-    <div class="image-content flex-between-top">
+    <div class="image-content desktop-done flex-between-top">
         {%- for block in section.blocks -%}
             {%- assign bs = block.settings -%}
             <div
@@ -130,8 +130,6 @@
                 {%- render 'global-image',
                     desktop_img: bs.image,
                     image_size: 1200,
-                    mobile_img: bs.mb_image,
-                    mobile_size: 1200,
                     preload: ss.image_preload
                 -%}
                 <div class="media-info flex-column w-full absolute z-1 text-left">
@@ -159,6 +157,41 @@
             </div>
         {%- endfor -%}
     </div>
+    <slide-element dots{% if ss.auto_slide %} autoplay autoplay-speed="{{ ss.duration }}"{% endif %} class="image-content custom-slide-button mobile-done block">
+        {%- for block in section.blocks -%}
+            {%- assign bs = block.settings -%}
+            <div
+                {% if bs.button_url != blank %} onclick="location.href='{{ bs.button_url }}'"{% endif %}
+                style="--aspect-ratio: {{ bs.image.aspect_ratio }};--mb-aspect-ratio: {% if bs.mb_image != blank %}{{ bs.mb_image.aspect_ratio }}{% else %}{{ bs.image.aspect_ratio }}{% endif %};"
+                class="image-item{% if bs.button_url != blank %} cursor-pointer{% endif %} relative overflow-hidden">
+                {%- render 'global-image',
+                    image: bs.mb_image,
+                    image_size: 750,
+                    preload: ss.image_preload
+                -%}
+                <div class="media-info flex-column w-full absolute z-1 text-left">
+                    {%- if bs.icon != blank -%}
+                        {%- render 'global-image', image: bs.icon, image_size: 800, show_size: true -%}
+                    {%- endif -%}
+                    {%- if bs.tag_text != blank -%}
+                        <div class="tag fw-700 lh-2">{{ bs.tag_text }}</div>
+                    {%- endif -%}
+                    {%- if bs.subtitle != blank -%}
+                        <div class="subname fw-500 lh-2">{{ bs.subtitle }}</div>
+                    {%- endif -%}
+                    {%- if bs.title != blank -%}
+                        <div class="name fw-700 lh-2">{{ bs.title }}</div>
+                    {%- endif -%}
+                    {%- if bs.text != blank -%}
+                        <div class="intro lh-2">{{ bs.text }}</div>
+                    {%- endif -%}
+                    {%- if bs.button_text != blank -%}
+                        <a href="{{ bs.button_url | default: 'javascript:void(0)' }}" class="button">{{ bs.button_text }}</a>
+                    {%- endif -%}
+                </div>
+            </div>
+        {%- endfor -%}
+    </slide-element>
 </div>
 {% schema %}
 {
@@ -456,6 +489,22 @@
       "id": "tag_border_color",
       "label": "Tag border color",
       "default": "#bee5c8"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_slide",
+      "label": "Mobile auto slide",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "duration",
+      "label": "Mobile slide speed duration",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 4
     }
   ],
   "blocks": [

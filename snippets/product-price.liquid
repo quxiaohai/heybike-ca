@@ -40,13 +40,14 @@
   <span class="price__regular whitespace-nowrap {% if showFree and price == 0 %} price__free {% endif %}" data-price="{{ price }}">
 
     {%- liquid
-      if target == product and product.price_varies
+      if target == product and product.price_varies and first == blank
 
         if settings.currency_code_enabled
           assign price_min = product.price_min | money_with_currency
         else
           assign price_min = product.price_min | money
         endif
+          echo 'price'
         echo 'products.general.from_text_html' | t: price: price_min
       else
         if settings.currency_code_enabled
