@@ -595,16 +595,24 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "electric-bikes",
-            "products": [],
+            "collection": "",
+            "products": [
+              "villain",
+              "ranger-3-0-pro",
+              "mars-3-0"
+            ],
             "title": "Best Sellers"
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "new-arrivals",
-            "products": [],
+            "collection": "",
+            "products": [
+              "saturn",
+              "villain",
+              "hybrid"
+            ],
             "title": "New Arrivals"
           }
         }
