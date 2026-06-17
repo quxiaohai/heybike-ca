@@ -374,6 +374,87 @@
         "parallax_direction": "vertical"
       }
     },
+    "mc_double_image_HkngBk": {
+      "type": "mc_double-image",
+      "blocks": {
+        "image_jehqer": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC___01.jpg",
+            "mb_image": "shopify://shop_images/mob___01.jpg",
+            "tag_text": "",
+            "subtitle": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "button_url": "",
+            "button_text_color": "#000000",
+            "button_bg_color": "#ffdb00"
+          }
+        },
+        "image_4T9qYf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner_367e6173-4758-4554-b964-9aa91da83976.jpg",
+            "mb_image": "shopify://shop_images/51c32ab8f1dfc11432105acb950fe1fd.jpg",
+            "tag_text": "",
+            "subtitle": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "button_url": "",
+            "button_text_color": "#000000",
+            "button_bg_color": "#ffdb00"
+          }
+        }
+      },
+      "block_order": [
+        "image_jehqer",
+        "image_4T9qYf"
+      ],
+      "disabled": true,
+      "name": "MC Double Image",
+      "settings": {
+        "page_color": "",
+        "show_title": false,
+        "title": "",
+        "title_style": "normal",
+        "title_pc_size": 48,
+        "title_mb_size": 24,
+        "title_margin_bottom": 16,
+        "title_color": "#ffffff",
+        "title_bold_color": "#ffffff",
+        "title_gradient_color": "",
+        "show_description": false,
+        "description": "",
+        "description_color": "#ffffff",
+        "description_pc_size": 18,
+        "description_mb_size": 14,
+        "description_pc_margin_bottom": 40,
+        "description_mb_margin_bottom": 30,
+        "image_preload": false,
+        "image_subtitle_color": "#ffffff",
+        "image_title_color": "#ffffff",
+        "image_desc_color": "#ffffff",
+        "image_subtitle_size": 16,
+        "mb_image_subtitle_size": 18,
+        "image_title_size": 32,
+        "mb_image_title_size": 28,
+        "image_desc_size": 14,
+        "mb_image_desc_size": 14,
+        "image_ratio": "",
+        "image_margin": 12,
+        "mb_image_ratio": "",
+        "mb_image_margin": 16,
+        "image_radius": 0,
+        "mb_image_radius": 0,
+        "tag_text_color": "#39b359",
+        "tag_bg_color": "#ebf7ee",
+        "tag_border_color": "#bee5c8",
+        "auto_slide": true,
+        "duration": 4
+      }
+    },
     "collage_nqGcUG": {
       "type": "collage",
       "blocks": {
@@ -1568,6 +1649,7 @@
   "order": [
     "image_with_text_overlay_W798Hi",
     "custom_slideshow_PeHB6A",
+    "mc_double_image_HkngBk",
     "collage_nqGcUG",
     "featured-collections",
     "countdown_timer_TiEbN4",
