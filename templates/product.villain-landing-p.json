@@ -18,6 +18,14 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
+        "text_UnzgkT": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>The Ultimate Electric Pit Bike for Big Attitudes</strong>",
+            "text_size": "text-base",
+            "disable_top_spacing": false
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -33,7 +41,7 @@
         "text_RHmxfj": {
           "type": "text",
           "settings": {
-            "text": "Intended for riders aged 16 and above; Default max speed limited to 20 mph",
+            "text": "<em><strong>🖤 Midnight Black Pre-Order Now OpenSecure your ride today.</strong></em><strong> </strong>Estimated shipping starts in July.",
             "text_size": "text-base",
             "disable_top_spacing": true
           }
@@ -182,6 +190,22 @@
             "disable_top_spacing": true
           }
         },
+        "text_PxMzCF": {
+          "type": "text",
+          "settings": {
+            "text": "● Intended for riders aged 16 and above",
+            "text_size": "text-base",
+            "disable_top_spacing": false
+          }
+        },
+        "text_wL7dJA": {
+          "type": "text",
+          "settings": {
+            "text": "● Default max speed limited to 20 mph",
+            "text_size": "text-base",
+            "disable_top_spacing": false
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -194,6 +218,7 @@
         }
       },
       "block_order": [
+        "text_UnzgkT",
         "title",
         "text_RHmxfj",
         "klarna_on_site_messaging_app_block_MAD4QL",
@@ -209,6 +234,8 @@
         "text_NLFHz8",
         "text_RtUYcF",
         "text_bWVdgQ",
+        "text_PxMzCF",
+        "text_wL7dJA",
         "share"
       ],
       "settings": {
