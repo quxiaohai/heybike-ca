@@ -76,7 +76,6 @@
         },
         "variant_picker_XmTAmi": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "show_variant_labels": true,
             "picker_type": "button",
