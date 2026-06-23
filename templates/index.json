@@ -705,6 +705,7 @@
         "timer_cjidAj",
         "button_RtJAgy"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/3840X1300.jpg",
