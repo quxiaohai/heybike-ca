@@ -40,6 +40,7 @@
         },
         "text_RHmxfj": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<em><strong>🖤 Midnight Black Pre-Order. </strong></em>Estimated shipping begins around July 5.",
             "text_size": "text-base",
