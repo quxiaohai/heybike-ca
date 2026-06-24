@@ -54,7 +54,7 @@
           "type": "countdown",
           "settings": {
             "heading": "Canada Day Deals",
-            "subheading": "Ends in:",
+            "subheading": "Sale ends in:",
             "color_text": "#000000",
             "color_background": "#f6be00",
             "gradient_background": ""
