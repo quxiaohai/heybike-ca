@@ -296,6 +296,20 @@
     "mc_multicolumn_video_slide_dc634x": {
       "type": "mc_multicolumn-video-slide",
       "blocks": {
+        "card_pAN9md": {
+          "type": "card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/sddefault.jpg",
+            "mobile_image": "shopify://shop_images/sddefault.jpg",
+            "muted": true,
+            "video_url": "https://www.youtube.com/watch?v=muJ3miXyEcI",
+            "video_url_mobile": "https://www.youtube.com/watch?v=muJ3miXyEcI",
+            "title": "I Bought Every Bike Under $1,500",
+            "text": "<p>It was by far the fastest bike with 4,000 W of power which makes it fun to ride and at this price an unbelievable deal.</p>",
+            "avatar": "shopify://shop_images/Sur_Ronster.jpg",
+            "author": "Sur Ronster"
+          }
+        },
         "card_PNB8GW": {
           "type": "card",
           "settings": {
@@ -466,6 +480,7 @@
         }
       },
       "block_order": [
+        "card_pAN9md",
         "card_PNB8GW",
         "card_fzWiaL",
         "card_MH4HCK",
