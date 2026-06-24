@@ -1,0 +1,305 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "title-xl"
+          }
+        },
+        "description_8f9GWF": {
+          "type": "description",
+          "settings": {
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title",
+        "description_8f9GWF"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image_height": "500px",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "200px",
+        "content_position_mobile": "items-center justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 31,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections_j6VAgQ": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "inscoder-collections",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion_tBDPfa": {
+          "type": "promotion",
+          "disabled": true,
+          "settings": {
+            "position": 4,
+            "image": "shopify://shop_images/Screenshot_2024-02-01_at_4.21.51_PM.png",
+            "heading": "HERO",
+            "content": "<p>Escape the ordinary and preorder yours today!</p>",
+            "button_label": "Preorder Now",
+            "button_link": "shopify://products/hero",
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#171717",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "subcollections_j6VAgQ",
+        "promotion_tBDPfa"
+      ],
+      "settings": {
+        "products_per_page": 11,
+        "columns": 3,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "drawer",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "faq_qtwQ3B": {
+      "type": "faq",
+      "blocks": {
+        "question_fnyXCG": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "<strong>What's included in Heybike 4th Anniversary Celebration?</strong>",
+            "text": "<p>We're celebrating 4 amazing years with unbeatable deals and exciting gifts! Here's what you can enjoy:</p><ul><li><strong>Best Deals Ever</strong> on All Ebikes</li><li><strong>Extra $100 Coupon</strong> with code \"ANNIVERSARY\"</li><li><strong>Free Baskets</strong> with select models</li><li><strong>60-Day Price Match Guarantee</strong></li><li><strong>One Tree Planted</strong> for every ebike sold</li></ul><p>Even more anniversary giveaways & surprises await! Stay in the loop—<a href=\"https://www.heybike.com/account/register\" target=\"_blank\" title=\"https://www.heybike.com/account/register\"><em><strong>subscribe</strong></em></a> to our emails for exclusive offers and the latest event updates!</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_TtMx99": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "<strong>What is the 60-Day Price Match Guarantee?</strong>",
+            "text": "<p>We guarantee price protection for orders placed during Heybike 4th Anniversary Sale. If you find a lower price on the exact same product within 60 days of your purchase on Heybike official website, simply reach out to our customer service team with proof of the lower price. Our team will verify the information, and issue a refund for the price difference depending on the specific situation.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_jJgxhe": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does my Heybike ebike come pre-assembled?</strong>",
+            "text": "<p>Your ebike will arrive partially assembled. There are just a few pieces to put into place once you take the bike out of the box. For unboxing and setup instructions, please follow the guides on our <a href=\"https://www.youtube.com/playlist?list=PLY2mr2usEhKHF8L_Qrf_jY0CFlBEmzat9\">YouTube Channel</a></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_xA8KHi": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I ride Heybike ebikes on rainy days?</strong>",
+            "text": "<p>You can ride in light rain and don't have to worry about damage caused by spray from wet roads and raindrops. We don't recommend riding ebikes in heavy rain or overly wet environments. As for the waterproof level, Heybike ebikes meet IPX4 standards; the motor, battery, and display meet IP64 standards.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_VKwKhX": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I ride an electric bike if the battery runs out? </strong>",
+            "text": "<p>If your ebike runs out of battery, you can simply continue riding. The motor on the ebike only assists your pedaling (instead of doing all the work), so you can continue riding as usual without the pedal assist.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_cFHK8r": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How many PAS levels are on my ebike?</strong>",
+            "text": "<p>1-5 PAS levels: Hauler, Hero, Mars 2.0, Horizon, Ranger S, Tyson, Cityrun, Brawn. Each PAS level has a corresponding speed limit.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_PkDRH7": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What App works with my ebike? What are the App features?</strong>",
+            "text": "<p>Heybike ebikes (except Explore, Ranger) can be connected with Heybike Smart App. You can use the App to control your bike remotely, record every ride, adjust speeds, and look for nearby dealers, etc.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_iFXGfE": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What's the warranty for Heybike ebikes?</strong>",
+            "text": "<p>We provide a 2-year warranty for all Heybike electric bikes, including the combo sale. Besides, the Hero's bike frame has a 10-year warranty.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_kgKQgN": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What's the return & refund policy? </strong>",
+            "text": "<p>You have 30 days after receiving your package to request a return. Please first contact our customer service team at <a href=\"mailto:support@heybike.com\">support@heybike.com</a> to get a return shipping label. As for the refund, it depends on different situations to get a full refund or partial refund. Find more details about the return & refund policy in this link.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_tqPFm8": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Are Heybike electric bikes UL-certified?</strong>",
+            "text": "<p>Our ebikes are safety-certified with UL 2849 standards. We always consider riders' safety as the top priority.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_TgyJEq": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is customer service available 24/7?</strong>",
+            "text": "<p>For customer service via email, it is available 24/7. More than 90% of the emails will be replied to within 24 hours and some emails may be 48 hours. As for telephone customer service, please dial +1 888-301-6908 or +1 888-859-1518 at 7:00-16:00 PST, Mon.-Sat.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_fnyXCG",
+        "question_TtMx99",
+        "question_jJgxhe",
+        "question_xA8KHi",
+        "question_VKwKhX",
+        "question_cFHK8r",
+        "question_PkDRH7",
+        "question_iFXGfE",
+        "question_kgKQgN",
+        "question_tqPFm8",
+        "question_TgyJEq"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "section_id": "",
+        "style": "with-border",
+        "heading": "FAQs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 3,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "main-collection",
+    "faq_qtwQ3B",
+    "recently-viewed"
+  ]
+}
