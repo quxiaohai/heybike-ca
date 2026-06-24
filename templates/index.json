@@ -151,7 +151,7 @@
             "overlay_opacity": 4,
             "subheading": "Limited-time Canada Day deals",
             "subheading_size": "subtitle-md",
-            "secondary_color": false,
+            "secondary_color": true,
             "heading": "Ride farther, explore more, and save big this holiday.",
             "heading_size": "title-sm",
             "heading_tag": "h2",
