@@ -176,12 +176,12 @@
         "image_pCkcAc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/VIllian-_banner.jpg",
+            "image": "shopify://shop_images/Canada_DAY_villain_banner_PC.jpg",
             "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-end md:justify-center",
             "text_alignment": "center",
-            "image_mobile": "shopify://shop_images/VIllian-_banner_M.jpg",
+            "image_mobile": "shopify://shop_images/Canada_DAY_villain_banner.jpg",
             "image_height_mobile": "500px",
             "content_position_mobile": "items-end justify-center",
             "text_alignment_mobile": "center",
@@ -388,8 +388,8 @@
             "text": "<p><strong>Retro-inspired style with power ready</strong></p><p><strong>for every adventure</strong></p>",
             "button_text": "Explore Saturn",
             "button_url": "shopify://products/saturn",
-            "button_text_color": "#F0DE42",
-            "button_bg_color": "#FFFFFF"
+            "button_text_color": "#f0de42",
+            "button_bg_color": "#ffffff"
           }
         },
         "image_4T9qYf": {
@@ -403,7 +403,7 @@
             "text": "",
             "button_text": "",
             "button_url": "",
-            "button_text_color": "#F0DE42",
+            "button_text_color": "#f0de42",
             "button_bg_color": "#ffdb00"
           }
         }
@@ -434,8 +434,8 @@
         "description_mb_margin_bottom": 15,
         "image_preload": false,
         "image_subtitle_color": "#ffffff",
-        "image_title_color": "#FFFFFF",
-        "image_desc_color": "#FFFFFF",
+        "image_title_color": "#ffffff",
+        "image_desc_color": "#ffffff",
         "image_subtitle_size": 16,
         "mb_image_subtitle_size": 18,
         "image_title_size": 32,
@@ -448,9 +448,9 @@
         "mb_image_margin": 16,
         "image_radius": 0,
         "mb_image_radius": 0,
-        "tag_text_color": "#F91018",
+        "tag_text_color": "#f91018",
         "tag_bg_color": "#000000",
-        "tag_border_color": "#F5DF39",
+        "tag_border_color": "#f5df39",
         "auto_slide": true,
         "duration": 4
       }
