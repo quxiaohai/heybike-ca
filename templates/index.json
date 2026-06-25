@@ -175,7 +175,6 @@
         },
         "image_pCkcAc": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Canada_DAY_villain_banner_PC.jpg",
             "image_height": "650px",
@@ -220,7 +219,6 @@
         },
         "image_3W4dbw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PC___01.jpg",
             "image_height": "650px",
@@ -228,7 +226,7 @@
             "content_position": "md:items-center md:justify-start",
             "text_alignment": "left",
             "image_mobile": "shopify://shop_images/mob___01.jpg",
-            "image_height_mobile": "auto",
+            "image_height_mobile": "600px",
             "content_position_mobile": "items-start justify-center",
             "text_alignment_mobile": "center",
             "color_text": "#ffffff",
