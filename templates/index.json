@@ -221,7 +221,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/PC___01.jpg",
-            "image_height": "600px",
+            "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-center md:justify-start",
             "text_alignment": "left",
