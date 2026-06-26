@@ -133,7 +133,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/EB-CA_day-PC.jpg",
-            "image_height": "600px",
+            "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-center md:justify-start",
             "text_alignment": "left",
@@ -177,7 +177,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Canada_DAY_villain_banner_PC.jpg",
-            "image_height": "600px",
+            "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-end md:justify-start",
             "text_alignment": "center",
