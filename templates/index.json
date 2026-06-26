@@ -132,12 +132,12 @@
         "image_aEmQFn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/banner_pc_c6348b31-9699-4b5b-bc3a-9fcc15ce4f08.jpg",
+            "image": "shopify://shop_images/EB-CA_day-PC.jpg",
             "image_height": "650px",
             "content_width": "small",
             "content_position": "md:items-center md:justify-start",
             "text_alignment": "left",
-            "image_mobile": "shopify://shop_images/banner_mob_b955b738-2976-44da-a59f-365cdb063710.jpg",
+            "image_mobile": "shopify://shop_images/EB_Canada_day-mob.jpg",
             "image_height_mobile": "600px",
             "content_position_mobile": "items-start justify-center",
             "text_alignment_mobile": "center",
