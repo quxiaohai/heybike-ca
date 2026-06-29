@@ -3518,6 +3518,13 @@ class SlideshowElement extends HTMLElement {
                     selectedElement.dataset.type === "video" && theme.utils.visibleMedia(selectedElement.querySelectorAll("video-media"))?.play(), theme.config.isTouch || selectedElement.querySelector("animate-element")?.refresh()
                 }
             }
+        }),this.slider.on('staticClick', (event, pointer, elem, index) => {
+            this.dispatchEvent(
+                new CustomEvent('slider:click', {
+                    bubbles: true,
+                    detail: {event, pointer, elem, index}
+                })
+            );
         }), this.slider.on("change", this.onChange.bind(this)), this.addEventListener("slider:previous", () => this.slider.previous()), this.addEventListener("slider:next", () => this.slider.next()), this.addEventListener("slider:play", () => this.slider.playPlayer()), this.addEventListener("slider:pause", () => this.slider.pausePlayer()), Shopify.designMode && this.addEventListener("shopify:block:select", event => this.slider.select(this.items.indexOf(event.target))))
     }
 

@@ -1,44 +1,46 @@
 <style>
-  #shopify-section-{{ section.id }} {
-    --section-padding-top: {{ section.settings.padding_top }}px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    {%- render 'section-variables', section: section -%}
-    {%- if section.settings.image != blank and section.settings.image_height == 'adapt' %}
-      --ratio-percent: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+    #shopify-section-{{ section.id }} {
+        --section-padding-top: {{ section.settings.padding_top }}px;
+        --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}{%- if section.settings.image != blank and section.settings.image_height == 'adapt' %} --ratio-percent: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
     {% endif -%}
-  }
-
-  {%- if section.settings.image_mobile != blank and section.settings.image_height_mobile == 'adapt' %}
-    @media screen and (max-width: 767px) {
-      #shopify-section-{{ section.id }} {
-        --ratio-percent: {{ 1 | divided_by: section.settings.image_mobile.aspect_ratio | times: 100 }}%;
-      }
     }
-  {% endif -%}
+
+    {%- if section.settings.image_mobile != blank and section.settings.image_height_mobile == 'adapt' %}
+    @media screen and (max-width: 767px) {
+        #shopify-section-{{ section.id }} {
+            --ratio-percent: {{ 1 | divided_by: section.settings.image_mobile.aspect_ratio | times: 100 }}%;
+        }
+    }
+
+    {% endif -%}
 </style>
 
-<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %} custom_slideshow"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
-  <div class="{% unless section.settings.full_width %}page-width {% endunless %}relative">
-    {%- if section.blocks.size > 1 and section.settings.autoplay -%}
-      <button
-        type="button"
-        class="slideshow-control flex items-center justify-center rounded-full sr-only"
-        is="control-button"
-        aria-controls="Slider-{{ section.id }}"
-        aria-live="polite"
-      >
+<div
+    class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %} custom_slideshow"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
+    <div class="{% unless section.settings.full_width %}page-width {% endunless %}relative">
+        {%- if section.blocks.size > 1 and section.settings.autoplay -%}
+            <button
+                type="button"
+                class="slideshow-control flex items-center justify-center rounded-full sr-only"
+                is="control-button"
+                aria-controls="Slider-{{ section.id }}"
+                aria-live="polite"
+            >
         <span class="slideshow-control__pause">
           {%- render 'icon', icon: 'pause' -%}
           <span class="sr-only">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
         </span>
-        <span class="slideshow-control__play">
+                <span class="slideshow-control__play">
           {%- render 'icon', icon: 'play' -%}
           <span class="sr-only">{{ 'sections.slideshow.play_slideshow' | t }}</span>
         </span>
-      </button>
-    {%- endif -%}
-    <slideshow-element class="custom_slider slideshow block" id="Slider-{{ section.id }}"{% if section.settings.autoplay %} autoplay autoplay-speed="{{ section.settings.autoplay_speed }}"{% endif %}
-    data-flickity='{
+            </button>
+        {%- endif -%}
+        <slideshow-element
+            class="custom_slider slideshow block"
+            id="Slider-{{ section.id }}"{% if section.settings.autoplay %} autoplay autoplay-speed="{{ section.settings.autoplay_speed }}"{% endif %}
+            data-flickity='{
           "cellAlign": "left",
           "groupCells": "100%",
           "fullscreen": true,
@@ -48,142 +50,173 @@
           "contain": true,
           "pageDots":true
         }'>
-      {%- for block in section.blocks -%}
-      <div class="banner media--{{ block.settings.image_height }} mobile:media--{{ block.settings.image_height_mobile }} w-full overflow-hidden banner-{{ block.id }}">
-        <media-element class="banner__media block w-full h-full overflow-hidden"{% if section.settings.enable_parallax %} data-parallax="0.3" data-parallax-dir="{{ section.settings.parallax_direction }}"{% endif %}>
-          <animate-element data-animate="zoom-out" class="media media--height block w-full h-full relative overflow-hidden">
-            {%- if block.settings.image != blank -%}
-              {%- capture sizes -%}{% if block.settings.full_width %}100vw{% else %}min({{ block.page_width }}px, 100vw){% endif %}{%- endcapture -%}
-              <picture class="media media--height block w-full h-full relative overflow-hidden">
-                {%- if block.settings.image_mobile -%}
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="{{ block.settings.image_mobile | image_url: width: '400x' }} 400w, {{ block.settings.image_mobile | image_url: width: '600x' }} 600w, {{ block.settings.image_mobile | image_url: width: '800x' }} 800w, {{ block.settings.image_mobile | image_url: width: '1000x' }} 1000w"
-                    width="{{ block.settings.image_mobile.width }}"
-                    height="{{ block.settings.image_mobile.height }}"
-                  >
-                {%- endif -%}
-  
-                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', is: 'lazy-image', class: 'banner__image' -}}
-              </picture>
-            {%- else -%}
-              {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay' -}}
-            {%- endif -%}
-          </animate-element>
-        </media-element>
-        
-        {%- if section.blocks.size > 0 -%}
-          <span class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none {{ block.id }}-banner__overlay"></span>
-          <div class="banner__content overflow-hidden absolute z-1 top-0 left-0 w-full h-full">
-            <div class="page-width w-full h-full flex {{ block.settings.content_position }} {{ block.settings.content_position_mobile }}">
-              <div class="banner__box banner__box--{{ block.settings.content_width }} md:text-{{ block.settings.text_alignment }} text-{{ block.settings.text_alignment_mobile }}">
-                {% style %}
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h1,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h2,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h3,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h4,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h5,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color h6,
-                  .custom_slideshow .banner-{{ block.id }} .banner_text-color p {
-                    color: {{ block.settings.color_text }};
-                  }
-                  .custom_slideshow .{{ block.id }}-banner__overlay {
-                    background-color: rgb({{ block.settings.block_color_overlay.rgb }}/ {{ block.settings.overlay_opacity | divided_by: 100.0 }});
-                  }
-                  .custom_slideshow .{{ block.id }}-banner__overlay~.banner__content {
-                    --color-background: {{ block.settings.block_color_overlay.rgb }};
-                  }
-                  .custom_slideshow .{{ block.id }}-button {
-                    color: rgb({{ block.settings.color_button_text.rgb }});
-                    background: {{ block.settings.color_button_gradient }};
-                    background-color: rgb({{ block.settings.color_button_background.rgb }});
-                  }
-                  .custom_slideshow .{{ block.id }}-button:after {
-                    border-color: rgb({{ block.settings.color_button_background.rgb }});
-                  }
-                {% endstyle %}
-                {%- assign delay = 0 -%}
-                
-                {% comment %} SUBHEADING {% endcomment %}
-                  {%- if block.settings.subheading != blank -%}
-                    <p class="banner__subheading heading uppercase leading-none tracking-widest {{ block.settings.subheading_size }}{% if block.settings.secondary_color %} banner__text--colored{% endif %}" {{ block.shopify_attributes }}>
-                      {{- block.settings.subheading -}}
-                    </p>
-                  {%- endif -%}
+            {%- for block in section.blocks -%}
+            <div
+                {% if block.settings.button_label != blank %}data-router="{{ block.settings.button_link }}"{% endif %}
+                class="banner media--{{ block.settings.image_height }} mobile:media--{{ block.settings.image_height_mobile }} w-full overflow-hidden banner-{{ block.id }}">
+                <media-element
+                    class="banner__media block w-full h-full overflow-hidden"{% if section.settings.enable_parallax %} data-parallax="0.3" data-parallax-dir="{{ section.settings.parallax_direction }}"{% endif %}>
+                    <animate-element data-animate="zoom-out"
+                                     class="media media--height block w-full h-full relative overflow-hidden">
+                        {%- if block.settings.image != blank -%}
+                            {%- capture sizes -%}{% if block.settings.full_width %}100vw{% else %}min({{ block.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+                            <picture class="media media--height block w-full h-full relative overflow-hidden">
+                                {%- if block.settings.image_mobile -%}
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="{{ block.settings.image_mobile | image_url: width: '400x' }} 400w, {{ block.settings.image_mobile | image_url: width: '600x' }} 600w, {{ block.settings.image_mobile | image_url: width: '800x' }} 800w, {{ block.settings.image_mobile | image_url: width: '1000x' }} 1000w"
+                                        width="{{ block.settings.image_mobile.width }}"
+                                        height="{{ block.settings.image_mobile.height }}"
+                                    >
+                                {%- endif -%}
 
-                {% comment %} TEXT {% endcomment %}
-                  {%- if block.settings.text != blank -%}
-                    <div class="rte leading-normal {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.secondary_color_text %} text-opacity{% endif %}{% if block.settings.color_text %} banner_text-color{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size:{{ block.settings.text_max_size }}px;"{% endif %} {{ block.shopify_attributes }}>
-                      {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text_text, scribble: block.settings.highlighted_scribble_text -%}
-                    </div>
-                  {%- endif -%}
+                                {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', is: 'lazy-image', class: 'banner__image' -}}
+                            </picture>
+                        {%- else -%}
+                            {{- 'lifestyle-1' | placeholder_svg_tag: 'banner__image banner__overlay' -}}
+                        {%- endif -%}
+                    </animate-element>
+                </media-element>
 
-                {% comment %} HEADING {% endcomment %}
-                  {%- if block.settings.heading != blank -%}
-                    {%- assign delay = delay | plus: 1 -%}
-                    <{{ block.settings.heading_tag }} class="banner__title heading font-bold leading-none {{ block.settings.heading_size }} {% if block.settings.color_text %} banner_text-color{% endif %}" {{ block.shopify_attributes }}>
-                      {%- if block.settings.highlighted_text == 'none' -%}
-                        <split-words class="split-words flex flex-wrap" data-animate="fade-up-large" data-animate-delay="{{ delay | times: 250 }}">{{ block.settings.heading }}</split-words>
-                      {%- else -%}
-                        {%- render 'highlighted-text', content: block.settings.heading, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble -%}
-                      {%- endif -%}
-                    </{{ block.settings.heading_tag }}>
-                  {%- endif -%}
-                  
-                {% comment %} BUTTON {% endcomment %}
-                  {%- if block.settings.button_label != blank -%}
-                    <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--fixed button--{{ block.settings.button_size }} icon-with-text {{ block.id }}-button"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} is="hover-link" {{ block.shopify_attributes }}>
-                      <span class="btn-fill" data-fill></span>
-                      <span class="btn-text">
+                {%- if section.blocks.size > 0 -%}
+                <span
+                    class="banner__overlay absolute top-0 left-0 w-full h-full pointer-events-none {{ block.id }}-banner__overlay"></span>
+                <div class="banner__content overflow-hidden absolute z-1 top-0 left-0 w-full h-full">
+                    <div
+                        class="page-width w-full h-full flex {{ block.settings.content_position }} {{ block.settings.content_position_mobile }}">
+                        <div
+                            class="banner__box banner__box--{{ block.settings.content_width }} md:text-{{ block.settings.text_alignment }} text-{{ block.settings.text_alignment_mobile }}">
+                            {% style %}
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h1,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h2,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h3,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h4,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h5,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color h6,
+                                .custom_slideshow .banner-{{ block.id }} .banner_text-color p {
+                                color: {{ block.settings.color_text }};
+                                }
+                                .custom_slideshow .{{ block.id }}-banner__overlay {
+                                background-color: rgb({{ block.settings.block_color_overlay.rgb }}/ {{ block.settings.overlay_opacity | divided_by: 100.0 }});
+                                }
+                                .custom_slideshow .{{ block.id }}-banner__overlay~.banner__content {
+                                --color-background: {{ block.settings.block_color_overlay.rgb }};
+                                }
+                                .custom_slideshow .{{ block.id }}-button {
+                                color: rgb({{ block.settings.color_button_text.rgb }});
+                                background: {{ block.settings.color_button_gradient }};
+                                background-color: rgb({{ block.settings.color_button_background.rgb }});
+                                }
+                                .custom_slideshow .{{ block.id }}-button:after {
+                                border-color: rgb({{ block.settings.color_button_background.rgb }});
+                                }
+                            {% endstyle %}
+                            {%- assign delay = 0 -%}
+
+                            {% comment %} SUBHEADING {% endcomment %}
+                            {%- if block.settings.subheading != blank -%}
+                                <p class="banner__subheading heading uppercase leading-none tracking-widest {{ block.settings.subheading_size }}{% if block.settings.secondary_color %} banner__text--colored{% endif %}" {{ block.shopify_attributes }}>
+                                    {{- block.settings.subheading -}}
+                                </p>
+                            {%- endif -%}
+
+                            {% comment %} TEXT {% endcomment %}
+                            {%- if block.settings.text != blank -%}
+                                <div
+                                    class="rte leading-normal {{ block.settings.text_font }} {{ block.settings.text_size }}{% if block.settings.secondary_color_text %} text-opacity{% endif %}{% if block.settings.color_text %} banner_text-color{% endif %}"{% if block.settings.text_size == 'subtext-custom' %} style="--subtext-size:{{ block.settings.text_max_size }}px;"{% endif %} {{ block.shopify_attributes }}>
+                                    {%- render 'highlighted-text', content: block.settings.text, style: block.settings.highlighted_text_text, scribble: block.settings.highlighted_scribble_text -%}
+                                </div>
+                            {%- endif -%}
+
+                            {% comment %} HEADING {% endcomment %}
+                            {%- if block.settings.heading != blank -%}
+                            {%- assign delay = delay | plus: 1 -%}
+                            <{{ block.settings.heading_tag }} class="banner__title heading font-bold
+                            leading-none {{ block.settings.heading_size }} {% if block.settings.color_text %} banner_text-color{% endif %}
+                            " {{ block.shopify_attributes }}>
+                            {%- if block.settings.highlighted_text == 'none' -%}
+                                <split-words class="split-words flex flex-wrap" data-animate="fade-up-large"
+                                             data-animate-delay="{{ delay | times: 250 }}">{{ block.settings.heading }}</split-words>
+                            {%- else -%}
+                                {%- render 'highlighted-text', content: block.settings.heading, style: block.settings.highlighted_text, scribble: block.settings.highlighted_scribble -%}
+                            {%- endif -%}
+                        </{{ block.settings.heading_tag }}>
+                        {%- endif -%}
+
+                        {% comment %} BUTTON {% endcomment %}
+                        {%- if block.settings.button_label != blank -%}
+                            <a class="button{% if block.settings.button_secondary_style %} button--secondary{% else %} button--primary{% endif %} button--fixed button--{{ block.settings.button_size }} icon-with-text {{ block.id }}-button"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}
+                               is="hover-link" {{ block.shopify_attributes }}>
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
                         {%- liquid
-                          echo block.settings.button_label | escape
-                          render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
+                            echo block.settings.button_label | escape
+                            render 'icon', icon: 'arrow-right', size: 'sm', class: 'transform'
                         -%}
                       </span>
-                    </a>
-                  {%- endif -%}
+                            </a>
+                        {%- endif -%}
 
-                {% comment %} LINK {% endcomment %}
-                  {%- if block.settings.label != blank -%}
-                    <a class="link"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      {{- block.settings.label -}}
-                    </a>
-                  {%- endif -%}
+                        {% comment %} LINK {% endcomment %}
+                        {%- if block.settings.label != blank -%}
+                            <a class="link"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                                {{- block.settings.label -}}
+                            </a>
+                        {%- endif -%}
 
-                {% comment %} CUSTOM LIQUID {% endcomment %}
-                  {%- if block.settings.liquid != blank -%}
-                    <div class="rte" {{ block.shopify_attributes }}>
-                      {{- block.settings.liquid -}}
+                        {% comment %} CUSTOM LIQUID {% endcomment %}
+                        {%- if block.settings.liquid != blank -%}
+                            <div class="rte" {{ block.shopify_attributes }}>
+                                {{- block.settings.liquid -}}
+                            </div>
+                        {%- endif -%}
                     </div>
-                  {%- endif -%}
-              </div>
+                </div>
             </div>
-          </div>
-        {%- endif -%}
-      </div>
-      {%- endfor -%}
+            {%- endif -%}
+    </div>
+    {%- endfor -%}
     </slideshow-element>
     {%- if section.blocks.size > 1 and section.settings.show_navigation -%}
-      <div class="slideshow-dots flex items-end justify-between">
-        <button type="button" class="flickity-prev-next-button previous" is="previous-button" class="hidden md:block pointer-events-auto" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.previous' | t | escape }}">
-          {%- render 'icon', icon: 'arrow-left-long', class: 'transform' -%}
-        </button>
-        <slider-dots class="flickity-page-dots w-auto pointer-events-auto" aria-controls="Slider-{{ section.id }}">
-          {%- for block in section.blocks -%}
-            <button type="button" class="flickity-page-dot" data-index="{{ forloop.index0 }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
-              <span class="sr-only">{{ 'general.pagination.page' | t: number: forloop.index }}</span>
+        <div class="slideshow-dots flex items-end justify-between">
+            <button type="button" class="flickity-prev-next-button previous" is="previous-button"
+                    class="hidden md:block pointer-events-auto" aria-controls="Slider-{{ section.id }}"
+                    aria-label="{{ 'general.pagination.previous' | t | escape }}">
+                {%- render 'icon', icon: 'arrow-left-long', class: 'transform' -%}
             </button>
-          {%- endfor -%}
-        </slider-dots>
-        <button type="button" class="flickity-prev-next-button next" is="next-button" class="hidden md:block pointer-events-auto" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.next' | t | escape }}">
-          {%- render 'icon', icon: 'arrow-right-long', class: 'transform' -%}
-        </button>
-      </div>
+            <slider-dots class="flickity-page-dots w-auto pointer-events-auto" aria-controls="Slider-{{ section.id }}">
+                {%- for block in section.blocks -%}
+                    <button type="button" class="flickity-page-dot" data-index="{{ forloop.index0 }}"
+                            aria-current="{% if forloop.first %}true{% else %}false{% endif %}">
+                        <span class="sr-only">{{ 'general.pagination.page' | t: number: forloop.index }}</span>
+                    </button>
+                {%- endfor -%}
+            </slider-dots>
+            <button type="button" class="flickity-prev-next-button next" is="next-button"
+                    class="hidden md:block pointer-events-auto" aria-controls="Slider-{{ section.id }}"
+                    aria-label="{{ 'general.pagination.next' | t | escape }}">
+                {%- render 'icon', icon: 'arrow-right-long', class: 'transform' -%}
+            </button>
+        </div>
     {%- endif -%}
-  </div>
 </div>
-
+</div>
+<script>
+    $heybike.ready(() => {
+        document.getElementById('Slider-{{ section.id }}').addEventListener('slider:click', event => {
+            const elem = event.detail.elem;
+            if (elem.hasAttribute('data-router')) {
+                location.href = elem.getAttribute('data-router');
+            } else {
+                const parent = elem.closest('.banner');
+                if (parent && parent.hasAttribute('data-router') && !elem.closest('a')) {
+                    location.href = elem.getAttribute('data-router');
+                }
+            }
+        });
+    });
+</script>
 {% schema %}
 {
   "name": "Custom Slideshow",
@@ -977,7 +1010,11 @@
     }
   ],
   "disabled_on": {
-    "groups": ["footer", "header", "custom.overlay"]
+    "groups": [
+      "footer",
+      "header",
+      "custom.overlay"
+    ]
   }
 }
 {% endschema %}
