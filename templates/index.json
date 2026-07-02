@@ -175,7 +175,6 @@
         },
         "image_pCkcAc": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Canada_DAY_villain_banner_PC.jpg",
             "image_height": "700px",
@@ -220,7 +219,6 @@
         },
         "image_3W4dbw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PC___01.jpg",
             "image_height": "700px",
