@@ -149,7 +149,7 @@
             "color_button_gradient": "",
             "block_color_overlay": "#171717",
             "overlay_opacity": 4,
-            "subheading": "Limited-time Canada Day deals",
+            "subheading": "SUMMER SAVINGS",
             "subheading_size": "subtitle-md",
             "secondary_color": true,
             "heading": "Ride farther, explore more, and save big this holiday.",
@@ -157,14 +157,14 @@
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
-            "text": "<p><strong>Celebrate Canada Day on Every Ride</strong></p>",
+            "text": "<p>Keep the Summer Rolling</p>",
             "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color_text": false,
             "highlighted_text_text": "text",
             "highlighted_scribble_text": "circle",
-            "button_label": "🍁Shop Now",
+            "button_label": "Explore Heybikes",
             "button_link": "shopify://collections/electric-bikes",
             "button_size": "sm",
             "button_secondary_style": false,
@@ -175,6 +175,7 @@
         },
         "image_pCkcAc": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Canada_DAY_villain_banner_PC.jpg",
             "image_height": "700px",
@@ -219,6 +220,7 @@
         },
         "image_3W4dbw": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PC___01.jpg",
             "image_height": "700px",
