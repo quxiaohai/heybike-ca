@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "Weekend Flash: Extra C$100 Off Mars 3.0 & Ranger 3.0 Pro.",
+            "text": "<strong>Weekend Flash: Extra C$100 Off Mars 3.0 & Ranger 3.0 Pro.</strong>",
             "link": "shopify://collections/electric-bikes",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -42,7 +42,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "🖤 Weekend Flash: Extra C$100 Off Villain",
+            "text": "<strong>🖤 Weekend Flash: Extra C$100 Off Villain</strong>",
             "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
