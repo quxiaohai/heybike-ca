@@ -389,8 +389,8 @@
             "text": "<p><strong>Retro-inspired style with power ready</strong></p><p><strong>for every adventure</strong></p>",
             "button_text": "Explore Saturn",
             "button_url": "shopify://products/saturn",
-            "button_text_color": "#EDDB31",
-            "button_bg_color": "#EDDB31"
+            "button_text_color": "#eddb31",
+            "button_bg_color": "#eddb31"
           }
         },
         "image_4T9qYf": {
@@ -403,7 +403,7 @@
             "title": "",
             "text": "",
             "button_text": "",
-            "button_url": "",
+            "button_url": "shopify://products/villain",
             "button_text_color": "#f0de42",
             "button_bg_color": "#ffdb00"
           }
@@ -448,7 +448,7 @@
         "mb_image_margin": 16,
         "image_radius": 0,
         "mb_image_radius": 0,
-        "tag_text_color": "#EDDB31",
+        "tag_text_color": "#eddb31",
         "tag_bg_color": "#000000",
         "tag_border_color": "#f5df39",
         "auto_slide": true,
