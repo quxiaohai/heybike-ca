@@ -46,6 +46,14 @@
             "disable_top_spacing": true
           }
         },
+        "text_9tcKqq": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Free gloves come in size M by default. </strong>Please leave an order note and contact support for a size change.",
+            "text_size": "text-base",
+            "disable_top_spacing": false
+          }
+        },
         "klarna_on_site_messaging_app_block_MAD4QL": {
           "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
           "settings": {
@@ -220,6 +228,7 @@
         "text_UnzgkT",
         "title",
         "text_RHmxfj",
+        "text_9tcKqq",
         "klarna_on_site_messaging_app_block_MAD4QL",
         "price_jg6hbG",
         "countdown_Yb9jEM",
