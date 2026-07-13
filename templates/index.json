@@ -381,14 +381,14 @@
         "image_jehqer": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC___01_1920x738_21a0e54d-eaa0-4a43-8be2-f15ff45ae843.jpg",
-            "mb_image": "shopify://shop_images/mob___01.jpg",
-            "tag_text": "New Arrivals",
+            "image": "shopify://shop_images/PC___01_f2561ae0-c0c8-4fe1-9006-b5372fcec680.jpg",
+            "mb_image": "shopify://shop_images/mob___01_159615b6-bebd-450d-9417-fc693cb3ff69.jpg",
+            "tag_text": "Hot Summer Ride",
             "subtitle": "",
-            "title": "<p>Meet Saturn</p>",
-            "text": "<p><strong>Retro-inspired style with power ready</strong></p><p><strong>for every adventure</strong></p>",
-            "button_text": "Explore Saturn",
-            "button_url": "shopify://products/saturn",
+            "title": "<p>BUY 2, SAVE $200</p>",
+            "text": "<p>Bundle any 2 ebikes and instantly get <strong>$200 off</strong>.</p>",
+            "button_text": "Shop Now",
+            "button_url": "shopify://collections/electric-bikes",
             "button_text_color": "#eddb31",
             "button_bg_color": "#eddb31"
           }
@@ -396,14 +396,14 @@
         "image_4T9qYf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/VIllian-_banner.jpg",
-            "mb_image": "shopify://shop_images/VIllian-_banner_M.jpg",
-            "tag_text": "",
+            "image": "shopify://shop_images/1920x653_2e41da73-6198-42e4-ba7c-b03a6c0dd383.jpg",
+            "mb_image": "shopify://shop_images/1125x1440_a0cb831e-48d1-4c80-893e-6bcaee05d18c.jpg",
+            "tag_text": "Best Seller",
             "subtitle": "",
-            "title": "",
-            "text": "",
-            "button_text": "",
-            "button_url": "shopify://products/villain",
+            "title": "<p>Ranger 3.0 Pro</p>",
+            "text": "<p>Unmached comfort meets peak performance</p>",
+            "button_text": "Shop Ranger 3.0 Pro",
+            "button_url": "shopify://products/ranger-3-0-pro",
             "button_text_color": "#f0de42",
             "button_bg_color": "#ffdb00"
           }
@@ -449,7 +449,7 @@
         "image_radius": 0,
         "mb_image_radius": 0,
         "tag_text_color": "#eddb31",
-        "tag_bg_color": "#000000",
+        "tag_bg_color": "rgba(0,0,0,0)",
         "tag_border_color": "#f5df39",
         "auto_slide": true,
         "duration": 4
