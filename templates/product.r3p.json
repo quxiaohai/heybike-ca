@@ -798,6 +798,111 @@
         "parallax_direction": "vertical"
       }
     },
+    "multicolumn_ebmr7M": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wDtcQ7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/R3P-600x580_002d1ecd-7774-4fab-9193-32adc12f97a6.png",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_GHF3Gq": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/R3P-600x580-2_63459bf2-5690-4b1a-b7e9-bd225cdee2bc.png",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_QeDfEt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/R3P-600x580-3.png",
+            "image_ratio": "adapt",
+            "video_url": "",
+            "description": "",
+            "enable_video_autoplay": false,
+            "enable_video_looping": false,
+            "heading": "",
+            "heading_size": "text-lg-2xl",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_wDtcQ7",
+        "column_GHF3Gq",
+        "column_QeDfEt"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "swipe_on_desktop": false,
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Own the streets. Hit the beach. Conquer the climbs.",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "hide_desktop": false
+      }
+    },
     "video_with_text_slide_ktkXgf": {
       "type": "video-with-text-slide",
       "blocks": {
@@ -1709,6 +1814,7 @@
     "image_with_text_yJHEzB",
     "image_with_text_yHVPEw",
     "slideshow_KGwhEa",
+    "multicolumn_ebmr7M",
     "video_with_text_slide_ktkXgf",
     "timeline_rAgziH",
     "lookbook_Geh8Xd",
