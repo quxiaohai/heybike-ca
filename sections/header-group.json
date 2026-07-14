@@ -40,6 +40,7 @@
         },
         "announcement_HKc6qM": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "<strong>🖤 Weekend Flash: Extra C$100 Off Villain</strong>",
