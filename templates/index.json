@@ -389,7 +389,7 @@
             "text": "<p>Bundle any 2 ebikes and instantly get <strong>$200 off</strong>.</p>",
             "button_text": "Shop Now",
             "button_url": "shopify://collections/electric-bikes",
-            "button_text_color": "#eddb31",
+            "button_text_color": "#000000",
             "button_bg_color": "#eddb31"
           }
         },
@@ -404,7 +404,7 @@
             "text": "<p>Unmached comfort meets peak performance</p>",
             "button_text": "Shop Ranger 3.0 Pro",
             "button_url": "shopify://products/ranger-3-0-pro",
-            "button_text_color": "#f0de42",
+            "button_text_color": "#000000",
             "button_bg_color": "#ffdb00"
           }
         }
