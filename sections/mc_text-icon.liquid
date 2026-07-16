@@ -1,0 +1,480 @@
+{%- liquid
+    assign ss = section.settings
+    assign cid = section.id | split: '__' | last
+-%}
+<style>
+    .{{ cid }} {
+        padding: 80px 0;
+        background-color: #fbf4f0;
+    }
+    .{{ cid }} .text-content {
+        gap: 0 20px;
+        align-items: stretch;
+    }
+    .{{ cid }} .item-wrap {
+        width: calc((100% - 40px) / 3);
+        gap: 10px 0;
+    }
+    .{{ cid }} .item {
+        width: 100%;
+        height: 232px;
+        background-color: {{ ss.card_color }};
+        padding: 0 36px;
+        cursor: pointer;
+        border-radius: {{ ss.card_radius }}px;
+    }
+    .{{ cid }} .item:hover .image {
+        transform: scale(1.1);
+    }
+    .{{ cid }} .large {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .{{ cid }} .large .media-wrap {
+        height: 320px;
+        margin-top: 10px;
+    }
+    .{{ cid }} .text {
+        color: {{ ss.card_text_color }};
+        line-height: 1.4;
+        font-size: 24px;
+        min-height: 67px;
+    }
+    .{{ cid }} .media-wrap {
+        margin-top: 22px;
+        height: 132px;
+    }
+    .{{ cid }} .image {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.5s ease-in-out;
+    }
+    @media screen and (max-width: 1536px) {
+        .{{ cid }} {
+            padding: 68px 0;
+        }
+        .{{ cid }} .text-content {
+            gap: 0 17px;
+        }
+        .{{ cid }} .item-wrap {
+            width: calc((100% - 34px) / 3);
+            gap: 9px 0;
+        }
+        .{{ cid }} .item {
+            height: 15vw;
+            min-height: 180px;
+        }
+        .{{ cid }} .large {
+            height: 100%;
+        }
+        .{{ cid }} .large .media-wrap {
+            height: 20.83vw;
+        }
+        .{{ cid }} .text {
+            font-size: 1.5625vw;
+            min-height: 57px;
+        }
+        .{{ cid }} .media-wrap {
+            margin-top: 19px;
+            height: 8.59375vw;
+        }
+    }
+
+    .mc_text-icon-popup {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 720px;
+        border-radius: 24px;
+        padding: 40px;
+    }
+
+    .mc_text-icon-popup .close {
+        width: 32px;
+        height: 32px;
+        z-index: 2;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .mc_text-icon-popup .close .svg-icon path {
+        transition: fill 0.4s;
+    }
+
+    .mc_text-icon-popup .close:hover .svg-icon path {
+        fill: #000000;
+    }
+
+    .mc_text-icon-popup .title {
+        color: #1e1e1e;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .mc_text-icon-popup .content {
+        font-size: 14px;
+        line-height: 1.3;
+        color: #666666;
+        padding: 24px 0;
+    }
+
+    .mc_text-icon-popup .reversed-link {
+        font-size: 14px;
+        line-height: 1.3;
+        color: #000000;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .mc_text-icon-popup {
+            max-width: 90%;
+        }
+
+        .{{ cid }} {
+            padding: 2.5rem 0;
+        }
+        .{{ cid }} .text-content {
+            gap: 0.625rem;
+            flex-wrap: wrap;
+        }
+        .{{ cid }} .item-wrap {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            gap: 0.625rem;
+            flex-direction: row;
+        }
+        .{{ cid }} .item {
+            height: 9rem;
+            min-height: auto;
+            padding: 0;
+        }
+        .{{ cid }} .large {
+            height: 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+            flex-direction: row-reverse;
+            gap: 1rem;
+        }
+        .{{ cid }} .large .text {
+            min-height: auto;
+        }
+        .{{ cid }} .large .media-wrap {
+            height: 100%;
+            align-items: flex-end;
+            margin-top: 0;
+        }
+
+        .{{ cid }} .large .media-wrap .image {
+            height: 90%;
+        }
+        .{{ cid }} .text {
+            font-size: 1rem;
+            min-height: 2.125rem;
+            white-space: wrap;
+        }
+        .{{ cid }} .media-wrap {
+            margin-top: 0.5rem;
+            height: 6rem;
+        }
+    }
+
+    {% render 'page-wrap-style' %}
+</style>
+<div class="{{ cid }} section--page w-full" id="{{ section.id }}-icon">
+    {%- render 'section-title', info: ss, tag: 'h2' -%}
+    <animate-element class="w-full text-content hide-scroll-bar flex-top page-width">
+        {%- liquid
+            assign list = section.blocks
+            assign pass = false
+        -%}
+        {%- for block in list -%}
+            {%- liquid
+                if pass
+                    assign pass = false
+                    continue
+                endif
+                assign bs = block.settings
+                assign index = forloop.index0
+                assign next = index | plus: 1
+                assign nbs = list[next].settings
+            -%}
+            <div class="item-wrap flex-center-col">
+                <div class="item overflow-hidden {{ bs.size }}" data-index="{{ index }}" data-proxy="item">
+                    <div class="media-wrap flex-center">
+                        {%- render 'global-image',
+                            desktop_img: bs.icon,
+                            show_size: true
+                        -%}
+                    </div>
+                    <h3 class="text fw-700 text-center">{{ bs.title }}</h3>
+                </div>
+            {%- if bs.size == 'small' and nbs != blank -%}
+                {%- assign pass = true -%}
+                <div class="item overflow-hidden {{ nbs.size }}" data-index="{{ next }}" data-proxy="item">
+                    <div class="media-wrap flex-center">
+                        {%- render 'global-image',
+                            desktop_img: nbs.icon,
+                            show_size: true
+                        -%}
+                    </div>
+                    <h3 class="text fw-700 text-center">{{ nbs.title }}</h3>
+                </div>
+            {%- endif -%}
+            </div>
+        {%- endfor -%}
+    </animate-element>
+    {% render 'mc_text-icon-popup' %}
+</div>
+<script>
+    (function () {
+        const list = [
+            {%- for block in section.blocks -%}
+            {%- assign bs = block.settings -%}
+            {
+                title: {{ bs.title | json }},
+                content: `{{ bs.text }}`,
+                url: {{ bs.url | json }},
+                button: {{ bs.button | json }}
+            }{% unless forloop.last %},{% endunless %}
+            {%- endfor -%}
+        ];
+        $heybike.proxy(document.getElementById('{{ section.id }}-icon'), 'item', ({elem, nodeList}) => {
+            const obj = list[elem.dataset.index];
+            nodeList.title.innerHTML = obj.title;
+            nodeList.content.innerHTML = obj.content;
+            nodeList.link.innerHTML = obj.button;
+            nodeList.link.href = obj.url;
+            $heybike.emit('{{ section.id }}:popup:show');
+        }, true);
+    })();
+</script>
+{% schema %}
+{
+  "name": "MC Text Icon",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "MC Text Icon"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Title",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "Title font style",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "italic",
+          "value": "italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "title_pc_size",
+      "label": "Desktop title size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_mb_size",
+      "label": "Mobile title size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "number",
+      "id": "title_margin_bottom",
+      "label": "Title margin bottom",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_bold_color",
+      "label": "Title Bold color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "title_gradient_color",
+      "label": "Title gradient color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show description",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "description_pc_size",
+      "label": "Desktop description size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_mb_size",
+      "label": "Mobile description size",
+      "min": 6,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "number",
+      "id": "description_pc_margin_bottom",
+      "label": "Desktop description margin bottom",
+      "default": 40
+    },
+    {
+      "type": "number",
+      "id": "description_mb_margin_bottom",
+      "label": "Mobile description margin bottom",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Text card"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Card background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card radius",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Size",
+          "options": [
+            {
+              "label": "Small",
+              "value": "small"
+            },
+            {
+              "label": "Large",
+              "value": "large"
+            }
+          ],
+          "default": "small"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button",
+          "default": "More Details Here"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

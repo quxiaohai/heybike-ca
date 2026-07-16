@@ -1,0 +1,883 @@
+{%- liquid
+    assign ss = section.settings
+    assign cid = section.id | split: '__' | last
+-%}
+<style>
+    .{{ cid }} {
+        padding: 58px 0 40px;
+        background-color: #f9f7f6;
+    }
+
+    .{{ cid }} .title {
+        font-size: 36px;
+        color: #000000;
+        padding-bottom: 45px;
+    }
+
+    .{{ cid }} .autumn-content {
+        max-width: 1440px;
+        box-sizing: border-box;
+        padding: 0 12px;
+        margin: 0 auto;
+    }
+
+    .{{ cid }} .autumn-content .slide-tabs {
+        padding-bottom: 42px;
+    }
+
+    .{{ cid }} .autumn-content .slide-tabs .button-incline {
+        --button-color: {{ ss.tab_color }};
+        --button-background-color: {{ ss.tab_bg_color }};
+    }
+
+    .{{ cid }} .autumn-content .slide-tabs .button-incline.active {
+        --button-background-color: {{ ss.tab_active_bg_color }};
+        --button-color: {{ ss.tab_active_color }};
+    }
+
+    .{{ cid }} .autumn-content .slider {
+        padding-inline: 0;
+        margin-inline: 0;
+        scroll-padding-inline: 0;
+        padding-block-end: 0;
+        max-width: 100%;
+        border: 0 none !important;
+    }
+
+    .{{ cid }} .autumn-content .slide-wrapper {
+        display: none;
+    }
+
+    .{{ cid }} .autumn-content .slide-wrapper.active {
+        display: block;
+    }
+
+    .{{ cid }} .autumn-content .card-grid {
+        --slider-item-width: {% if ss.video_layout == 'horizontal' %} 454px{% else %} 267px{% endif %};
+        gap: 0 {% if ss.video_layout == 'horizontal' %} 26px{% else %} 20px{% endif %};
+        align-items: stretch;
+    }
+
+    .{{ cid }} .autumn-content .slider-item {
+        border-radius: 10px;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .{{ cid }} .autumn-content .slider-item .media {
+        width: 100%;
+        height: auto;
+        aspect-ratio: {% if ss.video_layout == 'horizontal' %}16/9{% else %}0.56{% endif %};
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .{{ cid }} .autumn-content .slider-item .media[playing] .deferred-poster .play-button {
+        opacity: 0;
+    }
+
+    .{{ cid }} .autumn-content .slider-item .media .deferred-poster {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+    }
+
+    .{{ cid }} .autumn-content .slider-item .media .deferred-poster .play-button {
+        width: 100%;
+        height: auto;
+        background: none;
+        inset-inline: 0;
+        inset-block: 0;
+    }
+
+    .{{ cid }} .autumn-content .slider-item .media .deferred-poster .play-button .icon {
+        width: 70px;
+        height: 48px;
+    }
+
+    .{{ cid }} .autumn-content .media-info {
+        box-sizing: border-box;
+        flex: 1;
+        padding: 18px 15px 80px;
+    }
+
+    .{{ cid }} .autumn-content .media-info .intro, .{{ cid }} .autumn-content .media-info .name {
+        color: #333333;
+    }
+
+    .{{ cid }} .autumn-content .media-info .media-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+
+    .{{ cid }} .autumn-content .media-info .intro {
+        font-size: 16px;
+    }
+
+    .{{ cid }} .autumn-content .media-info .user {
+        left: 15px;
+        bottom: 20px;
+    }
+
+    .{{ cid }} .autumn-content .media-info .user .image {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+    }
+
+    .{{ cid }} .autumn-content .media-info .name {
+        font-size: 14px;
+        padding-left: 10px;
+        max-width: 320px;
+        word-break: break-word;
+    }
+
+    .{{ cid }} .slideshow-control {
+        padding-top: 34px;
+    }
+
+    .{{ cid }} .slideshow-control .flickity-page-dots {
+        margin-block: 0;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots {
+        gap: 0 30px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .button {
+        --buttons-width: 46px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .button .btn-text .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .indicators {
+        gap: 0 11px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot {
+        width: 40px;
+        margin: 0 5px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot:before {
+        height: 4px;
+        width: 40px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot[aria-current=true] {
+        width: 80px;
+    }
+
+    .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot[aria-current=true]:before {
+        width: 80px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .{{ cid }} {
+            padding: 49.3px 0 34px;
+        }
+
+        .{{ cid }} .title {
+            font-size: 30.6px;
+            padding-bottom: 38.25px;
+        }
+
+        .{{ cid }} .autumn-content {
+            padding: 0 12px;
+        }
+
+        .{{ cid }} .autumn-content .slide-tabs {
+            padding-bottom: 38px;
+        }
+
+        .{{ cid }} .autumn-content .slider {
+            scroll-padding-inline: var(--page-padding);
+            padding-block-end: var(--card-shadow-vertical-offset);
+        }
+
+        .{{ cid }} .autumn-content .card-grid {
+            gap: 0 22px;
+            --slider-item-width: {% if ss.video_layout == 'horizontal' %}calc((100% - 44px) / 3){% else %}calc((100% - 88px) / 5){% endif %};
+        }
+
+        .{{ cid }} .autumn-content .slider-item {
+            border-radius: 8.5px;
+        }
+
+        .{{ cid }} .autumn-content .slider-item .media .deferred-poster {
+            width: 59.5px;
+        }
+
+        .{{ cid }} .autumn-content .slider-item .media .deferred-poster .play-button .icon {
+            width: 59.5px;
+            height: 40.8px;
+        }
+
+        .{{ cid }} .autumn-content .media-info {
+            padding: 15px 13px 68px;
+        }
+
+        .{{ cid }} .autumn-content .media-info .name {
+            max-width: 272px;
+        }
+
+        .{{ cid }} .slideshow-control {
+            padding-top: 28.9px;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        .{{ cid }} {
+            padding: 1.5190972222rem 0 1.953125rem;
+        }
+
+        .{{ cid }} .title {
+            font-size: 1rem;
+            padding-bottom: 1.0416666667rem;
+        }
+
+        .{{ cid }} .autumn-content {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .{{ cid }} .autumn-content .slide-tabs {
+            padding-bottom: 1.5rem;
+            overflow-x: auto;
+            white-space: nowrap;
+        {%- if section.blocks.size > 2 -%} justify-content: flex-start !important;
+        {%- endif -%}
+        }
+
+        .{{ cid }} .autumn-content .card-grid {
+            --slider-item-width: 63.148vw;
+            gap: 0 0.6944444444rem;
+            padding-left: 0.8680555556rem;
+            padding-right: 50vw;
+        }
+
+        .{{ cid }} .autumn-content .slider-item {
+            border-radius: 0.1736111111rem;
+        }
+
+        .{{ cid }} .autumn-content .slider-item .media .deferred-poster {
+            width: 2.4739583333rem;
+        }
+
+        .{{ cid }} .autumn-content .slider-item .media .deferred-poster .play-button .icon {
+            width: 2.4739583333rem;
+            height: 1.7578125rem;
+        }
+
+        .{{ cid }} .autumn-content .media-info {
+            box-sizing: border-box;
+            padding: 1.1284722222rem 0.9331597222rem 2.5rem;
+        }
+
+        .{{ cid }} .autumn-content .media-info .media-title {
+            font-size: 12px;
+            padding-bottom: 6px;
+        }
+
+        .{{ cid }} .autumn-content .media-info .intro {
+            font-size: 0.5642361111rem;
+        }
+
+        .{{ cid }} .autumn-content .media-info .user {
+            left: 0.5208333333rem;
+            bottom: 0.7378472222rem;
+        }
+
+        .{{ cid }} .autumn-content .media-info .user .image {
+            width: 1.3237847222rem;
+            height: 1.3237847222rem;
+        }
+
+        .{{ cid }} .autumn-content .media-info .name {
+            font-size: 0.4991319444rem;
+            padding-left: 0.4557291667rem;
+            max-width: 11.2847222222rem;
+        }
+
+        .{{ cid }} .slideshow-control {
+            padding-top: 1.3237847222rem;
+            justify-content: center;
+        }
+
+        .{{ cid }} .slideshow-control .flickity-page-dots {
+            margin-block: 0;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots {
+            gap: 0;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots .indicators {
+            display: none;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot {
+            width: 1.3020833333rem;
+            height: 0.3255208333rem;
+            margin: 0 0.6510416667rem;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot:before {
+            width: 1.3020833333rem;
+            height: 0.3255208333rem;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot[aria-current=true] {
+            width: 2.6041666667rem;
+        }
+
+        .{{ cid }} .slideshow-control .tw-mobile--dots .flickity-page-dot[aria-current=true]:before {
+            width: 2.6041666667rem;
+        }
+    }
+
+    {% render 'page-wrap-style', info: ss, class: '.{{ cid }}' %}
+</style>
+{%- liquid
+    assign video_list = section.blocks | where: 'type', 'video'
+    assign youtube_list = section.blocks | where: 'type', 'youtube'
+-%}
+<div class="{{ cid }} w-full">
+    <tab-panel class="autumn-content block w-full">
+        {%- if ss.show_heading -%}
+            <div style="color: {{ ss.heading_color }}"
+                 class="title text-center text-base font-bold">{{ ss.heading }}</div>
+        {%- endif -%}
+        {%- if video_list.size > 0 and youtube_list.size > 0 -%}
+            <div class="slide-tabs hide-scroll-bar flex-{{ ss.tab_display_position }}">
+                <button is="magnet-button"
+                        data-proxy="tab"
+                        node-name="tab"
+                        data-index="0"
+                        class="button-incline flex-center relative active">
+                        <span class="incline-skew flex-center">
+                            <span class="incline-text">{{ ss.tab1_title }}</span>
+                        </span>
+                </button>
+                <button is="magnet-button"
+                        data-proxy="tab"
+                        node-name="tab"
+                        data-index="1"
+                        class="button-incline flex-center relative">
+                        <span class="incline-skew flex-center">
+                            <span class="incline-text">{{ ss.tab2_title }}</span>
+                        </span>
+                </button>
+            </div>
+        {%- endif -%}
+        {%- if video_list.size > 0 -%}
+            <animate-element node-name="panel" data-repeat class="slide-wrapper active">
+                <slider-element id="Slider1-{{ section.id }}" class="grid slider slider--desktop slider--tablet"
+                                selector=".card-grid>.slider-item">
+                    <motion-list class="card-grid card-grid--3 mobile:card-grid--1 grid">
+                        {%- for block in video_list -%}
+                            {%- assign bs = block.settings -%}
+                            <div class="slider-item card tw-relative tw-overflow-hidden">
+                                {%- capture sizes -%}{% if bs.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+                                {%- if bs.video_mobile or bs.video_url_mobile -%}
+                                    {%- render 'video',
+                                        sizes: sizes,
+                                        video: bs.video_mobile,
+                                        video_url: bs.video_url_mobile,
+                                        muted: bs.enable_video_autoplay,
+                                        autoplay: bs.enable_video_autoplay,
+                                        loop: bs.enable_video_looping,
+                                        description: bs.description,
+                                        cover_image: bs.cover_image_mobile,
+                                        show_play_button: true,
+                                        is_mobile: true,
+                                        controls: true,
+                                        class: 'media media--height w-full h-full relative'
+                                    -%}
+                                {%- endif -%}
+                                {%- render 'video',
+                                    sizes: sizes,
+                                    video: bs.video,
+                                    video_url: bs.video_url,
+                                    muted: bs.enable_video_autoplay,
+                                    autoplay: bs.enable_video_autoplay,
+                                    loop: bs.enable_video_looping,
+                                    description: bs.description,
+                                    cover_image: bs.cover_image,
+                                    show_youtube_button: true,
+                                    controls: true,
+                                    class: 'media media--height w-full h-full relative'
+                                -%}
+                                <div class="media-info tw-relative">
+                                    <div class="media-title">{{ bs.title }}</div>
+                                    {%- if bs.content != blank -%}
+                                        <div class="intro tw-leading-normal">{{ bs.content }}</div>
+                                    {%- endif -%}
+                                    {% if bs.avatar and bs.author %}
+                                        <div class="user tw-absolute flex-left">
+                                            {{ bs.avatar | image_url: width: '48' | image_tag: class: 'image', width: '48' }}
+                                            <span class="name tw-leading-[1.2]">{{ bs.author }}</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </motion-list>
+                </slider-element>
+                <div class="slideshow-control w-full flex-right">
+                    <div class="tw-mobile--dots flex-center">
+                        <div class="flex-center indicators {{ ss.button_theme }}">
+                            <button class="button button--secondary" type="button" is="previous-button"
+                                    aria-controls="Slider1-{{ section.id }}"
+                                    aria-label="{{ 'general.pagination.previous' | t | escape }}" disabled tabindex="-1">
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
+                            {%- render 'icon', icon: 'chevron-left', class: 'stroke-2 transform' -%}
+                        </span>
+                            </button>
+                            <button class="button button--secondary" type="button" is="next-button"
+                                    aria-controls="Slider1-{{ section.id }}"
+                                    aria-label="{{ 'general.pagination.next' | t | escape }}" tabindex="-1">
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
+                            {%- render 'icon', icon: 'chevron-right', class: 'stroke-2 transform' -%}
+                        </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </animate-element>
+        {%- endif -%}
+        {%- if youtube_list.size > 0 -%}
+            <animate-element node-name="panel" data-repeat class="slide-wrapper{% if video_list.size == 0 %} active{% endif %}">
+                <slider-element id="Slider2-{{ section.id }}" class="grid slider slider--desktop slider--tablet"
+                                selector=".card-grid>.slider-item">
+                    <motion-list class="card-grid card-grid--3 mobile:card-grid--1 grid">
+                        {%- for block in youtube_list -%}
+                            {%- assign bs = block.settings -%}
+                            <div class="slider-item card tw-relative tw-overflow-hidden">
+                                {%- capture sizes -%}{% if bs.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+                                {%- if bs.video_mobile or bs.video_url_mobile -%}
+                                    {%- render 'video',
+                                        sizes: sizes,
+                                        video: bs.video_mobile,
+                                        video_url: bs.video_url_mobile,
+                                        muted: bs.enable_video_autoplay,
+                                        autoplay: bs.enable_video_autoplay,
+                                        loop: bs.enable_video_looping,
+                                        description: bs.description,
+                                        cover_image: bs.cover_image_mobile,
+                                        show_play_button: true,
+                                        is_mobile: true,
+                                        controls: true,
+                                        class: 'media media--height w-full h-full relative'
+                                    -%}
+                                {%- endif -%}
+                                {%- render 'video',
+                                    sizes: sizes,
+                                    video: bs.video,
+                                    video_url: bs.video_url,
+                                    muted: bs.enable_video_autoplay,
+                                    autoplay: bs.enable_video_autoplay,
+                                    loop: bs.enable_video_looping,
+                                    description: bs.description,
+                                    cover_image: bs.cover_image,
+                                    show_youtube_button: true,
+                                    controls: true,
+                                    class: 'media media--height w-full h-full relative'
+                                -%}
+                                <div class="media-info tw-relative">
+                                    <div class="media-title">{{ bs.title }}</div>
+                                    {%- if bs.content != blank -%}
+                                        <div class="intro tw-leading-normal">{{ bs.content }}</div>
+                                    {%- endif -%}
+                                    {% if bs.avatar and bs.author %}
+                                        <div class="user tw-absolute flex-left">
+                                            {{ bs.avatar | image_url: width: '48' | image_tag: class: 'image', width: '48' }}
+                                            <span class="name tw-leading-[1.2]">{{ bs.author }}</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </motion-list>
+                </slider-element>
+                <div class="slideshow-control w-full flex-right">
+                    <div class="tw-mobile--dots flex-center">
+                        <div class="flex-center indicators {{ ss.button_theme }}">
+                            <button class="button button--secondary" type="button" is="previous-button"
+                                    aria-controls="Slider2-{{ section.id }}"
+                                    aria-label="{{ 'general.pagination.previous' | t | escape }}" disabled tabindex="-1">
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
+                            {%- render 'icon', icon: 'chevron-left', class: 'stroke-2 transform' -%}
+                        </span>
+                            </button>
+                            <button class="button button--secondary" type="button" is="next-button"
+                                    aria-controls="Slider2-{{ section.id }}"
+                                    aria-label="{{ 'general.pagination.next' | t | escape }}" tabindex="-1">
+                                <span class="btn-fill" data-fill></span>
+                                <span class="btn-text">
+                            {%- render 'icon', icon: 'chevron-right', class: 'stroke-2 transform' -%}
+                        </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </animate-element>
+        {%- endif -%}
+    </tab-panel>
+</div>
+{% schema %}
+{
+  "name": "Autumn Sale Video",
+  "class": "mc--main",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "autumn-sale-video"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "page_color",
+      "label": "Background Color",
+      "default": "#f9f7f6"
+    },
+    {
+      "type": "number",
+      "id": "page_top",
+      "label": "Padding Top"
+    },
+    {
+      "type": "number",
+      "id": "page_bottom",
+      "label": "padding Bottom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "Show Title",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title",
+      "default": "YouTube Channel"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Title color",
+      "default": "#333333"
+    },
+    {
+      "type": "select",
+      "id": "button_theme",
+      "label": "Button theme",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        }
+      ],
+      "default": "dark"
+    },
+    {
+      "type": "select",
+      "id": "video_layout",
+      "label": "Video layout",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        },
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        }
+      ],
+      "default": "horizontal"
+    },
+    {
+      "type": "header",
+      "content": "Slide tab"
+    },
+    {
+      "type": "text",
+      "id": "tab1_title",
+      "label": "Tab #1 title",
+      "default": "Industry Experts"
+    },
+    {
+      "type": "text",
+      "id": "tab2_title",
+      "label": "Tab #2 title",
+      "default": "Dealers"
+    },
+    {
+      "type": "text_alignment",
+      "id": "tab_display_position",
+      "label": "Tab display position",
+      "default": "left"
+    },
+    {
+      "type": "color",
+      "id": "tab_color",
+      "label": "Tab text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_color",
+      "label": "Tab active text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "tab_bg_color",
+      "label": "Tab background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_bg_color",
+      "label": "Tab active background color",
+      "default": "#f8e737"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background color",
+      "default": "#f5f5f5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__video.content"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.video.settings.video.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__video_url.content",
+          "info": "t:sections.video.settings.header__video_url.info"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_autoplay",
+          "label": "t:sections.video.settings.enable_video_autoplay.label",
+          "info": "t:sections.video.settings.enable_video_autoplay.info",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__mobile.content"
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "t:sections.video.settings.video_mobile.label"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url_mobile",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "label": "t:sections.video.settings.video_url_mobile.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image_mobile",
+          "label": "t:sections.video.settings.cover_image_mobile.label"
+        },
+        {
+          "type": "header",
+          "content": "Content settings"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Youtube Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "1,194 people have given this bike a 4.5 star rating"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Electric Revolution"
+        }
+      ]
+    },
+    {
+      "type": "youtube",
+      "name": "Youtube",
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__video.content"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.video.settings.video.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__video_url.content",
+          "info": "t:sections.video.settings.header__video_url.info"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_autoplay",
+          "label": "t:sections.video.settings.enable_video_autoplay.label",
+          "info": "t:sections.video.settings.enable_video_autoplay.info",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__mobile.content"
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "t:sections.video.settings.video_mobile.label"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url_mobile",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "label": "t:sections.video.settings.video_url_mobile.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image_mobile",
+          "label": "t:sections.video.settings.cover_image_mobile.label"
+        },
+        {
+          "type": "header",
+          "content": "Content settings"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Youtube Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "1,194 people have given this bike a 4.5 star rating"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Electric Revolution"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
