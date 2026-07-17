@@ -40,10 +40,9 @@
         },
         "announcement_HKc6qM": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "<strong>🖤 Weekend Flash: Extra C$100 Off Villain</strong>",
+            "text": "<strong>🖤 Weekend Flash: Extra C$100 Off Villain Midnight Black</strong>",
             "link": "shopify://products/villain",
             "hide_icon_mobile": true,
             "text_mobile": "",
