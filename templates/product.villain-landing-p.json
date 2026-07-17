@@ -75,8 +75,8 @@
         "countdown_Yb9jEM": {
           "type": "countdown",
           "settings": {
-            "heading": "Hurry!",
-            "subheading": "Sale ends in:",
+            "heading": "Weekend Flash Sale ends in:",
+            "subheading": "",
             "color_text": "#000000",
             "color_background": "#f0c533",
             "gradient_background": ""
